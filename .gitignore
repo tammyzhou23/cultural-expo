@@ -41,6 +41,9 @@ Thumbs.db
 # Vercel
 .vercel
 
+# Cache
+.npm-cache/
+
 # Backup files
 *.backup
 src/index.css.backup

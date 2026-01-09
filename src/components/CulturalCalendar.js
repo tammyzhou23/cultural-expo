@@ -23,16 +23,33 @@ function CulturalCalendar({ onDateSelect, onAddExperience, onEditExperience }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [hoveredDate, setHoveredDate] = useState(null);
   const [experiences, setExperiences] = useState([]);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
 
-  // Load calendar data when date changes
+  // Load calendar data when date changes or experiences are updated
   useEffect(() => {
     const data = getCalendarData(year, month);
     setCalendarData(data);
     setExperiences(getAllExperiences());
-  }, [year, month]);
+  }, [year, month, refreshKey]);
+
+  // Listen for experience changes (custom event)
+  useEffect(() => {
+    const handleExperienceChange = () => {
+      setRefreshKey(prev => prev + 1);
+    };
+
+    // Listen for custom event when experiences are added/updated
+    window.addEventListener('experienceChanged', handleExperienceChange);
+    window.addEventListener('userChanged', handleExperienceChange);
+
+    return () => {
+      window.removeEventListener('experienceChanged', handleExperienceChange);
+      window.removeEventListener('userChanged', handleExperienceChange);
+    };
+  }, []);
 
   // Get first day of month and number of days
   const firstDay = new Date(year, month, 1).getDay();
@@ -72,7 +89,7 @@ function CulturalCalendar({ onDateSelect, onAddExperience, onEditExperience }) {
     
     // Create context menu
     const contextMenu = document.createElement('div');
-    contextMenu.className = 'fixed bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50';
+    contextMenu.className = 'fixed bg-dark-tertiary rounded-lg shadow-lg border border-dark-border py-2 z-50';
     contextMenu.style.left = `${e.pageX}px`;
     contextMenu.style.top = `${e.pageY}px`;
     
@@ -92,7 +109,7 @@ function CulturalCalendar({ onDateSelect, onAddExperience, onEditExperience }) {
 
     menuItems.forEach(item => {
       const menuItem = document.createElement('button');
-      menuItem.className = 'block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100';
+      menuItem.className = 'block w-full text-left px-4 py-2 text-sm text-text-primary hover:bg-dark-secondary';
       menuItem.textContent = item.label;
       menuItem.onclick = () => {
         item.action();
@@ -190,72 +207,66 @@ function CulturalCalendar({ onDateSelect, onAddExperience, onEditExperience }) {
 
   return (
     <motion.div 
-      className="max-w-4xl mx-auto bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden"
-      initial={{ opacity: 0, y: 20 }}
+      className="max-w-4xl mx-auto card overflow-hidden"
+      initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.3 }}
     >
-      {/* Compact Calendar Header */}
-      <div className="bg-gradient-to-r from-accent-primary to-accent-secondary p-4">
-        <div className="flex items-center justify-between">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            <h2 className="text-xl font-bold text-white mb-1">
+      {/* Simplified Calendar Header */}
+      <div className="bg-accent-primary p-3 sm:p-4">
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <h2 className="text-lg sm:text-xl font-semibold text-white mb-1">
               {MONTHS[month]} {year}
             </h2>
-            <p className="text-white text-opacity-80 text-sm flex items-center">
-                              <CalendarIcon className="w-4 h-4 mr-1 text-white" />
+            <p className="text-white/80 text-xs sm:text-sm flex items-center">
+              <CalendarIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-1" aria-hidden="true" />
               Cultural Journey Calendar
             </p>
-          </motion.div>
+          </div>
           
-          <motion.div 
-            className="flex items-center space-x-2"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-          >
+          <div className="flex items-center gap-2">
             <motion.button
               onClick={goToPreviousMonth}
-              className="btn btn-icon bg-white bg-opacity-20 hover:bg-opacity-30 text-white border-0"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              className="btn btn-icon bg-white/20 hover:bg-white/30 text-white border-0"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               title="Previous month"
+              aria-label="Previous month"
             >
-                              <ChevronLeftIcon className="w-5 h-5 text-white" />
+              <ChevronLeftIcon className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
             </motion.button>
             
             <motion.button
               onClick={goToToday}
-              className="btn bg-white bg-opacity-20 hover:bg-opacity-30 text-white border-0 text-sm font-medium"
+              className="btn bg-white/20 hover:bg-white/30 text-white border-0 text-xs sm:text-sm font-medium"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              aria-label="Go to today"
             >
               Today
             </motion.button>
             
             <motion.button
               onClick={goToNextMonth}
-              className="btn btn-icon bg-white bg-opacity-20 hover:bg-opacity-30 text-white border-0"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              className="btn btn-icon bg-white/20 hover:bg-white/30 text-white border-0"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               title="Next month"
+              aria-label="Next month"
             >
-                              <ChevronRightIcon className="w-5 h-5 text-white" />
+              <ChevronRightIcon className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
             </motion.button>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      {/* Compact Calendar Grid */}
-      <div className="p-4">
+      {/* Simplified Calendar Grid */}
+      <div className="p-2 sm:p-4">
         {/* Weekday Headers */}
         <div className="grid grid-cols-7 gap-1 mb-2">
           {WEEKDAYS.map(day => (
-            <div key={day} className="text-center text-sm font-medium text-gray-400 py-2">
+            <div key={day} className="text-center text-xs sm:text-sm font-medium text-text-tertiary py-1 sm:py-2">
               {day}
             </div>
           ))}
@@ -285,17 +296,17 @@ function CalendarDay({
 
   return (
     <div
-      className={`relative min-h-[60px] p-1 border border-gray-600/30 cursor-pointer transition-all duration-200 ${
+      className={`relative min-h-[50px] sm:min-h-[60px] p-1 sm:p-2 border border-dark-border cursor-pointer transition-all duration-200 rounded ${
         isCurrentMonth 
-          ? 'hover:bg-gray-700/30' 
-          : 'text-gray-500 bg-gray-800/20'
+          ? 'hover:bg-dark-tertiary' 
+          : 'text-text-tertiary bg-dark-secondary/50'
       } ${
         isSelected 
-          ? 'bg-accent-primary/20 border-accent-primary/50' 
+          ? 'bg-accent-primary/10 border-accent-primary' 
           : ''
       } ${
         isToday 
-          ? 'bg-accent-secondary/20 border-accent-secondary font-bold' 
+          ? 'bg-accent-secondary/10 border-accent-secondary font-semibold' 
           : ''
       }`}
       onClick={onClick}
@@ -304,7 +315,7 @@ function CalendarDay({
       onMouseLeave={() => onHover(false)}
     >
       {/* Day Number */}
-      <div className={`text-xs ${isToday ? 'text-accent-secondary' : 'text-gray-300'}`}>
+      <div className={`text-xs sm:text-sm ${isToday ? 'text-accent-secondary' : 'text-text-primary'}`}>
         {day}
       </div>
 

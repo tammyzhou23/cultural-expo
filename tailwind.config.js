@@ -47,15 +47,15 @@ module.exports = {
         }
       },
       fontSize: {
-        'xs': ['12px', { lineHeight: '16px', fontWeight: '400' }],
-        'sm': ['14px', { lineHeight: '20px', fontWeight: '400' }],
-        'base': ['16px', { lineHeight: '24px', fontWeight: '400' }],
-        'lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
-        'xl': ['20px', { lineHeight: '28px', fontWeight: '500' }],
-        '2xl': ['24px', { lineHeight: '32px', fontWeight: '600' }],
-        '3xl': ['32px', { lineHeight: '40px', fontWeight: '700' }],
-        '4xl': ['40px', { lineHeight: '48px', fontWeight: '700' }],
-        '5xl': ['48px', { lineHeight: '56px', fontWeight: '700' }],
+        'xs': ['clamp(0.75rem, 1.5vw, 0.875rem)', { lineHeight: '1.5', fontWeight: '400' }],
+        'sm': ['clamp(0.875rem, 2vw, 1rem)', { lineHeight: '1.5', fontWeight: '400' }],
+        'base': ['clamp(1rem, 2vw, 1.125rem)', { lineHeight: '1.6', fontWeight: '400' }],
+        'lg': ['clamp(1.125rem, 2.5vw, 1.25rem)', { lineHeight: '1.6', fontWeight: '500' }],
+        'xl': ['clamp(1.25rem, 3vw, 1.5rem)', { lineHeight: '1.5', fontWeight: '500' }],
+        '2xl': ['clamp(1.5rem, 4vw, 2rem)', { lineHeight: '1.4', fontWeight: '600' }],
+        '3xl': ['clamp(1.875rem, 5vw, 2.5rem)', { lineHeight: '1.3', fontWeight: '600' }],
+        '4xl': ['clamp(2.25rem, 6vw, 3rem)', { lineHeight: '1.2', fontWeight: '600' }],
+        '5xl': ['clamp(3rem, 8vw, 4rem)', { lineHeight: '1.1', fontWeight: '600' }],
       },
       spacing: {
         '18': '4.5rem',   // 72px
@@ -69,12 +69,10 @@ module.exports = {
         'button': '6px',
       },
       boxShadow: {
-        'card': '0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2)',
-        'card-hover': '0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3)',
-        'modal': '0 25px 50px -12px rgba(0, 0, 0, 0.8)',
-        'glow': '0 0 20px rgba(124, 58, 237, 0.3)',
-        'glow-hover': '0 0 30px rgba(124, 58, 237, 0.5)',
-        'inner-soft': 'inset 0 2px 4px rgba(0, 0, 0, 0.1)',
+        'card': '0 1px 2px rgba(0, 0, 0, 0.1)',
+        'card-hover': '0 2px 4px rgba(0, 0, 0, 0.1)',
+        'modal': '0 8px 16px rgba(0, 0, 0, 0.2)',
+        'inner-soft': 'inset 0 1px 2px rgba(0, 0, 0, 0.05)',
       },
       animation: {
         // Enhanced animations for modern feel
@@ -167,12 +165,12 @@ module.exports = {
         'glass': '8px',
       },
       transitionDuration: {
-        '400': '400ms',
-        '600': '600ms',
+        '150': '150ms',
+        '200': '200ms',
+        '300': '300ms',
       },
       transitionTimingFunction: {
-        'smooth': 'cubic-bezier(0.16, 1, 0.3, 1)',
-        'spring': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
       zIndex: {
         'dropdown': '100',

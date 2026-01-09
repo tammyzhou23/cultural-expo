@@ -102,6 +102,36 @@ A beautiful React web application that lets you discover cultures from around th
 
 5. Open your browser and visit `http://localhost:3000`
 
+### Authentication (Google Sign-In)
+
+This app supports simple login with Google to keep each user's progress separate on the same device.
+
+1) Install dependencies (if not already):
+```bash
+npm install
+```
+
+2) Create a Firebase project and enable Google sign-in:
+- In Firebase console, create a Web App and copy the config.
+- Enable Authentication → Sign-in method → Google.
+
+3) Create `.env.local` in the project root with:
+```bash
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
+
+4) Start the app:
+```bash
+npm start
+```
+
+Notes:
+- Progress is stored locally per signed-in user profile (namespaced in localStorage).
+- If not signed in, data is stored under a "guest" profile.
+
 ## Technologies Used
 
 - **React 18**: Modern React with functional components and hooks

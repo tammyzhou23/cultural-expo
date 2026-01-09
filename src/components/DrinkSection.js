@@ -26,11 +26,11 @@ function DrinkSection({ selectedCountry }) {
   // Early return if no country is selected
   if (!selectedCountry || !selectedCountry.id) {
     return (
-      <div className="flex items-center justify-center min-h-64">
+      <div className="flex items-center justify-center min-h-48 py-12">
         <div className="text-center">
-          <div className="text-6xl mb-4">🍹</div>
-          <h3 className="text-2xl font-bold text-gray-300 mb-2">Traditional Drinks</h3>
-          <p className="text-gray-400">Select a country to explore its beverages</p>
+          <div className="text-4xl mb-3">🍹</div>
+          <h3 className="text-lg font-medium text-text-secondary mb-2">Traditional Drinks</h3>
+          <p className="text-sm text-text-tertiary">Select a country to explore its beverages</p>
         </div>
       </div>
     );
@@ -49,37 +49,48 @@ function DrinkSection({ selectedCountry }) {
     setSelectedDrink(selectedDrink === drinkId ? null : drinkId);
   };
 
+  if (drinks.length === 0) {
+    return (
+      <div className="text-center py-12">
+        <div className="text-5xl mb-4">🍹</div>
+        <h3 className="text-xl font-semibold text-text-primary mb-2">No Drinks Found</h3>
+        <p className="text-sm text-text-secondary">
+          No drink information available for this country.
+        </p>
+      </div>
+    );
+  }
+
   return (
-    <div className="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-8">
-      <div className="text-center mb-8">
-        <h3 className="text-3xl font-bold text-white mb-3 flex items-center justify-center">
-          <span className="mr-3">🍹</span>
+    <div className="space-y-4 sm:space-y-6">
+      <div className="text-center">
+        <h3 className="text-xl sm:text-2xl font-semibold text-accent-primary mb-2">
           Traditional Drinks
         </h3>
-        <p className="text-gray-300 text-lg">
+        <p className="text-sm text-text-secondary">
           Discover authentic beverages and cocktails from {selectedCountry.name}
         </p>
       </div>
 
       {/* Drinks Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         <AnimatePresence>
           {drinks.map((drink, index) => (
             <motion.div
               key={drink.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ delay: index * 0.1, duration: 0.4 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ delay: index * 0.05, duration: 0.2 }}
               className="relative"
             >
               <motion.div
-                className={`bg-gray-800/40 backdrop-blur-sm rounded-xl overflow-hidden cursor-pointer transition-all duration-300 focus:outline-none ${
+                className={`card overflow-hidden cursor-pointer ${
                   selectedDrink === drink.id
-                    ? 'border-2 border-blue-400 bg-blue-400/20 shadow-lg'
-                    : 'border border-gray-700/50 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-400/20 focus:border-2 focus:border-blue-400 focus:shadow-lg focus:shadow-blue-400/20'
+                    ? 'border-accent-primary'
+                    : ''
                 }`}
-                whileHover={{ y: -5 }}
+                whileHover={{ scale: 1.01 }}
                 onClick={() => handleCardClick(drink.id)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
@@ -93,23 +104,23 @@ function DrinkSection({ selectedCountry }) {
                 aria-label={`${drink.name} - Click to ${selectedDrink === drink.id ? 'collapse' : 'expand'} details`}
               >
                 {/* Drink Header */}
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="text-4xl">{drink.emoji}</div>
+                <div className="p-4 sm:p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="text-3xl sm:text-4xl">{drink.emoji}</div>
                   </div>
 
-                  <h4 className="text-xl font-bold text-white mb-2">{drink.name}</h4>
-                  <p className="text-gray-300 text-sm mb-4 line-clamp-2">{drink.description}</p>
+                  <h4 className="text-lg sm:text-xl font-semibold text-text-primary mb-2">{drink.name}</h4>
+                  <p className="text-sm text-text-secondary mb-4 line-clamp-2">{drink.description}</p>
 
                   {/* Quick Info */}
-                  <div className="flex items-center justify-between text-sm text-gray-400 mb-4">
+                  <div className="flex items-center justify-between text-xs sm:text-sm text-text-tertiary mb-4">
                     <div className="flex items-center space-x-2">
                       {getTemperatureIcon(drink.temperature)}
                       <span>{drink.temperature}</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       {drink.alcohol_content !== 'non-alcoholic' && (
-                        <BeakerIcon className="w-4 h-4 text-white" />
+                        <BeakerIcon className="w-4 h-4 text-text-secondary" />
                       )}
                       <span>{drink.alcohol_content}</span>
                     </div>
@@ -123,34 +134,34 @@ function DrinkSection({ selectedCountry }) {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="border-t border-blue-400/20 bg-blue-400/5"
+                      transition={{ duration: 0.2 }}
+                      className="border-t border-dark-border bg-dark-tertiary"
                     >
-                      <div className="p-6 space-y-6">
+                      <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
                         {/* Origin Story */}
-                        <div className="bg-blue-900/20 border border-blue-500/30 rounded-xl p-4">
-                          <h5 className="text-lg font-semibold mb-2 text-blue-300 flex items-center space-x-2">
+                        <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-accent-primary flex items-center space-x-2">
                             <span>📖</span>
                             <span>Cultural Story</span>
                           </h5>
-                          <p className="text-blue-200 text-sm leading-relaxed">
+                          <p className="text-sm text-text-secondary leading-relaxed">
                             {drink.origin_story}
                           </p>
                         </div>
 
                         {/* Ingredients */}
-                        <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-4">
-                          <h5 className="text-lg font-semibold mb-3 text-green-300 flex items-center space-x-2">
+                        <div className="bg-accent-secondary/5 border border-accent-secondary/20 rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-accent-secondary flex items-center space-x-2">
                             <span>🥄</span>
                             <span>Ingredients</span>
                           </h5>
                           <div className="space-y-2">
                             {drink.ingredients.map((ingredient, idx) => (
                               <div key={idx} className="flex items-center justify-between text-sm">
-                                <span className="text-green-200 font-medium">{ingredient.item}</span>
-                                <div className="flex items-center space-x-3 text-green-300">
+                                <span className="text-text-primary font-medium">{ingredient.item}</span>
+                                <div className="flex items-center space-x-3 text-text-secondary">
                                   <span>{ingredient.quantity}</span>
-                                  <span className="text-green-400">({ingredient.quantity_imperial})</span>
+                                  <span className="text-text-tertiary">({ingredient.quantity_imperial})</span>
                                 </div>
                               </div>
                             ))}
@@ -158,30 +169,30 @@ function DrinkSection({ selectedCountry }) {
                         </div>
 
                         {/* Serving Details */}
-                        <div className="bg-purple-900/20 border border-purple-500/30 rounded-xl p-4">
-                          <h5 className="text-lg font-semibold mb-3 text-purple-300 flex items-center space-x-2">
+                        <div className="bg-accent-tertiary/5 border border-accent-tertiary/20 rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-accent-tertiary flex items-center space-x-2">
                             <span>🍷</span>
                             <span>Serving</span>
                           </h5>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                             <div>
-                              <span className="text-purple-200 font-medium">Glassware:</span>
-                              <p className="text-purple-300 mt-1">{drink.glassware}</p>
+                              <span className="text-accent-tertiary font-medium">Glassware:</span>
+                              <p className="text-text-secondary mt-1">{drink.glassware}</p>
                             </div>
                             <div>
-                              <span className="text-purple-200 font-medium">Garnish:</span>
-                              <p className="text-purple-300 mt-1">{drink.garnish}</p>
+                              <span className="text-accent-tertiary font-medium">Garnish:</span>
+                              <p className="text-text-secondary mt-1">{drink.garnish}</p>
                             </div>
                           </div>
                         </div>
 
                         {/* Substitution Suggestions */}
-                        <div className="bg-orange-900/20 border border-orange-500/30 rounded-xl p-4">
-                          <h5 className="text-lg font-semibold mb-2 text-orange-300 flex items-center space-x-2">
+                        <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-accent-primary flex items-center space-x-2">
                             <span>💡</span>
                             <span>Substitution Tips</span>
                           </h5>
-                          <p className="text-orange-200 text-sm leading-relaxed">
+                          <p className="text-sm text-text-secondary leading-relaxed">
                             {drink.type === 'cocktail' && drink.ingredients.some(i => i.category === 'liqueur') && 
                               "If you can't find specialty liqueurs, try using similar flavored spirits or syrups. For example, replace Aperol with Campari or a bitter orange liqueur."}
                             {drink.type === 'traditional_drink' && 
@@ -202,16 +213,6 @@ function DrinkSection({ selectedCountry }) {
         </AnimatePresence>
       </div>
 
-      {/* Empty State */}
-      {drinks.length === 0 && (
-        <div className="text-center py-16">
-          <div className="w-20 h-20 mx-auto mb-6 text-gray-500 text-4xl">🍹</div>
-          <h3 className="text-2xl font-bold text-gray-300 mb-3">No Drinks Found</h3>
-          <p className="text-gray-400 text-lg">
-            No drinks match the selected type. Try adjusting the filter.
-          </p>
-        </div>
-      )}
     </div>
   );
 }

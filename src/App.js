@@ -6,7 +6,9 @@ import {
   ArrowPathIcon,
   MagnifyingGlassIcon,
   GlobeAltIcon,
-  ListBulletIcon
+  ListBulletIcon,
+  Bars3Icon,
+  XMarkIcon
 } from '@heroicons/react/24/outline';
 import ToastProvider, { useToast } from './components/ToastProvider';
 import CountrySelector from './components/CountrySelector';
@@ -16,8 +18,10 @@ import DrinkSection from './components/DrinkSection';
 import MovieSection from './components/MovieSection';
 import CulturalCalendar from './components/CulturalCalendar';
 import ProgressDashboard from './components/ProgressDashboard';
+import AuthStatus from './components/AuthStatus';
 import AddExperienceModal from './components/AddExperienceModal';
 import MapView from './components/MapView';
+import CulturalIcon from './components/CulturalIcon';
 import { getAllExperiences, saveExperience } from './utils/experienceManager';
 import { selectRandomCountry, getAllCountries } from './utils/countrySelector';
 
@@ -46,6 +50,7 @@ const AppContent = () => {
   const [editingExperienceId, setEditingExperienceId] = useState(null);
   const [initialDate, setInitialDate] = useState(null);
   const [announcements, setAnnouncements] = useState('');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   // Explore page state
   const [exploreViewMode, setExploreViewMode] = useState('list'); // 'list' or 'map'
@@ -241,7 +246,29 @@ const AppContent = () => {
     }
   };
 
-  // Get journey progress data
+  // State for refreshing data when experiences change
+  const [dataRefreshKey, setDataRefreshKey] = useState(0);
+
+  // Listen for experience changes and user changes
+  useEffect(() => {
+    const handleExperienceChange = () => {
+      setDataRefreshKey(prev => prev + 1);
+    };
+
+    const handleUserChange = () => {
+      setDataRefreshKey(prev => prev + 1);
+    };
+
+    window.addEventListener('experienceChanged', handleExperienceChange);
+    window.addEventListener('userChanged', handleUserChange);
+
+    return () => {
+      window.removeEventListener('experienceChanged', handleExperienceChange);
+      window.removeEventListener('userChanged', handleUserChange);
+    };
+  }, []);
+
+  // Get journey progress data (refreshes when dataRefreshKey changes)
   const experiences = getAllExperiences() || [];
   const uniqueCountries = new Set(experiences.map(exp => exp.country.id)).size;
   const totalCountries = 50; // Total countries in our database
@@ -268,6 +295,15 @@ const AppContent = () => {
 
   return (
     <div className="min-h-screen bg-dark-primary text-text-primary">
+      {/* Skip to content link for accessibility */}
+      <a 
+        href="#main-content" 
+        className="skip-link focus:top-4"
+        aria-label="Skip to main content"
+      >
+        Skip to main content
+      </a>
+
       {/* Live region for accessibility announcements */}
       <div 
         className="sr-only" 
@@ -280,18 +316,19 @@ const AppContent = () => {
 
       {/* Global Navigation Header */}
       <motion.header 
-        className="bg-dark-secondary border-b border-dark-border backdrop-blur-glass sticky top-0 z-40 shadow-lg"
+        className="bg-dark-secondary border-b border-dark-border backdrop-blur-sm sticky top-0 z-40"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         role="banner"
       >
-        <div className="container mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
+        <div className="container mx-auto px-3 sm:px-4 md:px-6 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-2 sm:gap-4 min-w-0">
             {/* Logo and Title */}
             <motion.div 
-              className="flex items-center space-x-4 cursor-pointer"
-              whileHover={{ scale: 1.02 }}
+              className="flex items-center space-x-2 sm:space-x-3 cursor-pointer flex-shrink min-w-0"
+              style={{ maxWidth: 'calc(100% - 300px)' }}
+              whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.2 }}
               onClick={navigateToHome}
               role="button"
@@ -305,94 +342,257 @@ const AppContent = () => {
               aria-label="Return to homepage"
               title="Click to return to homepage"
             >
-              <div className="relative">
+              <div className="relative flex-shrink-0">
                 <motion.div 
-                  className="w-12 h-12 bg-gradient-to-br from-accent-primary to-accent-secondary rounded-xl flex items-center justify-center shadow-glow"
-                  whileHover={{ rotate: 360, scale: 1.1 }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-accent-primary rounded-lg flex items-center justify-center shadow-glow"
+                  whileHover={{ scale: 1.05, rotate: 5 }}
+                  transition={{ duration: 0.2 }}
                 >
-                  <ArrowPathIcon className="w-6 h-6 text-white" />
+                  <CulturalIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white" />
                 </motion.div>
-                <motion.div
-                  className="absolute -top-1 -right-1 w-3 h-3 bg-accent-secondary rounded-full"
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                />
               </div>
-              <div>
-                <h1 className="text-2xl md:text-3xl font-bold text-text-primary tracking-tight">
+              <div className="hidden sm:block min-w-0 overflow-hidden">
+                <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-text-primary tracking-tight truncate">
                   Cultural Expo
                 </h1>
-                <p className="text-text-secondary text-sm">
+                <p className="text-text-secondary text-xs hidden lg:block truncate">
                   Discover the world's rich cultures
                 </p>
               </div>
             </motion.div>
 
-            {/* Global CTAs - Always Visible */}
+            {/* Desktop Navigation */}
             <nav 
-              className="flex items-center space-x-4" 
+              className="hidden md:flex items-center gap-1 lg:gap-2 flex-shrink-0" 
               role="navigation" 
               aria-label="Primary navigation"
             >
               {/* Navigation Buttons */}
               <motion.button
-                onClick={navigateToHome}
-                className={`btn ${currentPage === 'home' ? 'btn-accent-primary' : 'btn-ghost'} group`}
-                whileHover={{ scale: 1.02 }}
+                onClick={() => {
+                  navigateToHome();
+                  setMobileMenuOpen(false);
+                }}
+                className={`btn flex-shrink-0 relative ${
+                  currentPage === 'home' 
+                    ? 'bg-accent-primary text-white shadow-lg shadow-accent-primary/30 border-2 border-accent-primary' 
+                    : 'btn-ghost hover:bg-dark-tertiary text-text-secondary border-2 border-transparent'
+                }`}
+                style={currentPage === 'home' ? {
+                  boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(168, 85, 247, 0.3)'
+                } : {}}
+                whileHover={{ scale: currentPage === 'home' ? 1 : 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label="Go to home page"
                 title="Home (⌘1)"
+                aria-current={currentPage === 'home' ? 'page' : undefined}
               >
-                <HomeIcon className="w-4 h-4 text-white group-hover:text-accent-primary transition-colors" aria-hidden="true" />
-                <span className="hidden sm:inline ml-1 text-sm">Home</span>
-                <span className="hidden lg:inline ml-2 text-xs text-white/70">⌘1</span>
+                <HomeIcon className={`w-4 h-4 flex-shrink-0 ${currentPage === 'home' ? 'text-white' : 'text-text-secondary'}`} aria-hidden="true" />
+                <span className={`ml-1.5 lg:ml-2 text-xs lg:text-sm whitespace-nowrap font-semibold ${currentPage === 'home' ? 'text-white' : 'text-text-secondary'}`}>
+                  Home
+                </span>
+                {currentPage === 'home' && (
+                  <motion.div
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-white rounded-full"
+                    layoutId="activeUnderline"
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                  />
+                )}
               </motion.button>
 
               <motion.button
-                onClick={navigateToExplore}
-                className={`btn ${currentPage === 'explore' ? 'btn-accent-primary' : 'btn-ghost'} group`}
-                whileHover={{ scale: 1.02 }}
+                onClick={() => {
+                  navigateToExplore();
+                  setMobileMenuOpen(false);
+                }}
+                className={`btn flex-shrink-0 relative ${
+                  currentPage === 'explore' 
+                    ? 'bg-accent-primary text-white shadow-lg shadow-accent-primary/30 border-2 border-accent-primary' 
+                    : 'btn-ghost hover:bg-dark-tertiary text-text-secondary border-2 border-transparent'
+                }`}
+                style={currentPage === 'explore' ? {
+                  boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(168, 85, 247, 0.3)'
+                } : {}}
+                whileHover={{ scale: currentPage === 'explore' ? 1 : 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label="Go to explore page"
                 title="Explore (⌘2)"
+                aria-current={currentPage === 'explore' ? 'page' : undefined}
               >
-                <GlobeAltIcon className="w-4 h-4 text-white group-hover:text-accent-primary transition-colors" aria-hidden="true" />
-                <span className="hidden sm:inline ml-1 text-sm">Explore</span>
-                <span className="hidden lg:inline ml-2 text-xs text-white/70">⌘2</span>
+                <GlobeAltIcon className={`w-4 h-4 flex-shrink-0 ${currentPage === 'explore' ? 'text-white' : 'text-text-secondary'}`} aria-hidden="true" />
+                <span className={`ml-1.5 lg:ml-2 text-xs lg:text-sm whitespace-nowrap font-semibold ${currentPage === 'explore' ? 'text-white' : 'text-text-secondary'}`}>
+                  Explore
+                </span>
+                {currentPage === 'explore' && (
+                  <motion.div
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-white rounded-full"
+                    layoutId="activeUnderline"
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                  />
+                )}
               </motion.button>
 
-              {/* Add Experience CTA */}
+              {/* Add Experience CTA - Icon only on medium screens */}
               <motion.button
-                onClick={() => handleAddExperience()}
-                className="btn btn-ghost group"
+                onClick={() => {
+                  handleAddExperience();
+                  setMobileMenuOpen(false);
+                }}
+                className="btn btn-ghost flex-shrink-0 hover:bg-dark-tertiary p-2 lg:px-3"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label="Add new cultural experience"
                 title="Add Experience (⌘E)"
               >
-                <PlusIcon className="w-4 h-4 text-white group-hover:text-accent-primary transition-colors" aria-hidden="true" />
-                <span className="hidden sm:inline ml-1 text-sm">Add Experience</span>
-                <span className="hidden lg:inline ml-2 text-xs text-white/70">⌘E</span>
+                <PlusIcon className="w-4 h-4 flex-shrink-0 text-text-secondary" aria-hidden="true" />
+                <span className="ml-1.5 lg:ml-2 text-xs lg:text-sm whitespace-nowrap hidden xl:inline text-text-secondary">Add</span>
               </motion.button>
 
-              {/* Randomizer CTA */}
+              {/* Randomizer CTA - Icon only on medium screens */}
               <motion.button
-                onClick={handleRandomizer}
-                className="btn btn-ghost group"
+                onClick={() => {
+                  handleRandomizer();
+                  setMobileMenuOpen(false);
+                }}
+                className="btn btn-ghost flex-shrink-0 hover:bg-dark-tertiary p-2 lg:px-3"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label="Random country selector"
                 title="Random Country (⌘L)"
               >
-                <ArrowPathIcon className="w-4 h-4 text-white group-hover:text-accent-primary transition-colors" aria-hidden="true" />
-                <span className="hidden sm:inline ml-1 text-sm">Random</span>
-                <span className="hidden lg:inline ml-2 text-xs text-white/70">⌘L</span>
+                <ArrowPathIcon className="w-4 h-4 flex-shrink-0 text-text-secondary" aria-hidden="true" />
+                <span className="ml-1.5 lg:ml-2 text-xs lg:text-sm whitespace-nowrap hidden xl:inline text-text-secondary">Random</span>
               </motion.button>
 
-              {/* Removed Command Palette */}
+              {/* Auth */}
+              <div className="ml-1 lg:ml-2 pl-1 lg:pl-2 border-l border-dark-border flex-shrink-0">
+                <AuthStatus />
+              </div>
             </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden btn btn-ghost p-2 flex-shrink-0 min-w-[44px]"
+              aria-label="Toggle navigation menu"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
+            >
+              {mobileMenuOpen ? (
+                <XMarkIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+              ) : (
+                <Bars3Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+              )}
+            </button>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          <AnimatePresence>
+            {mobileMenuOpen && (
+              <motion.nav
+                id="mobile-menu"
+                className="md:hidden mt-3 pt-3 border-t border-dark-border px-3 sm:px-4"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.2 }}
+                role="navigation"
+                aria-label="Mobile navigation"
+              >
+                <div className="flex flex-col gap-2 pb-2">
+                  <button
+                    onClick={() => {
+                      navigateToHome();
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`btn w-full justify-start relative ${
+                      currentPage === 'home' 
+                        ? 'bg-accent-primary text-white shadow-lg shadow-accent-primary/30 border-l-4 border-white' 
+                        : 'btn-ghost hover:bg-dark-tertiary text-text-secondary border-l-4 border-transparent'
+                    }`}
+                    style={currentPage === 'home' ? {
+                      boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(168, 85, 247, 0.3)'
+                    } : {}}
+                    aria-label="Go to home page"
+                    aria-current={currentPage === 'home' ? 'page' : undefined}
+                  >
+                    <HomeIcon className={`w-5 h-5 mr-3 flex-shrink-0 ${currentPage === 'home' ? 'text-white' : 'text-text-secondary'}`} aria-hidden="true" />
+                    <span className={`text-sm font-semibold ${currentPage === 'home' ? 'text-white' : 'text-text-secondary'}`}>
+                      Home
+                    </span>
+                    {currentPage === 'home' && (
+                      <motion.div
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-white"
+                        initial={{ scaleX: 0 }}
+                        animate={{ scaleX: 1 }}
+                        transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                      />
+                    )}
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      navigateToExplore();
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`btn w-full justify-start relative ${
+                      currentPage === 'explore' 
+                        ? 'bg-accent-primary text-white shadow-lg shadow-accent-primary/30 border-l-4 border-white' 
+                        : 'btn-ghost hover:bg-dark-tertiary text-text-secondary border-l-4 border-transparent'
+                    }`}
+                    style={currentPage === 'explore' ? {
+                      boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(168, 85, 247, 0.3)'
+                    } : {}}
+                    aria-label="Go to explore page"
+                    aria-current={currentPage === 'explore' ? 'page' : undefined}
+                  >
+                    <GlobeAltIcon className={`w-5 h-5 mr-3 flex-shrink-0 ${currentPage === 'explore' ? 'text-white' : 'text-text-secondary'}`} aria-hidden="true" />
+                    <span className={`text-sm font-semibold ${currentPage === 'explore' ? 'text-white' : 'text-text-secondary'}`}>
+                      Explore
+                    </span>
+                    {currentPage === 'explore' && (
+                      <motion.div
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-white"
+                        initial={{ scaleX: 0 }}
+                        animate={{ scaleX: 1 }}
+                        transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                      />
+                    )}
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      handleAddExperience();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="btn w-full justify-start btn-ghost"
+                    aria-label="Add new cultural experience"
+                  >
+                    <PlusIcon className="w-5 h-5 mr-3 flex-shrink-0" aria-hidden="true" />
+                    <span className="text-sm">Add Experience</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      handleRandomizer();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="btn w-full justify-start btn-ghost"
+                    aria-label="Random country selector"
+                  >
+                    <ArrowPathIcon className="w-5 h-5 mr-3 flex-shrink-0" aria-hidden="true" />
+                    <span className="text-sm">Random Country</span>
+                  </button>
+
+                  <div className="pt-2 mt-2 border-t border-dark-border">
+                    <AuthStatus />
+                  </div>
+                </div>
+              </motion.nav>
+            )}
+          </AnimatePresence>
         </div>
       </motion.header>
 
@@ -434,6 +634,7 @@ const AppContent = () => {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.4, duration: 0.6 }}
+                  key={dataRefreshKey}
                 >
                   <CulturalCalendar
                     onDateSelect={handleDateSelect}
@@ -449,6 +650,7 @@ const AppContent = () => {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3, duration: 0.6 }}
+                  key={dataRefreshKey}
                 >
                   <ProgressDashboard 
                     progress={journeyProgress}
@@ -671,9 +873,13 @@ const AppContent = () => {
       {/* Add Experience Modal */}
       <AddExperienceModal
         isOpen={showAddExperienceModal}
-        onClose={() => setShowAddExperienceModal(false)}
+        onClose={() => {
+          setShowAddExperienceModal(false);
+          setEditingExperienceId(null);
+        }}
         selectedDate={initialDate}
         onExperienceAdded={handleExperienceAdded}
+        editingExperienceId={editingExperienceId}
       />
     </div>
   );

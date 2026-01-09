@@ -171,26 +171,13 @@ function CountrySelector({ onCountrySelect, countries = null, onRandomSelect }) 
         >
           <motion.button
             onClick={onRandomSelect}
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent-secondary to-accent-tertiary hover:from-accent-tertiary hover:to-accent-secondary rounded-xl text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 focus-ring"
-            whileHover={{ scale: 1.02 }}
+            className="btn btn-accent-primary inline-flex items-center"
+            whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
             aria-label="Randomly select a country"
           >
-            <motion.div
-              className="mr-3 text-2xl"
-              animate={{ 
-                rotate: [0, 10, -10, 10, 0],
-                scale: [1, 1.1, 1]
-              }}
-              transition={{ 
-                duration: 0.6,
-                repeat: Infinity,
-                repeatDelay: 2
-              }}
-            >
-              ✨
-            </motion.div>
-            <span>Randomly select a country</span>
+            <SparklesIcon className="w-4 h-4 mr-2" aria-hidden="true" />
+            <span>Random Country</span>
           </motion.button>
         </motion.div>
       </LazySection>

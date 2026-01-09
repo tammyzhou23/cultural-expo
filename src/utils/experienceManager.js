@@ -7,6 +7,16 @@ const EXPERIENCES_KEY = 'cultural_expo_experiences';
 const USER_PREFERENCES_KEY = 'cultural_expo_preferences';
 const ACHIEVEMENTS_KEY = 'cultural_expo_achievements';
 
+// Current user scoping for storage
+let currentUserId = 'guest';
+export const setCurrentUserId = (userId) => {
+  currentUserId = userId || 'guest';
+};
+
+const keyFor = (baseKey) => {
+  return currentUserId === 'guest' ? baseKey : `${baseKey}__${currentUserId}`;
+};
+
 /**
  * Experience data structure:
  * {
@@ -34,7 +44,7 @@ const ACHIEVEMENTS_KEY = 'cultural_expo_achievements';
  */
 export const getAllExperiences = () => {
   try {
-    const experiences = localStorage.getItem(EXPERIENCES_KEY);
+    const experiences = localStorage.getItem(keyFor(EXPERIENCES_KEY));
     return experiences ? JSON.parse(experiences) : [];
   } catch (error) {
     console.error('Error reading experiences from localStorage:', error);
@@ -70,7 +80,13 @@ export const saveExperience = (experience) => {
       experience.id = newExperience.id;
     }
     
-    localStorage.setItem(EXPERIENCES_KEY, JSON.stringify(experiences));
+    localStorage.setItem(keyFor(EXPERIENCES_KEY), JSON.stringify(experiences));
+    
+    // Dispatch custom event to notify components of experience changes
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('experienceChanged'));
+    }
+    
     return experience.id;
   } catch (error) {
     console.error('Error saving experience:', error);
@@ -86,7 +102,12 @@ export const deleteExperience = (experienceId) => {
   try {
     const experiences = getAllExperiences();
     const filtered = experiences.filter(exp => exp.id !== experienceId);
-    localStorage.setItem(EXPERIENCES_KEY, JSON.stringify(filtered));
+    localStorage.setItem(keyFor(EXPERIENCES_KEY), JSON.stringify(filtered));
+    
+    // Dispatch custom event to notify components of experience changes
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('experienceChanged'));
+    }
   } catch (error) {
     console.error('Error deleting experience:', error);
   }
@@ -264,7 +285,7 @@ const calculateAchievements = (stats) => {
  */
 export const getUserPreferences = () => {
   try {
-    const prefs = localStorage.getItem(USER_PREFERENCES_KEY);
+    const prefs = localStorage.getItem(keyFor(USER_PREFERENCES_KEY));
     return prefs ? JSON.parse(prefs) : {
       theme: 'light',
       lastSelectedCountry: null,
@@ -288,7 +309,7 @@ export const saveUserPreferences = (preferences) => {
   try {
     const currentPrefs = getUserPreferences();
     const updatedPrefs = { ...currentPrefs, ...preferences };
-    localStorage.setItem(USER_PREFERENCES_KEY, JSON.stringify(updatedPrefs));
+    localStorage.setItem(keyFor(USER_PREFERENCES_KEY), JSON.stringify(updatedPrefs));
   } catch (error) {
     console.error('Error saving user preferences:', error);
   }
@@ -322,10 +343,10 @@ export const importExperiences = (jsonData) => {
     const data = JSON.parse(jsonData);
     
     if (data.experiences && Array.isArray(data.experiences)) {
-      localStorage.setItem(EXPERIENCES_KEY, JSON.stringify(data.experiences));
+      localStorage.setItem(keyFor(EXPERIENCES_KEY), JSON.stringify(data.experiences));
       
       if (data.preferences) {
-        localStorage.setItem(USER_PREFERENCES_KEY, JSON.stringify(data.preferences));
+        localStorage.setItem(keyFor(USER_PREFERENCES_KEY), JSON.stringify(data.preferences));
       }
       
       return true;
@@ -338,13 +359,123 @@ export const importExperiences = (jsonData) => {
 };
 
 /**
+ * Migrate guest data to user account
+ * This should be called when a user signs in
+ * @param {string} userId - The user ID to migrate data to
+ * @returns {boolean} Success status
+ */
+export const migrateGuestDataToUser = (userId) => {
+  try {
+    if (!userId || userId === 'guest') {
+      return false;
+    }
+
+    // Get guest data
+    const guestExperiences = localStorage.getItem(EXPERIENCES_KEY);
+    const guestPreferences = localStorage.getItem(USER_PREFERENCES_KEY);
+    const guestAchievements = localStorage.getItem(ACHIEVEMENTS_KEY);
+
+    // Get existing user data
+    const userExperiencesKey = `${EXPERIENCES_KEY}__${userId}`;
+    const userPreferencesKey = `${USER_PREFERENCES_KEY}__${userId}`;
+    const userAchievementsKey = `${ACHIEVEMENTS_KEY}__${userId}`;
+
+    let hasDataToMigrate = false;
+
+    // Migrate experiences
+    if (guestExperiences) {
+      const guestExp = JSON.parse(guestExperiences);
+      if (guestExp && guestExp.length > 0) {
+        const existingUserExp = localStorage.getItem(userExperiencesKey);
+        if (existingUserExp) {
+          // Merge guest and user experiences, avoiding duplicates
+          const userExp = JSON.parse(existingUserExp);
+          const mergedExp = [...userExp];
+          
+          guestExp.forEach(guestExpItem => {
+            // Check if experience already exists (by date and country)
+            const exists = userExp.some(userExpItem => 
+              userExpItem.date === guestExpItem.date && 
+              userExpItem.country?.id === guestExpItem.country?.id
+            );
+            if (!exists) {
+              mergedExp.push(guestExpItem);
+            }
+          });
+          
+          localStorage.setItem(userExperiencesKey, JSON.stringify(mergedExp));
+        } else {
+          // No existing user data, just copy guest data
+          localStorage.setItem(userExperiencesKey, guestExperiences);
+        }
+        hasDataToMigrate = true;
+      }
+    }
+
+    // Migrate preferences (user preferences take precedence)
+    if (guestPreferences && !localStorage.getItem(userPreferencesKey)) {
+      localStorage.setItem(userPreferencesKey, guestPreferences);
+      hasDataToMigrate = true;
+    }
+
+    // Migrate achievements
+    if (guestAchievements) {
+      const guestAch = JSON.parse(guestAchievements);
+      if (guestAch && guestAch.length > 0) {
+        const existingUserAch = localStorage.getItem(userAchievementsKey);
+        if (existingUserAch) {
+          // Merge achievements
+          const userAch = JSON.parse(existingUserAch);
+          const mergedAch = [...userAch];
+          
+          guestAch.forEach(guestAchItem => {
+            const exists = userAch.some(userAchItem => userAchItem.id === guestAchItem.id);
+            if (!exists) {
+              mergedAch.push(guestAchItem);
+            }
+          });
+          
+          localStorage.setItem(userAchievementsKey, JSON.stringify(mergedAch));
+        } else {
+          localStorage.setItem(userAchievementsKey, guestAchievements);
+        }
+        hasDataToMigrate = true;
+      }
+    }
+
+    // Clear guest data after successful migration
+    if (hasDataToMigrate) {
+      localStorage.removeItem(EXPERIENCES_KEY);
+      localStorage.removeItem(USER_PREFERENCES_KEY);
+      localStorage.removeItem(ACHIEVEMENTS_KEY);
+      
+      // Dispatch event to notify components
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('experienceChanged'));
+        window.dispatchEvent(new CustomEvent('userDataMigrated'));
+      }
+    }
+
+    return hasDataToMigrate;
+  } catch (error) {
+    console.error('Error migrating guest data to user:', error);
+    return false;
+  }
+};
+
+/**
  * Clear all data (with confirmation)
  */
 export const clearAllData = () => {
   try {
-    localStorage.removeItem(EXPERIENCES_KEY);
-    localStorage.removeItem(USER_PREFERENCES_KEY);
-    localStorage.removeItem(ACHIEVEMENTS_KEY);
+    localStorage.removeItem(keyFor(EXPERIENCES_KEY));
+    localStorage.removeItem(keyFor(USER_PREFERENCES_KEY));
+    localStorage.removeItem(keyFor(ACHIEVEMENTS_KEY));
+    
+    // Dispatch event to notify components
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('experienceChanged'));
+    }
   } catch (error) {
     console.error('Error clearing data:', error);
   }

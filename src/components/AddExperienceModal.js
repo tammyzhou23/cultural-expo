@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   XMarkIcon, 
@@ -9,12 +9,12 @@ import {
   MagnifyingGlassIcon
 } from '@heroicons/react/24/outline';
 import { getAllCountries } from '../utils/countrySelector';
-import { saveExperience } from '../utils/experienceManager';
+import { saveExperience, getExperienceById } from '../utils/experienceManager';
 import authenticFoodData from '../data/authenticFoodDatabase.json';
 import drinksData from '../data/drinks.json';
 import moviesData from '../data/movies.json';
 
-const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }) => {
+const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded, editingExperienceId }) => {
   const [date, setDate] = useState('');
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [countrySearch, setCountrySearch] = useState('');
@@ -43,31 +43,68 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
     country.name.toLowerCase().includes(countrySearch.toLowerCase())
   );
 
-  // Initialize date based on selectedDate prop or today
+  // Load existing experience data when editing
   useEffect(() => {
-    if (selectedDate) {
-      setDate(selectedDate);
-    } else {
-      const today = new Date().toISOString().split('T')[0];
-      setDate(today);
+    if (editingExperienceId && isOpen) {
+      const experience = getExperienceById(editingExperienceId);
+      if (experience) {
+        // Set date
+        setDate(experience.date || new Date().toISOString().split('T')[0]);
+        
+        // Set country
+        setSelectedCountry(experience.country || null);
+        setCountrySearch(experience.country?.name || '');
+        
+        // Set foods (dishes)
+        setSelectedFoods(experience.dishes || []);
+        
+        // Set drinks
+        setSelectedDrinks(experience.drinks || []);
+        
+        // Set movies
+        setSelectedMovies(experience.movies || []);
+        
+        // Set notes
+        setNotes(experience.overall_notes || '');
+      }
+    } else if (isOpen) {
+      // Reset form when opening for new experience
+      if (selectedDate) {
+        setDate(selectedDate);
+      } else {
+        const today = new Date().toISOString().split('T')[0];
+        setDate(today);
+      }
+      setSelectedCountry(null);
+      setCountrySearch('');
+      setSelectedFoods([]);
+      setSelectedDrinks([]);
+      setSelectedMovies([]);
+      setNotes('');
+      setShowCustomFoodInput(false);
+      setShowCustomDrinkInput(false);
+      setShowCustomMovieInput(false);
+      setCustomFood('');
+      setCustomDrink('');
+      setCustomMovie('');
     }
-  }, [selectedDate]);
+  }, [editingExperienceId, isOpen, selectedDate]);
 
   // Get suggestions based on selected country
   const getFoodSuggestions = () => {
-    if (!selectedCountry) return [];
+    if (!selectedCountry || !selectedCountry.id) return [];
     const countryKey = selectedCountry.id.toLowerCase();
     return authenticFoodData.dishes[countryKey] || [];
   };
 
   const getDrinkSuggestions = () => {
-    if (!selectedCountry) return [];
+    if (!selectedCountry || !selectedCountry.id) return [];
     const countryKey = selectedCountry.id.toLowerCase();
     return drinksData[countryKey] || [];
   };
 
   const getMovieSuggestions = () => {
-    if (!selectedCountry) return [];
+    if (!selectedCountry || !selectedCountry.id) return [];
     const countryKey = selectedCountry.id.toLowerCase();
     return moviesData[countryKey] || [];
   };
@@ -79,27 +116,58 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
   };
 
   const handleFoodToggle = (food) => {
-    setSelectedFoods(prev => 
-      prev.find(f => f.name === food.name)
-        ? prev.filter(f => f.name !== food.name)
-        : [...prev, { name: food.name, attempted: false, rating: 0, notes: '' }]
-    );
+    setSelectedFoods(prev => {
+      const existing = prev.find(f => f.name === food.name);
+      if (existing) {
+        return prev.filter(f => f.name !== food.name);
+      } else {
+        // Preserve custom flag if it exists, otherwise add as new item
+        return [...prev, { 
+          name: food.name, 
+          attempted: false, 
+          rating: 0, 
+          notes: '',
+          custom: food.custom || false
+        }];
+      }
+    });
   };
 
   const handleDrinkToggle = (drink) => {
-    setSelectedDrinks(prev => 
-      prev.find(d => d.name === drink.name)
-        ? prev.filter(d => d.name !== drink.name)
-        : [...prev, { name: drink.name, attempted: false, rating: 0, notes: '' }]
-    );
+    setSelectedDrinks(prev => {
+      const existing = prev.find(d => d.name === drink.name);
+      if (existing) {
+        return prev.filter(d => d.name !== drink.name);
+      } else {
+        // Preserve custom flag if it exists, otherwise add as new item
+        return [...prev, { 
+          name: drink.name, 
+          attempted: false, 
+          rating: 0, 
+          notes: '',
+          custom: drink.custom || false
+        }];
+      }
+    });
   };
 
   const handleMovieToggle = (movie) => {
-    setSelectedMovies(prev => 
-      prev.find(m => m.title === movie.title)
-        ? prev.filter(m => m.title !== movie.title)
-        : [...prev, { title: movie.title, year: movie.year, watched: false, rating: 0, notes: '' }]
-    );
+    setSelectedMovies(prev => {
+      const existing = prev.find(m => m.title === movie.title);
+      if (existing) {
+        return prev.filter(m => m.title !== movie.title);
+      } else {
+        // Preserve custom flag and handle year property for custom movies
+        return [...prev, { 
+          title: movie.title, 
+          year: movie.year || null, 
+          watched: false, 
+          rating: 0, 
+          notes: '',
+          custom: movie.custom || false
+        }];
+      }
+    });
   };
 
   const addCustomFood = () => {
@@ -133,6 +201,7 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
     }
 
     const experience = {
+      ...(editingExperienceId && { id: editingExperienceId }), // Include ID if editing
       date,
       country: selectedCountry,
       dishes: selectedFoods,
@@ -166,67 +235,134 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
     return 'Ready to save!';
   };
 
+  // Focus trap and escape key handling
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    // Focus trap - get all focusable elements
+    const modal = document.querySelector('[role="dialog"]');
+    const focusableElements = modal?.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const firstElement = focusableElements?.[0];
+    const lastElement = focusableElements?.[focusableElements.length - 1];
+
+    const handleTab = (e) => {
+      if (e.key !== 'Tab') return;
+      
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    document.addEventListener('keydown', handleTab);
+    
+    // Focus first element when modal opens
+    setTimeout(() => firstElement?.focus(), 100);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener('keydown', handleTab);
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+        className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-modal p-0 sm:p-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        onClick={(e) => e.target === e.currentTarget && onClose()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
       >
         <motion.div
-          className="bg-gray-900 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden border border-gray-700"
+          className="bg-dark-tertiary rounded-none sm:rounded-2xl shadow-2xl max-w-4xl w-full h-full sm:h-auto sm:max-h-[90vh] overflow-hidden border-0 sm:border border-dark-border flex flex-col"
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
+          transition={{ duration: 0.2 }}
+          onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-700 bg-gray-800/50">
+          <div className="flex items-center justify-between p-4 sm:p-6 border-b border-dark-border bg-dark-secondary">
             <div>
-              <h2 className="text-2xl font-bold text-white flex items-center">
-                <PlusIcon className="w-6 h-6 mr-3 text-accent-primary" />
-                Add Cultural Experience
+              <h2 id="modal-title" className="text-xl sm:text-2xl font-semibold text-text-primary flex items-center">
+                {editingExperienceId ? (
+                  <>
+                    <GlobeAltIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 text-accent-primary" aria-hidden="true" />
+                    Edit Cultural Experience
+                  </>
+                ) : (
+                  <>
+                    <PlusIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 text-accent-primary" aria-hidden="true" />
+                    Add Cultural Experience
+                  </>
+                )}
               </h2>
-              <p className="text-gray-400 mt-1">Record your cultural exploration journey</p>
+              <p className="text-text-secondary text-xs sm:text-sm mt-1">
+                {editingExperienceId ? 'Update your cultural exploration journey' : 'Record your cultural exploration journey'}
+              </p>
             </div>
             <button
               onClick={onClose}
-              className="p-2 text-gray-400 hover:text-white hover:bg-gray-700 rounded-lg transition-colors"
+              className="p-2 text-text-secondary hover:text-text-primary hover:bg-dark-tertiary rounded-lg transition-colors"
               title="Close"
+              aria-label="Close modal"
             >
-                              <XMarkIcon className="w-5 h-5 text-white" />
+              <XMarkIcon className="w-5 h-5" aria-hidden="true" />
             </button>
           </div>
 
           {/* Content */}
-          <div className="p-6 overflow-y-auto max-h-[calc(90vh-200px)]">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="p-4 sm:p-6 overflow-y-auto flex-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
               {/* Left Column */}
               <div className="space-y-6">
                 {/* Date Selection */}
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
-                    <CalendarIcon className="w-4 h-4 inline mr-2 text-white" />
+                  <label htmlFor="experience-date" className="block text-sm font-medium text-text-primary mb-2">
+                    <CalendarIcon className="w-4 h-4 inline mr-2 text-accent-primary" aria-hidden="true" />
                     Date
                   </label>
                   <input
+                    id="experience-date"
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition-colors"
+                    className="input"
+                    aria-label="Select date for experience"
                   />
                 </div>
 
                 {/* Country Selection */}
                 <div className="relative">
-                  <label className="block text-sm font-medium text-white mb-2">
-                    <GlobeAltIcon className="w-4 h-4 inline mr-2 text-white" />
+                  <label htmlFor="country-search" className="block text-sm font-medium text-text-primary mb-2">
+                    <GlobeAltIcon className="w-4 h-4 inline mr-2 text-accent-primary" aria-hidden="true" />
                     Country *
                   </label>
                   <div className="relative">
                     <input
+                      id="country-search"
                       type="text"
                       value={countrySearch}
                       onChange={(e) => {
@@ -235,28 +371,37 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
                       }}
                       onFocus={() => setShowCountryDropdown(true)}
                       placeholder="Search for a country..."
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition-colors pr-10"
+                      className="input pr-10"
+                      aria-label="Search and select country"
+                      aria-autocomplete="list"
+                      aria-expanded={showCountryDropdown}
+                      aria-controls="country-dropdown"
                     />
-                    <MagnifyingGlassIcon className="w-4 h-4 absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                    <MagnifyingGlassIcon className="w-4 h-4 absolute right-3 top-1/2 transform -translate-y-1/2 text-text-tertiary pointer-events-none" aria-hidden="true" />
                   </div>
                   
                   {/* Country Dropdown */}
                   <AnimatePresence>
                     {showCountryDropdown && (
                       <motion.div
-                        className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-600 rounded-lg shadow-lg max-h-60 overflow-y-auto"
+                        id="country-dropdown"
+                        className="absolute z-10 w-full mt-1 bg-dark-secondary border border-dark-border rounded-lg shadow-lg max-h-60 overflow-y-auto"
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        role="listbox"
                       >
                         {filteredCountries.map((country) => (
                           <button
                             key={country.id}
                             onClick={() => handleCountrySelect(country)}
-                            className="w-full px-4 py-3 text-left hover:bg-gray-700 flex items-center space-x-3 transition-colors"
+                            className="w-full px-4 py-3 text-left hover:bg-dark-tertiary flex items-center space-x-3 transition-colors"
+                            role="option"
+                            aria-selected={selectedCountry?.id === country.id}
                           >
-                            <span className="text-lg">{country.flag}</span>
-                            <span className="text-white">{country.name}</span>
+                            <span className="text-lg" aria-hidden="true">{country.flag}</span>
+                            <span className="text-text-primary">{country.name}</span>
                           </button>
                         ))}
                       </motion.div>
@@ -266,77 +411,125 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
 
                 {/* Notes */}
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="experience-notes" className="block text-sm font-medium text-text-primary mb-2">
                     Notes
                   </label>
                   <textarea
+                    id="experience-notes"
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
                     placeholder="Add any additional notes about your experience..."
                     rows={4}
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition-colors resize-none"
+                    className="input resize-none"
+                    aria-label="Add notes about your experience"
                   />
                 </div>
               </div>
 
               {/* Right Column - Cultural Items */}
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {/* Food Section */}
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-3">🍽️ Food & Dishes</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-3">🍽️ Food & Dishes</h3>
                   {selectedCountry ? (
-                    <div className="space-y-3">
+                    <div className="space-y-2 sm:space-y-3">
+                      {/* Selected Custom Foods */}
+                      {selectedFoods.filter(f => f.custom).length > 0 && (
+                        <div className="space-y-2">
+                          <div className="text-xs font-medium text-text-secondary uppercase tracking-wide">Custom Dishes</div>
+                          <div className="grid grid-cols-1 gap-2">
+                            {selectedFoods.filter(f => f.custom).map((food) => (
+                              <button
+                                key={`custom-${food.name}`}
+                                onClick={() => handleFoodToggle(food)}
+                                className="p-3 text-left rounded-lg border bg-accent-primary/10 border-accent-primary text-text-primary transition-colors hover:bg-accent-primary/15"
+                                aria-pressed="true"
+                              >
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-xs">✨</span>
+                                    <div className="font-medium text-sm">{food.name}</div>
+                                  </div>
+                                  <CheckIcon className="w-5 h-5 text-accent-primary" aria-hidden="true" />
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       {/* Suggestions */}
-                      <div className="grid grid-cols-1 gap-2">
-                        {getFoodSuggestions().map((food) => (
-                          <button
-                            key={food.name}
-                            onClick={() => handleFoodToggle(food)}
-                            className={`p-3 text-left rounded-lg border transition-colors ${
-                              selectedFoods.find(f => f.name === food.name)
-                                ? 'bg-accent-primary/20 border-accent-primary text-white'
-                                : 'bg-gray-800 border-gray-600 text-gray-300 hover:bg-gray-700'
-                            }`}
-                          >
-                            <div className="flex items-center justify-between">
-                              <div className="font-medium">{food.name}</div>
-                              {selectedFoods.find(f => f.name === food.name) && (
-                                <CheckIcon className="w-5 h-5 text-accent-primary" />
-                              )}
-                            </div>
-                          </button>
-                        ))}
-                      </div>
+                      {getFoodSuggestions().length > 0 && (
+                        <div className="space-y-2">
+                          {selectedFoods.filter(f => f.custom).length > 0 && (
+                            <div className="text-xs font-medium text-text-secondary uppercase tracking-wide">Suggested Dishes</div>
+                          )}
+                          <div className="grid grid-cols-1 gap-2">
+                            {getFoodSuggestions().map((food) => (
+                              <button
+                                key={food.name}
+                                onClick={() => handleFoodToggle(food)}
+                                className={`p-3 text-left rounded-lg border transition-colors ${
+                                  selectedFoods.find(f => f.name === food.name)
+                                    ? 'bg-accent-primary/10 border-accent-primary text-text-primary'
+                                    : 'bg-dark-secondary border-dark-border text-text-secondary hover:bg-dark-tertiary'
+                                }`}
+                                aria-pressed={selectedFoods.find(f => f.name === food.name) ? 'true' : 'false'}
+                              >
+                                <div className="flex items-center justify-between">
+                                  <div className="font-medium text-sm">{food.name}</div>
+                                  {selectedFoods.find(f => f.name === food.name) && (
+                                    <CheckIcon className="w-5 h-5 text-accent-primary" aria-hidden="true" />
+                                  )}
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                       
-                      {/* Custom Food */}
+                      {/* Custom Food Input */}
                       {showCustomFoodInput ? (
-                        <div className="flex space-x-2">
+                        <div className="flex gap-2">
                           <input
                             type="text"
                             value={customFood}
                             onChange={(e) => setCustomFood(e.target.value)}
                             placeholder="Enter custom dish name..."
-                            className="flex-1 px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-accent-primary"
+                            className="input flex-1"
                             onKeyPress={(e) => e.key === 'Enter' && addCustomFood()}
+                            aria-label="Enter custom dish name"
                           />
                           <button
                             onClick={addCustomFood}
-                            className="px-4 py-2 bg-accent-primary text-white rounded-lg hover:bg-accent-secondary transition-colors"
+                            className="btn btn-accent-primary"
+                            aria-label="Add custom dish"
                           >
                             Add
+                          </button>
+                          <button
+                            onClick={() => {
+                              setShowCustomFoodInput(false);
+                              setCustomFood('');
+                            }}
+                            className="btn btn-secondary"
+                            aria-label="Cancel"
+                          >
+                            Cancel
                           </button>
                         </div>
                       ) : (
                         <button
                           onClick={() => setShowCustomFoodInput(true)}
-                          className="w-full p-3 border-2 border-dashed border-gray-600 rounded-lg text-gray-400 hover:border-accent-primary hover:text-accent-primary transition-colors"
+                          className="w-full p-3 border-2 border-dashed border-dark-border rounded-lg text-text-tertiary hover:border-accent-primary hover:text-accent-primary transition-colors"
+                          aria-label="Add custom dish"
                         >
                           + Add Custom Dish
                         </button>
                       )}
                     </div>
                   ) : (
-                    <div className="text-gray-400 text-center py-8">
+                    <div className="text-text-tertiary text-center py-8 text-sm">
                       Select a country to see food suggestions
                     </div>
                   )}
@@ -344,60 +537,106 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
 
                 {/* Drinks Section */}
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-3">🍹 Drinks & Beverages</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-3">🍹 Drinks & Beverages</h3>
                   {selectedCountry ? (
-                    <div className="space-y-3">
+                    <div className="space-y-2 sm:space-y-3">
+                      {/* Selected Custom Drinks */}
+                      {selectedDrinks.filter(d => d.custom).length > 0 && (
+                        <div className="space-y-2">
+                          <div className="text-xs font-medium text-text-secondary uppercase tracking-wide">Custom Drinks</div>
+                          <div className="grid grid-cols-1 gap-2">
+                            {selectedDrinks.filter(d => d.custom).map((drink) => (
+                              <button
+                                key={`custom-${drink.name}`}
+                                onClick={() => handleDrinkToggle(drink)}
+                                className="p-3 text-left rounded-lg border bg-accent-primary/10 border-accent-primary text-text-primary transition-colors hover:bg-accent-primary/15"
+                                aria-pressed="true"
+                              >
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-xs">✨</span>
+                                    <div className="font-medium text-sm">{drink.name}</div>
+                                  </div>
+                                  <CheckIcon className="w-5 h-5 text-accent-primary" aria-hidden="true" />
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       {/* Suggestions */}
-                      <div className="grid grid-cols-1 gap-2">
-                        {getDrinkSuggestions().map((drink) => (
-                          <button
-                            key={drink.id}
-                            onClick={() => handleDrinkToggle(drink)}
-                            className={`p-3 text-left rounded-lg border transition-colors ${
-                              selectedDrinks.find(d => d.name === drink.name)
-                                ? 'bg-accent-primary/20 border-accent-primary text-white'
-                                : 'bg-gray-800 border-gray-600 text-gray-300 hover:bg-gray-700'
-                            }`}
-                          >
-                            <div className="flex items-center justify-between">
-                              <div className="font-medium">{drink.name}</div>
-                              {selectedDrinks.find(d => d.name === drink.name) && (
-                                <CheckIcon className="w-5 h-5 text-accent-primary" />
-                              )}
-                            </div>
-                          </button>
-                        ))}
-                      </div>
+                      {getDrinkSuggestions().length > 0 && (
+                        <div className="space-y-2">
+                          {selectedDrinks.filter(d => d.custom).length > 0 && (
+                            <div className="text-xs font-medium text-text-secondary uppercase tracking-wide">Suggested Drinks</div>
+                          )}
+                          <div className="grid grid-cols-1 gap-2">
+                            {getDrinkSuggestions().map((drink) => (
+                              <button
+                                key={drink.id}
+                                onClick={() => handleDrinkToggle(drink)}
+                                className={`p-3 text-left rounded-lg border transition-colors ${
+                                  selectedDrinks.find(d => d.name === drink.name)
+                                    ? 'bg-accent-primary/10 border-accent-primary text-text-primary'
+                                    : 'bg-dark-secondary border-dark-border text-text-secondary hover:bg-dark-tertiary'
+                                }`}
+                                aria-pressed={selectedDrinks.find(d => d.name === drink.name) ? 'true' : 'false'}
+                              >
+                                <div className="flex items-center justify-between">
+                                  <div className="font-medium text-sm">{drink.name}</div>
+                                  {selectedDrinks.find(d => d.name === drink.name) && (
+                                    <CheckIcon className="w-5 h-5 text-accent-primary" aria-hidden="true" />
+                                  )}
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                       
-                      {/* Custom Drink */}
+                      {/* Custom Drink Input */}
                       {showCustomDrinkInput ? (
-                        <div className="flex space-x-2">
+                        <div className="flex gap-2">
                           <input
                             type="text"
                             value={customDrink}
                             onChange={(e) => setCustomDrink(e.target.value)}
                             placeholder="Enter custom drink name..."
-                            className="flex-1 px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-accent-primary"
+                            className="input flex-1"
                             onKeyPress={(e) => e.key === 'Enter' && addCustomDrink()}
+                            aria-label="Enter custom drink name"
                           />
                           <button
                             onClick={addCustomDrink}
-                            className="px-4 py-2 bg-accent-primary text-white rounded-lg hover:bg-accent-secondary transition-colors"
+                            className="btn btn-accent-primary"
+                            aria-label="Add custom drink"
                           >
                             Add
+                          </button>
+                          <button
+                            onClick={() => {
+                              setShowCustomDrinkInput(false);
+                              setCustomDrink('');
+                            }}
+                            className="btn btn-secondary"
+                            aria-label="Cancel"
+                          >
+                            Cancel
                           </button>
                         </div>
                       ) : (
                         <button
                           onClick={() => setShowCustomDrinkInput(true)}
-                          className="w-full p-3 border-2 border-dashed border-gray-600 rounded-lg text-gray-400 hover:border-accent-primary hover:text-accent-primary transition-colors"
+                          className="w-full p-3 border-2 border-dashed border-dark-border rounded-lg text-text-tertiary hover:border-accent-primary hover:text-accent-primary transition-colors"
+                          aria-label="Add custom drink"
                         >
                           + Add Custom Drink
                         </button>
                       )}
                     </div>
                   ) : (
-                    <div className="text-gray-400 text-center py-8">
+                    <div className="text-text-tertiary text-center py-8 text-sm">
                       Select a country to see drink suggestions
                     </div>
                   )}
@@ -405,60 +644,106 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
 
                 {/* Movies Section */}
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-3">🎬 Movies & Films</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-3">🎬 Movies & Films</h3>
                   {selectedCountry ? (
-                    <div className="space-y-3">
+                    <div className="space-y-2 sm:space-y-3">
+                      {/* Selected Custom Movies */}
+                      {selectedMovies.filter(m => m.custom).length > 0 && (
+                        <div className="space-y-2">
+                          <div className="text-xs font-medium text-text-secondary uppercase tracking-wide">Custom Movies</div>
+                          <div className="grid grid-cols-1 gap-2">
+                            {selectedMovies.filter(m => m.custom).map((movie) => (
+                              <button
+                                key={`custom-${movie.title}`}
+                                onClick={() => handleMovieToggle(movie)}
+                                className="p-3 text-left rounded-lg border bg-accent-primary/10 border-accent-primary text-text-primary transition-colors hover:bg-accent-primary/15"
+                                aria-pressed="true"
+                              >
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-xs">✨</span>
+                                    <div className="font-medium text-sm">{movie.title}</div>
+                                  </div>
+                                  <CheckIcon className="w-5 h-5 text-accent-primary" aria-hidden="true" />
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       {/* Suggestions */}
-                      <div className="grid grid-cols-1 gap-2">
-                        {getMovieSuggestions().map((movie) => (
-                          <button
-                            key={movie.id}
-                            onClick={() => handleMovieToggle(movie)}
-                            className={`p-3 text-left rounded-lg border transition-colors ${
-                              selectedMovies.find(m => m.title === movie.title)
-                                ? 'bg-accent-primary/20 border-accent-primary text-white'
-                                : 'bg-gray-800 border-gray-600 text-gray-300 hover:bg-gray-700'
-                            }`}
-                          >
-                            <div className="flex items-center justify-between">
-                              <div className="font-medium">{movie.title} ({movie.year})</div>
-                              {selectedMovies.find(m => m.title === movie.title) && (
-                                <CheckIcon className="w-5 h-5 text-accent-primary" />
-                              )}
-                            </div>
-                          </button>
-                        ))}
-                      </div>
+                      {getMovieSuggestions().length > 0 && (
+                        <div className="space-y-2">
+                          {selectedMovies.filter(m => m.custom).length > 0 && (
+                            <div className="text-xs font-medium text-text-secondary uppercase tracking-wide">Suggested Movies</div>
+                          )}
+                          <div className="grid grid-cols-1 gap-2">
+                            {getMovieSuggestions().map((movie) => (
+                              <button
+                                key={movie.id}
+                                onClick={() => handleMovieToggle(movie)}
+                                className={`p-3 text-left rounded-lg border transition-colors ${
+                                  selectedMovies.find(m => m.title === movie.title)
+                                    ? 'bg-accent-primary/10 border-accent-primary text-text-primary'
+                                    : 'bg-dark-secondary border-dark-border text-text-secondary hover:bg-dark-tertiary'
+                                }`}
+                                aria-pressed={selectedMovies.find(m => m.title === movie.title) ? 'true' : 'false'}
+                              >
+                                <div className="flex items-center justify-between">
+                                  <div className="font-medium text-sm">{movie.title} ({movie.year})</div>
+                                  {selectedMovies.find(m => m.title === movie.title) && (
+                                    <CheckIcon className="w-5 h-5 text-accent-primary" aria-hidden="true" />
+                                  )}
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                       
-                      {/* Custom Movie */}
+                      {/* Custom Movie Input */}
                       {showCustomMovieInput ? (
-                        <div className="flex space-x-2">
+                        <div className="flex gap-2">
                           <input
                             type="text"
                             value={customMovie}
                             onChange={(e) => setCustomMovie(e.target.value)}
                             placeholder="Enter custom movie title..."
-                            className="flex-1 px-3 py-2 bg-gray-800 border border-gray-600 rounded-lg text-white focus:border-accent-primary"
+                            className="input flex-1"
                             onKeyPress={(e) => e.key === 'Enter' && addCustomMovie()}
+                            aria-label="Enter custom movie title"
                           />
                           <button
                             onClick={addCustomMovie}
-                            className="px-4 py-2 bg-accent-primary text-white rounded-lg hover:bg-accent-secondary transition-colors"
+                            className="btn btn-accent-primary"
+                            aria-label="Add custom movie"
                           >
                             Add
+                          </button>
+                          <button
+                            onClick={() => {
+                              setShowCustomMovieInput(false);
+                              setCustomMovie('');
+                            }}
+                            className="btn btn-secondary"
+                            aria-label="Cancel"
+                          >
+                            Cancel
                           </button>
                         </div>
                       ) : (
                         <button
                           onClick={() => setShowCustomMovieInput(true)}
-                          className="w-full p-3 border-2 border-dashed border-gray-600 rounded-lg text-gray-400 hover:border-accent-primary hover:text-accent-primary transition-colors"
+                          className="w-full p-3 border-2 border-dashed border-dark-border rounded-lg text-text-tertiary hover:border-accent-primary hover:text-accent-primary transition-colors"
+                          aria-label="Add custom movie"
                         >
                           + Add Custom Movie
                         </button>
                       )}
                     </div>
                   ) : (
-                    <div className="text-gray-400 text-center py-8">
+                    <div className="text-text-tertiary text-center py-8 text-sm">
                       Select a country to see movie suggestions
                     </div>
                   )}
@@ -468,35 +753,40 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded }
           </div>
 
           {/* Sticky Save Button */}
-          <div className="sticky bottom-0 bg-gray-900 border-t border-gray-700 p-4">
-            <div className="flex items-center justify-between">
-              <div className="text-sm text-gray-400">
+          <div className="sticky bottom-0 bg-dark-secondary border-t border-dark-border p-4 sm:p-6">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
+              <div className="text-xs sm:text-sm text-text-secondary">
                 {selectedCountry && (
-                  <span>Selected: {selectedCountry.flag} {selectedCountry.name}</span>
-                )}
-                {selectedCountry && (
-                  <div className="text-xs mt-1">
-                    {selectedFoods.length} foods • {selectedDrinks.length} drinks • {selectedMovies.length} movies
+                  <div>
+                    <span>Selected: {selectedCountry.flag} {selectedCountry.name}</span>
+                    <div className="text-xs mt-1">
+                      {selectedFoods.length} foods • {selectedDrinks.length} drinks • {selectedMovies.length} movies
+                    </div>
                   </div>
                 )}
+                {!selectedCountry && (
+                  <span className="text-text-tertiary">{getValidationMessage()}</span>
+                )}
               </div>
-              <div className="flex space-x-3">
+              <div className="flex w-full sm:w-auto gap-3">
                 <button
                   onClick={onClose}
-                  className="px-6 py-3 text-gray-400 hover:text-white hover:bg-gray-700 rounded-lg transition-colors"
+                  className="btn btn-secondary flex-1 sm:flex-none"
+                  aria-label="Cancel and close modal"
                 >
                   Cancel
                 </button>
-                                <button
+                <button
                   onClick={handleSubmit}
                   disabled={!isFormValid}
-                  className={`px-8 py-3 rounded-lg font-medium transition-colors ${
+                  className={`btn flex-1 sm:flex-none ${
                     isFormValid
-                      ? 'bg-accent-primary text-white hover:bg-accent-secondary shadow-lg'
-                      : 'bg-gray-700 text-gray-500 cursor-not-allowed'
+                      ? 'btn-accent-primary'
+                      : 'btn-ghost opacity-50 cursor-not-allowed'
                   }`}
+                  aria-label={isFormValid ? (editingExperienceId ? 'Update experience' : 'Save experience') : getValidationMessage()}
                 >
-                  {isFormValid ? '💾 Save Experience' : getValidationMessage()}
+                  {isFormValid ? (editingExperienceId ? '💾 Update Experience' : '💾 Save Experience') : getValidationMessage()}
                 </button>
               </div>
             </div>
