@@ -1,11 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
-const CountryCard = React.memo(({ country, onCountrySelect, index }) => {
-  if (!country || !country.name) {
-    return null;
-  }
+const REGION_COLORS = {
+  'East Asia':           'bg-slate-500/15 text-slate-400',
+  'Southern Europe':     'bg-slate-500/15 text-slate-400',
+  'Western Asia/Europe': 'bg-slate-500/15 text-slate-400',
+  'Europe/Asia':         'bg-slate-500/15 text-slate-400',
+  'North America':       'bg-indigo-500/15 text-indigo-400',
+  'Western Europe':      'bg-indigo-500/15 text-indigo-400',
+  'Central Asia':        'bg-indigo-500/15 text-indigo-400',
+  'Northern Europe':     'bg-indigo-500/15 text-indigo-400',
+  'Central Europe':      'bg-indigo-500/15 text-indigo-400',
+  'Eastern Europe':      'bg-indigo-500/15 text-indigo-400',
+  'South Asia':          'bg-amber-500/15 text-amber-400',
+  'Southeast Asia':      'bg-amber-500/15 text-amber-400',
+  'North Africa':        'bg-amber-500/15 text-amber-400',
+  'Western Asia':        'bg-amber-500/15 text-amber-400',
+  'Oceania':             'bg-amber-500/15 text-amber-400',
+  'East Africa':         'bg-teal-500/15 text-teal-400',
+  'South America':       'bg-teal-500/15 text-teal-400',
+  'Caribbean':           'bg-teal-500/15 text-teal-400',
+  'West Africa':         'bg-teal-500/15 text-teal-400',
+  'Central Africa':      'bg-teal-500/15 text-teal-400',
+  'Southern Africa':     'bg-teal-500/15 text-teal-400',
+  'Central America':     'bg-teal-500/15 text-teal-400',
+};
+
+const CountryCard = React.memo(({ country, onCountrySelect, index, isExplored }) => {
+  if (!country || !country.name) return null;
+
+  const regionClass = REGION_COLORS[country.region] || 'bg-accent-primary/20 text-accent-primary';
 
   return (
     <motion.div
@@ -16,24 +41,37 @@ const CountryCard = React.memo(({ country, onCountrySelect, index }) => {
     >
       <motion.button
         onClick={() => onCountrySelect(country)}
-        className="card w-full p-3 sm:p-4 group h-full"
-        whileHover={{ scale: 1.01 }}
+        className="card w-full p-5 group h-full relative"
+        whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         aria-label={`Explore ${country.name}`}
       >
-        <div className="flex items-center justify-between h-full">
-          <div className="flex items-center space-x-3 sm:space-x-4 flex-1">
-            <div className="text-2xl sm:text-3xl">{country.flag}</div>
-            <div className="text-left flex-1 min-w-0">
-              <h3 className="text-base sm:text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors truncate">
-                {country.name}
-              </h3>
-              <p className="text-xs sm:text-sm text-text-secondary truncate">{country.region}</p>
-            </div>
+        {/* Explored badge */}
+        {isExplored && (
+          <div className="absolute top-3 right-3">
+            <CheckCircleIcon className="w-5 h-5 text-green-400" aria-label="Already explored" />
           </div>
-          <div className="flex items-center">
-            <ChevronRightIcon className="w-4 h-4 text-text-tertiary group-hover:text-accent-primary transition-colors opacity-0 group-hover:opacity-100 flex-shrink-0" aria-hidden="true" />
-          </div>
+        )}
+
+        <div className="flex flex-col items-center text-center gap-3">
+          {/* Flag */}
+          <motion.div
+            className="text-4xl sm:text-5xl leading-none"
+            whileHover={{ scale: 1.15, rotate: [0, -3, 3, 0] }}
+            transition={{ duration: 0.4, ease: 'easeOut' }}
+          >
+            {country.flag}
+          </motion.div>
+
+          {/* Name */}
+          <h3 className="text-base sm:text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors leading-tight">
+            {country.name}
+          </h3>
+
+          {/* Region pill */}
+          <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-medium ${regionClass}`}>
+            {country.region}
+          </span>
         </div>
       </motion.button>
     </motion.div>
@@ -42,8 +80,7 @@ const CountryCard = React.memo(({ country, onCountrySelect, index }) => {
 
 CountryCard.displayName = 'CountryCard';
 
-const VirtualizedCountryList = ({ countries = [], onCountrySelect }) => {
-  // Safety check for countries array
+const VirtualizedCountryList = ({ countries = [], onCountrySelect, exploredCountries = new Set() }) => {
   if (!countries || !Array.isArray(countries) || countries.length === 0) {
     return (
       <div className="flex items-center justify-center py-16">
@@ -58,13 +95,14 @@ const VirtualizedCountryList = ({ countries = [], onCountrySelect }) => {
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 p-2 sm:p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 p-2 sm:p-4">
         {countries.map((country, index) => (
           <CountryCard
             key={country.id || country.name || index}
             country={country}
             onCountrySelect={onCountrySelect}
             index={index}
+            isExplored={exploredCountries.has(country.name)}
           />
         ))}
       </div>

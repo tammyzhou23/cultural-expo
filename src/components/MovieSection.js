@@ -45,7 +45,7 @@ function MovieSection({ selectedCountry }) {
   return (
     <div className="space-y-4 sm:space-y-6">
       <div className="text-center">
-        <h3 className="text-xl sm:text-2xl font-semibold text-accent-primary mb-2">
+        <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-2">
           Cinema & Films
         </h3>
         <p className="text-sm text-text-secondary">Explore {selectedCountry.name}'s movie culture</p>
@@ -60,7 +60,7 @@ function MovieSection({ selectedCountry }) {
             transition={{ delay: index * 0.05, duration: 0.2 }}
             className={`card cursor-pointer ${
               selectedMovie === movie.title
-                ? 'border-accent-primary'
+                ? 'border-dark-border-hover'
                 : ''
             }`}
             onClick={() => setSelectedMovie(selectedMovie === movie.title ? null : movie.title)}
@@ -82,18 +82,18 @@ function MovieSection({ selectedCountry }) {
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="text-lg sm:text-xl font-semibold text-text-primary">{movie.title}</h4>
-                    <span className="text-accent-primary text-base sm:text-lg">{movie.rating}</span>
+                    <span className="text-text-secondary text-base sm:text-lg">{movie.rating}</span>
                   </div>
                   <p className="text-sm text-text-secondary mb-3">
                     <span className="font-medium">{movie.year}</span> • {movie.director} • {movie.duration}min
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {Array.isArray(movie.genre) ? movie.genre.map((g, index) => (
-                      <span key={index} className="px-2 py-1 rounded-full text-xs font-medium border border-accent-primary/30 bg-accent-primary/10 text-accent-primary">
+                      <span key={index} className="px-2 py-1 rounded-full text-xs font-medium border border-dark-border bg-white/[0.03] text-text-secondary">
                         {g}
                       </span>
                     )) : (
-                      <span className="px-2 py-1 rounded-full text-xs font-medium border border-accent-primary/30 bg-accent-primary/10 text-accent-primary">
+                      <span className="px-2 py-1 rounded-full text-xs font-medium border border-dark-border bg-white/[0.03] text-text-secondary">
                         {movie.genre}
                       </span>
                     )}
@@ -112,29 +112,29 @@ function MovieSection({ selectedCountry }) {
                   >
                     <div className="space-y-3">
                       <div>
-                        <h5 className="font-semibold text-accent-primary text-sm mb-1">Plot Summary</h5>
+                        <h5 className="font-semibold text-text-primary text-sm mb-1">Plot Summary</h5>
                         <p className="text-sm text-text-secondary">
                           {movie.description || 'A compelling story that showcases the unique cultural perspective of this region.'}
                         </p>
                       </div>
-                      
+
                       <div>
-                        <h5 className="font-semibold text-accent-secondary text-sm mb-1">Category</h5>
+                        <h5 className="font-semibold text-text-primary text-sm mb-1">Category</h5>
                         <p className="text-sm text-text-secondary">
                           {movie.category || 'Cultural Film'}
                         </p>
                       </div>
-                      
+
                       <div>
-                        <h5 className="font-semibold text-accent-tertiary text-sm mb-1">Cultural Significance</h5>
+                        <h5 className="font-semibold text-text-primary text-sm mb-1">Cultural Significance</h5>
                         <p className="text-sm text-text-secondary">
                           {movie.cultural_significance || `This film represents important aspects of ${selectedCountry.name}'s culture, storytelling traditions, and cinematic heritage.`}
                         </p>
                       </div>
-                      
+
                       {movie.awards && movie.awards.length > 0 && (
                         <div>
-                          <h5 className="font-semibold text-accent-primary text-sm mb-1">Awards</h5>
+                          <h5 className="font-semibold text-text-primary text-sm mb-1">Awards</h5>
                           <p className="text-sm text-text-secondary">
                             {movie.awards.join(', ')}
                           </p>

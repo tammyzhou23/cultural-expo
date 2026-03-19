@@ -196,7 +196,6 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded, 
 
   const handleSubmit = () => {
     if (!selectedCountry) {
-      alert('Please select a country');
       return;
     }
 
@@ -497,7 +496,7 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded, 
                             onChange={(e) => setCustomFood(e.target.value)}
                             placeholder="Enter custom dish name..."
                             className="input flex-1"
-                            onKeyPress={(e) => e.key === 'Enter' && addCustomFood()}
+                            onKeyDown={(e) => e.key === 'Enter' && addCustomFood()}
                             aria-label="Enter custom dish name"
                           />
                           <button
@@ -604,7 +603,7 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded, 
                             onChange={(e) => setCustomDrink(e.target.value)}
                             placeholder="Enter custom drink name..."
                             className="input flex-1"
-                            onKeyPress={(e) => e.key === 'Enter' && addCustomDrink()}
+                            onKeyDown={(e) => e.key === 'Enter' && addCustomDrink()}
                             aria-label="Enter custom drink name"
                           />
                           <button
@@ -711,7 +710,7 @@ const AddExperienceModal = ({ isOpen, onClose, selectedDate, onExperienceAdded, 
                             onChange={(e) => setCustomMovie(e.target.value)}
                             placeholder="Enter custom movie title..."
                             className="input flex-1"
-                            onKeyPress={(e) => e.key === 'Enter' && addCustomMovie()}
+                            onKeyDown={(e) => e.key === 'Enter' && addCustomMovie()}
                             aria-label="Enter custom movie title"
                           />
                           <button
