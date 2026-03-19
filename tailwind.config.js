@@ -13,37 +13,38 @@ module.exports = {
       colors: {
         // Dark Mode Design System (Notion/Linear/Cursor Inspired)
         dark: {
-          'primary': '#0D1117',     // Primary background
-          'secondary': '#161B22',   // Card backgrounds
-          'tertiary': '#21262D',    // Hover states
-          'border': '#30363D',      // Subtle borders
-          'border-hover': '#424A53', // Hover borders
+          'primary': '#0A0A0F',     // Primary background — warm-tinted
+          'secondary': '#15141A',   // Card backgrounds
+          'tertiary': '#201E26',    // Hover states
+          'quaternary': '#2C2A34',  // Highest elevation
+          'border': '#2E2C36',      // Subtle borders
+          'border-hover': '#3E3C48', // Hover borders
         },
         text: {
-          'primary': '#F0F6FC',     // High contrast white
-          'secondary': '#8B949E',   // Muted gray
-          'tertiary': '#6E7681',    // Subtle gray
-          'inverse': '#24292F',     // Dark text for light backgrounds
+          'primary': '#FFFFFF',     // High contrast white
+          'secondary': '#A1A1AA',   // Zinc-400 — clear step down
+          'tertiary': '#71717A',    // Zinc-500 — subtle
+          'inverse': '#18181B',     // Dark text for light backgrounds
         },
         accent: {
           'success': '#238636',     // Success green
           'error': '#DA3633',       // Error red
-          'info': '#1F6FEB',        // Info blue
+          'info': '#6366F1',        // Info indigo
           'warning': '#FB8500',     // Warning orange
         },
         brand: {
-          'primary': '#7C3AED',     // Purple primary
-          'secondary': '#A855F7',   // Purple secondary
-          'tertiary': '#C084FC',    // Purple light
-          'cultural': '#FF6B6B',    // Cultural accent (warm)
-          'warm-orange': '#FF8C42',
-          'deep-blue': '#1E3A8A',
-          'rich-green': '#166534',
+          'primary': '#6366F1',     // Indigo primary
+          'secondary': '#818CF8',   // Indigo secondary
+          'tertiary': '#A5B4FC',    // Indigo light
+        },
+        progress: {
+          'DEFAULT': '#22C55E',     // Green — growth
+          'light': '#4ADE80',       // Green-400
         },
         glass: {
-          'bg': 'rgba(22, 27, 34, 0.8)',        // Glass background
-          'border': 'rgba(48, 54, 61, 0.6)',    // Glass border
-          'text': 'rgba(240, 246, 252, 0.9)',   // Glass text
+          'bg': 'rgba(21, 20, 26, 0.8)',        // Glass background — warm-tinted
+          'border': 'rgba(46, 44, 54, 0.6)',    // Glass border
+          'text': 'rgba(255, 255, 255, 0.9)',   // Glass text
         }
       },
       fontSize: {
@@ -136,8 +137,8 @@ module.exports = {
           '50%': { transform: 'translateY(-6px)' },
         },
         glowPulse: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(124, 58, 237, 0.3)' },
-          '50%': { boxShadow: '0 0 30px rgba(124, 58, 237, 0.6)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(99, 102, 241, 0.3)' },
+          '50%': { boxShadow: '0 0 30px rgba(99, 102, 241, 0.6)' },
         },
         spring: {
           '0%': { transform: 'scale(0.9) rotate(-1deg)' },

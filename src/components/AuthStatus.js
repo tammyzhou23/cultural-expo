@@ -10,23 +10,26 @@ function AuthStatus() {
 
   // Close menu when clicking outside
   useEffect(() => {
+    if (!showMenu) return;
+
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setShowMenu(false);
       }
     };
 
-    if (showMenu) {
-      document.addEventListener('mousedown', handleClickOutside);
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          setShowMenu(false);
-        }
-      });
-    }
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEscape);
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
     };
   }, [showMenu]);
 

@@ -43,7 +43,7 @@ const FoodSection = ({ selectedCountry }) => {
   return (
     <div className="space-y-4 sm:space-y-6">
       <div className="text-center">
-        <h3 className="text-xl sm:text-2xl font-semibold text-accent-primary mb-2">
+        <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-2">
           Traditional Cuisine
         </h3>
         <p className="text-sm text-text-secondary">
@@ -63,7 +63,7 @@ const FoodSection = ({ selectedCountry }) => {
             <motion.div
               className={`card overflow-hidden cursor-pointer ${
                 expandedRecipe === index
-                  ? 'border-accent-primary'
+                  ? 'border-dark-border-hover'
                   : ''
               }`}
               whileHover={{ scale: 1.01 }}
@@ -82,7 +82,7 @@ const FoodSection = ({ selectedCountry }) => {
               {/* Card Header */}
               <div className="p-4 sm:p-6 text-center">
                 <div className="text-3xl sm:text-4xl mb-3">🍽️</div>
-                <h4 className="text-lg sm:text-xl font-semibold text-accent-primary mb-2">
+                <h4 className="text-lg sm:text-xl font-semibold text-text-primary mb-2">
                   {dish.name}
                 </h4>
                 <p className="text-sm text-text-secondary leading-relaxed">
@@ -102,8 +102,8 @@ const FoodSection = ({ selectedCountry }) => {
                   >
                     <div className="p-4 sm:p-6 space-y-3">
                       {/* Cultural Story */}
-                      <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
-                        <h5 className="text-base font-semibold text-accent-primary mb-2 flex items-center">
+                      <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                        <h5 className="text-base font-semibold text-text-primary mb-2 flex items-center">
                           <span className="mr-2">📖</span>
                           Cultural Story
                         </h5>
@@ -113,26 +113,26 @@ const FoodSection = ({ selectedCountry }) => {
                       </div>
 
                       {/* Dish Information */}
-                      <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
-                        <h5 className="text-base font-semibold text-accent-primary mb-2 flex items-center">
+                      <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                        <h5 className="text-base font-semibold text-text-primary mb-2 flex items-center">
                           <span className="mr-2">🍽️</span>
                           Dish Information
                         </h5>
                         <div className="grid grid-cols-2 gap-3 text-sm">
                           <div>
-                            <span className="text-accent-primary font-medium">Origin:</span>
+                            <span className="text-text-secondary font-medium">Origin:</span>
                             <p className="text-text-secondary">Traditional {selectedCountry.name}</p>
                           </div>
                           <div>
-                            <span className="text-accent-primary font-medium">Serving:</span>
+                            <span className="text-text-secondary font-medium">Serving:</span>
                             <p className="text-text-secondary">Family style</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Cooking Tips */}
-                      <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
-                        <h5 className="text-base font-semibold text-accent-primary mb-2 flex items-center">
+                      <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                        <h5 className="text-base font-semibold text-text-primary mb-2 flex items-center">
                           <span className="mr-2">👨‍🍳</span>
                           Cooking Tips
                         </h5>

@@ -185,7 +185,7 @@ const CommandPalette = ({ isOpen, onClose, onCommand }) => {
                     key={command.id}
                     className={`command-palette-item ${selectedIndex === index ? 'selected' : ''}`}
                     onClick={() => handleItemClick(command)}
-                    whileHover={{ backgroundColor: 'rgba(168, 85, 247, 0.1)' }}
+                    whileHover={{ backgroundColor: 'rgba(99, 102, 241, 0.1)' }}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.05 }}

@@ -205,7 +205,7 @@ function MapView({ countries = [], onCountrySelect, onClose }) {
 
   // Create custom marker icon based on exploration status
   const createMarkerIcon = (isExplored) => {
-    const color = isExplored ? '#10B981' : '#8B5CF6'; // Green for explored, purple for unexplored
+    const color = isExplored ? '#10B981' : '#6366F1'; // Green for explored, indigo for unexplored
     const iconSvg = `
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="${color}" stroke="#ffffff" stroke-width="2"/>
@@ -332,7 +332,7 @@ function MapView({ countries = [], onCountrySelect, onClose }) {
                 )}
                 <button
                   onClick={() => handleCountryClick(country)}
-                  className="mt-2 px-3 py-1 bg-purple-600 text-white text-xs rounded hover:bg-purple-700 transition-colors"
+                  className="mt-2 px-3 py-1 bg-indigo-600 text-white text-xs rounded hover:bg-indigo-700 transition-colors"
                 >
                   {country.isExplored ? 'Revisit' : 'Explore'}
                 </button>
@@ -355,7 +355,7 @@ function MapView({ countries = [], onCountrySelect, onClose }) {
           <div>• {mapCountries.length} countries available</div>
           <div>• {Array.from(exploredCountries).length} countries explored</div>
           <div className="flex items-center space-x-2 mt-2">
-            <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+            <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
             <span>Unexplored</span>
           </div>
           <div className="flex items-center space-x-2">

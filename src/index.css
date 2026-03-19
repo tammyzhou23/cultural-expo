@@ -1,41 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Apple-Inspired Design System - Purple-Based Accent Colors */
+/* Cultural Expo Design System - Indigo Brand + Warm Cultural Accents */
 :root {
-  /* Semantic Color System */
-  --bg-primary: #000000;           /* Main app background */
-  --bg-secondary: #1C1C1E;        /* Card/container backgrounds */
-  --bg-tertiary: #2C2C2E;         /* Elevated elements, modals */
-  --bg-quaternary: #3A3A3C;       /* Highest elevation elements */
-  
-  /* Text Colors - High Contrast for Accessibility */
+  /* Semantic Color System — warm-tinted dark surfaces */
+  --bg-primary: #0A0A0F;           /* Main app background — warm-tinted dark */
+  --bg-secondary: #15141A;         /* Card/container backgrounds */
+  --bg-tertiary: #201E26;          /* Elevated elements, modals */
+  --bg-quaternary: #2C2A34;        /* Highest elevation elements */
+
+  /* Text Colors - Layered hierarchy for readability */
   --text-primary: #FFFFFF;         /* Primary text - highest contrast */
-  --text-secondary: #EBEBF5;       /* Secondary text */
-  --text-tertiary: rgba(235, 235, 245, 0.6);  /* Muted text */
-  --text-disabled: rgba(235, 235, 245, 0.3);  /* Disabled text */
-  
-  /* Border Colors */
-  --border-primary: #38383A;       /* Main borders */
-  --border-secondary: #48484A;     /* Lighter borders */
-  --border-focus: #A855F7;         /* Focus states - purple */
-  
-  /* Simplified Purple-Based Accent Color System (3 primary shades) */
-  --accent-primary: #A855F7;       /* Primary purple */
-  --accent-secondary: #C084FC;     /* Lighter purple */
-  --accent-tertiary: #8B5CF6;      /* Darker purple */
-  
-  /* Interactive Colors - Purple Family */
-  --interactive-primary: #A855F7;  /* Primary buttons, links */
-  --interactive-secondary: #C084FC; /* Secondary interactions */
-  --interactive-hover: #8B5CF6;    /* Hover states */
-  --interactive-focus: #A855F7;    /* Focus highlights */
-  
-  /* Legacy Support - Transitioning to new system */
-  --color-primary: #A855F7;
-  --color-secondary: #C084FC;
+  --text-secondary: #A1A1AA;       /* Secondary text - zinc-400, clear step down */
+  --text-tertiary: #71717A;        /* Muted text - zinc-500 */
+  --text-disabled: #52525B;        /* Disabled text - zinc-600 */
+
+  /* Border Colors — warm-tinted */
+  --border-primary: #2E2C36;       /* Main borders */
+  --border-secondary: #3E3C48;     /* Lighter borders */
+  --border-focus: #6366F1;         /* Focus states - indigo */
+
+  /* Progress color */
+  --color-progress: #22C55E;       /* Green — growth */
+  --color-progress-light: #4ADE80; /* Green-400 */
+
+  /* Indigo-Based Accent Color System (3 primary shades) */
+  --accent-primary: #6366F1;       /* Primary indigo */
+  --accent-secondary: #818CF8;     /* Lighter indigo */
+  --accent-tertiary: #4F46E5;      /* Darker indigo */
   
   /* Transitions - Faster, smoother */
   --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,7 +63,7 @@
   }
 
   body::selection {
-    background-color: var(--interactive-primary);
+    background-color: var(--accent-primary);
     color: var(--text-primary);
   }
 
@@ -129,18 +123,12 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--text-primary) !important;
-  }
-
-  p, span, div, label {
-    color: var(--text-primary) !important;
-    font-size: clamp(0.875rem, 2vw, 1rem);
-    line-height: 1.6;
+    color: var(--text-primary);
   }
 
   /* Link styles */
   a {
-    color: var(--interactive-primary);
+    color: var(--accent-primary);
     text-decoration: none;
     transition: color 0.2s ease;
   }
@@ -160,7 +148,7 @@
   input:focus, textarea:focus, select:focus {
     border-color: var(--border-focus) !important;
     outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
   }
 
   input::placeholder, textarea::placeholder {
@@ -208,12 +196,12 @@
   }
   .calendar-day:hover { background-color: var(--bg-tertiary); }
   .calendar-day.selected { 
-    background-color: var(--interactive-primary) !important; 
+    background-color: var(--accent-primary) !important; 
     color: var(--text-primary) !important; 
   }
   .calendar-day.today { 
-    border-color: var(--interactive-primary); 
-    color: var(--interactive-primary); 
+    border-color: var(--accent-primary); 
+    color: var(--accent-primary); 
   }
   
   /* Modal and Overlay Fixes */
@@ -224,29 +212,7 @@
   /* Form Element Fixes */
   .form-input, .form-textarea, .form-select { background: var(--bg-secondary) !important; border: 1px solid var(--border-primary) !important; color: var(--text-primary) !important; }
   .form-input::placeholder, .form-textarea::placeholder { color: var(--text-tertiary) !important; }
-  .form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--border-focus) !important; outline: none !important; box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2) !important; }
-  
-  /* Button Fixes */
-  .btn-primary, button[type="submit"] { background: var(--interactive-primary) !important; color: var(--text-primary) !important; border: none !important; }
-  .btn-secondary, .btn-outline { background: transparent !important; color: var(--text-primary) !important; border: 1px solid var(--border-primary) !important; }
-  .btn-secondary:hover { background: var(--bg-secondary) !important; }
-  
-  /* Card and Container Fixes */
-  .card, .bg-white, .bg-gray-50, .bg-gray-100 { background: var(--bg-secondary) !important; border: 1px solid var(--border-primary) !important; color: var(--text-primary) !important; }
-  
-  /* Hover State Fixes */
-  .hover\:bg-gray-100:hover, .hover\:bg-gray-50:hover { background: var(--bg-tertiary) !important; }
-  .hover\:bg-gray-200:hover { background: var(--bg-quaternary) !important; }
-  
-  /* Text Color Fixes */
-  .text-black { color: var(--text-primary) !important; }
-  .text-gray-700, .text-gray-800, .text-gray-900 { color: var(--text-secondary) !important; }
-  .text-gray-500, .text-gray-600 { color: var(--text-tertiary) !important; }
-  .text-gray-400, .text-gray-300 { color: var(--text-disabled) !important; }
-  
-  /* Border Fixes */
-  .border-gray-300, .border-gray-200 { border-color: var(--border-primary) !important; }
-  .border-gray-400 { border-color: var(--border-secondary) !important; }
+  .form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--border-focus) !important; outline: none !important; box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15) !important; }
   
   /* Line clamp utilities */
   .line-clamp-2 {
@@ -271,7 +237,7 @@
     top: -10rem;
     left: 1.5rem;
     z-index: 1200;
-    background-color: #7C3AED;
+    background-color: #6366F1;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
@@ -305,8 +271,6 @@
     border: 1px solid transparent;
     transition: all var(--transition-base) var(--transition-smooth);
     user-select: none;
-    transform: translateZ(0);
-    will-change: transform;
     min-height: 40px; /* Touch target size - slightly reduced for better fit */
     white-space: nowrap;
   }
@@ -341,14 +305,14 @@
   }
 
   .btn-primary {
-    background: var(--interactive-primary) !important;
+    background: var(--accent-primary) !important;
     color: var(--text-primary) !important;
     border: none;
     box-shadow: var(--shadow-soft);
   }
 
   .btn-primary:hover {
-    background: var(--interactive-hover) !important;
+    background: var(--accent-tertiary) !important;
     transform: scale(1.01);
     box-shadow: var(--shadow-medium);
   }
@@ -398,8 +362,6 @@
     border: 1px solid var(--border-primary);
     border-radius: 0.75rem;
     transition: all var(--transition-base) var(--transition-smooth);
-    transform: translateZ(0);
-    will-change: transform, box-shadow;
     box-shadow: var(--shadow-soft);
     color: var(--text-primary) !important;
     padding: 1rem; /* Reduced from default */
@@ -419,21 +381,13 @@
     border-color: var(--border-secondary);
   }
 
-  /* Glassmorphism effects */
-  .glass {
-    background-color: rgba(22, 27, 34, 0.8);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(48, 54, 61, 0.6);
-    color: rgba(240, 246, 252, 0.9);
-  }
-
   /* Section Cards */
   .section-card {
-    background-color: #161B22;
-    border: 1px solid #30363D;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 0.5rem;
     padding: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-medium);
   }
 
   /* Input System - Improved spacing and touch targets */
@@ -457,7 +411,7 @@
   .input:focus {
     border-color: var(--border-focus) !important;
     outline: none;
-    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.15);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
   }
 
   .input-group {
@@ -490,7 +444,7 @@
   }
 
   .calendar-cell.selected {
-    background-color: rgba(168, 85, 247, 0.1);
+    background-color: rgba(99, 102, 241, 0.1);
     border-color: var(--accent-primary);
   }
 
@@ -502,7 +456,7 @@
   /* Progress Indicators */
   .progress-bar {
     width: 100%;
-    background-color: #21262D;
+    background-color: var(--bg-tertiary);
     border-radius: 9999px;
     height: 0.5rem;
     overflow: hidden;
@@ -510,15 +464,15 @@
 
   .progress-fill {
     height: 100%;
-    background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+    background: linear-gradient(to right, var(--color-progress), var(--color-progress-light));
     transition: all 0.5s ease-out;
     border-radius: 9999px;
   }
 
   /* Notification System */
   .toast {
-    background-color: #161B22;
-    border: 1px solid #30363D;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 0.75rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
     padding: 1rem;
@@ -538,7 +492,7 @@
 
   .toast.info {
     border-color: var(--accent-primary);
-    background-color: rgba(168, 85, 247, 0.1);
+    background-color: rgba(99, 102, 241, 0.1);
   }
 
   /* Badges and Tags */
@@ -552,9 +506,9 @@
   }
 
   .badge-primary {
-    background-color: rgba(168, 85, 247, 0.2);
+    background-color: rgba(99, 102, 241, 0.2);
     color: var(--accent-secondary);
-    border: 1px solid rgba(168, 85, 247, 0.3);
+    border: 1px solid rgba(99, 102, 241, 0.3);
   }
 
   .badge-success {
@@ -582,8 +536,8 @@
     right: 1rem;
     top: 5rem;
     z-index: 1100;
-    background-color: #161B22;
-    border: 1px solid #30363D;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 0.75rem;
     backdrop-filter: blur(8px);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
@@ -628,8 +582,8 @@
   }
 
   .command-palette-item.selected {
-    background-color: rgba(168, 85, 247, 0.2);
-    color: var(--interactive-primary) !important;
+    background-color: rgba(99, 102, 241, 0.2);
+    color: var(--accent-primary) !important;
   }
 
   .command-palette-kbd {
@@ -697,18 +651,17 @@
     height: 4rem;
     margin: 0 auto 1rem;
     color: #DA3633;
-    animation: bounceGentle 2s infinite;
   }
 
   .error-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #F0F6FC;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
   }
 
   .error-message {
-    color: #8B949E;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
     max-width: 28rem;
     margin-left: auto;
@@ -765,12 +718,6 @@
   50% { transform: translateY(-6px); }
 }
 
-@keyframes bounceGentle {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-4px); }
-  60% { transform: translateY(-2px); }
-}
-
 @keyframes stagger {
   0% { opacity: 0; transform: translateY(8px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -800,7 +747,7 @@
   }
   
   .btn-primary {
-    border-color: var(--interactive-primary);
+    border-color: var(--accent-primary);
   }
   
   .btn-secondary {
@@ -839,45 +786,10 @@
   }
 }
 
-/* Final Dark Mode Overrides - Catch All Remaining Light Elements */
-* {
-  /* Ensure all text is readable */
-  color: var(--text-primary) !important;
-}
-
-/* Override any remaining light backgrounds */
-[class*="bg-"] {
-  background-color: var(--bg-secondary) !important;
-}
-
-/* Ensure all form elements follow dark mode */
-input, textarea, select, button {
-  background-color: var(--bg-secondary) !important;
-  color: var(--text-primary) !important;
-  border-color: var(--border-primary) !important;
-}
-
-/* Override any remaining light text */
-[class*="text-"] {
-  color: var(--text-primary) !important;
-}
-
-/* Ensure all borders are visible */
-[class*="border-"] {
-  border-color: var(--border-primary) !important;
-}
-
-/* Modal and dialog overrides */
-[role="dialog"], [role="alertdialog"], .modal, .dialog {
-  background-color: var(--bg-tertiary) !important;
-  color: var(--text-primary) !important;
-}
-
-/* Toast and notification overrides */
-.toast, .notification, .alert {
-  background-color: var(--bg-tertiary) !important;
-  color: var(--text-primary) !important;
-  border-color: var(--border-primary) !important;
+/* Scoped dark-mode overrides for third-party / legacy elements only */
+[role="dialog"], [role="alertdialog"] {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
 }
 
 /* Country Page Specific Utilities */
@@ -897,22 +809,22 @@ input, textarea, select, button {
   
   /* Accessible background colors with proper contrast */
   .bg-card-elevated {
-    background-color: rgba(31, 41, 55, 0.4) !important; /* Dark gray with transparency */
+    background-color: rgba(21, 20, 26, 0.4) !important; /* Dark gray with transparency */
     backdrop-filter: blur(12px);
   }
   
   .bg-card-hover {
-    background-color: rgba(31, 41, 55, 0.6) !important; /* Darker on hover */
+    background-color: rgba(21, 20, 26, 0.6) !important; /* Darker on hover */
     backdrop-filter: blur(16px);
   }
   
   /* Accessible border colors */
   .border-accessible {
-    border-color: rgba(75, 85, 99, 0.5) !important; /* Medium gray with transparency */
+    border-color: rgba(46, 44, 54, 0.6) !important; /* Medium gray with transparency */
   }
   
   .border-accessible-hover {
-    border-color: rgba(75, 85, 99, 0.7) !important; /* Darker on hover */
+    border-color: rgba(46, 44, 54, 0.8) !important; /* Darker on hover */
   }
   
   /* Focus ring utilities for accessibility */
@@ -927,18 +839,18 @@ input, textarea, select, button {
   
   /* Glassmorphism effects with accessibility */
   .glass-accessible {
-    background: rgba(31, 41, 55, 0.4);
+    background: rgba(21, 20, 26, 0.4);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(75, 85, 99, 0.3);
+    border: 1px solid rgba(46, 44, 54, 0.5);
   }
   
   .glass-accessible-hover {
-    background: rgba(31, 41, 55, 0.6);
+    background: rgba(21, 20, 26, 0.6);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(75, 85, 99, 0.5);
+    border: 1px solid rgba(46, 44, 54, 0.6);
   }
   
-  /* Simplified Purple-Based Accent Color System (3 primary shades) */
+  /* Simplified Indigo-Based Accent Color System (3 primary shades) */
   .text-accent-primary {
     color: var(--accent-primary) !important;
   }
@@ -953,64 +865,64 @@ input, textarea, select, button {
   
   /* Background colors for accent system */
   .bg-accent-primary {
-    background-color: rgba(168, 85, 247, 0.1) !important;
+    background-color: rgba(99, 102, 241, 0.1) !important;
   }
   
   .bg-accent-secondary {
-    background-color: rgba(192, 132, 252, 0.1) !important;
+    background-color: rgba(129, 140, 248, 0.1) !important;
   }
   
   .bg-accent-tertiary {
-    background-color: rgba(139, 92, 246, 0.1) !important;
+    background-color: rgba(79, 70, 229, 0.1) !important;
   }
   
   
   /* Hover states for accent backgrounds */
   .bg-accent-primary-hover {
-    background-color: rgba(168, 85, 247, 0.2) !important;
+    background-color: rgba(99, 102, 241, 0.2) !important;
   }
   
   .bg-accent-secondary-hover {
-    background-color: rgba(192, 132, 252, 0.2) !important;
+    background-color: rgba(129, 140, 248, 0.2) !important;
   }
   
   .bg-accent-tertiary-hover {
-    background-color: rgba(139, 92, 246, 0.2) !important;
+    background-color: rgba(79, 70, 229, 0.2) !important;
   }
   
   /* Border colors for accent system */
   .border-accent-primary {
-    border-color: rgba(168, 85, 247, 0.3) !important;
+    border-color: rgba(99, 102, 241, 0.3) !important;
   }
   
   .border-accent-secondary {
-    border-color: rgba(192, 132, 252, 0.3) !important;
+    border-color: rgba(129, 140, 248, 0.3) !important;
   }
   
   .border-accent-tertiary {
-    border-color: rgba(139, 92, 246, 0.3) !important;
+    border-color: rgba(79, 70, 229, 0.3) !important;
   }
   
   /* Hover border states */
   .border-accent-primary-hover {
-    border-color: rgba(168, 85, 247, 0.5) !important;
+    border-color: rgba(99, 102, 241, 0.5) !important;
   }
   
   .border-accent-secondary-hover {
-    border-color: rgba(192, 132, 252, 0.5) !important;
+    border-color: rgba(129, 140, 248, 0.5) !important;
   }
   
   /* Simplified accent background utilities - solid colors only */
   .bg-accent-subtle {
-    background: rgba(168, 85, 247, 0.05);
+    background: rgba(99, 102, 241, 0.05);
   }
   
   .bg-accent-soft {
-    background: rgba(168, 85, 247, 0.1);
+    background: rgba(99, 102, 241, 0.1);
   }
   
   .bg-accent-medium {
-    background: rgba(168, 85, 247, 0.15);
+    background: rgba(99, 102, 241, 0.15);
   }
   
   /* Button accent styles - Simplified, no gradients */
@@ -1022,26 +934,26 @@ input, textarea, select, button {
   }
   
   .btn-accent-primary:hover {
-    background: var(--interactive-hover);
+    background: var(--accent-tertiary);
     box-shadow: var(--shadow-medium);
     transform: scale(1.01);
   }
   
   .btn-accent-secondary {
-    background: rgba(168, 85, 247, 0.1);
+    background: rgba(99, 102, 241, 0.1);
     color: var(--accent-primary);
-    border: 1px solid rgba(168, 85, 247, 0.3);
+    border: 1px solid rgba(99, 102, 241, 0.3);
   }
   
   .btn-accent-secondary:hover {
-    background: rgba(168, 85, 247, 0.15);
-    border-color: rgba(168, 85, 247, 0.4);
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.4);
     transform: scale(1.01);
   }
   
   /* Semantic color utilities for different content types */
   .text-info {
-    color: var(--accent-primary) !important; /* Purple for information */
+    color: var(--accent-primary) !important; /* Indigo for information */
   }
   
   .text-success {
@@ -1058,7 +970,7 @@ input, textarea, select, button {
   
   /* Background colors for semantic meaning */
   .bg-info {
-    background-color: rgba(168, 85, 247, 0.1) !important;
+    background-color: rgba(99, 102, 241, 0.1) !important;
   }
   
   .bg-success {
@@ -1094,7 +1006,7 @@ input, textarea, select, button {
   /* High contrast mode enhancements */
   @media (prefers-contrast: high) {
     .glass-accessible {
-      background: rgba(31, 41, 55, 0.9) !important;
+      background: rgba(21, 20, 26, 0.9) !important;
       border-width: 2px !important;
     }
     
@@ -1103,7 +1015,7 @@ input, textarea, select, button {
     }
     
     .focus-ring-accessible:focus {
-      box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.8) !important;
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.8) !important;
     }
   }
 }
@@ -1118,9 +1030,9 @@ input, textarea, select, button {
 }
 
 .leaflet-popup-content-wrapper {
-  background: rgba(31, 41, 55, 0.95);
+  background: rgba(21, 20, 26, 0.95);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(75, 85, 99, 0.3);
+  border: 1px solid rgba(46, 44, 54, 0.5);
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -1132,8 +1044,8 @@ input, textarea, select, button {
 }
 
 .leaflet-popup-tip {
-  background: rgba(31, 41, 55, 0.95);
-  border: 1px solid rgba(75, 85, 99, 0.3);
+  background: rgba(21, 20, 26, 0.95);
+  border: 1px solid rgba(46, 44, 54, 0.5);
 }
 
 .leaflet-popup-close-button {
@@ -1142,12 +1054,12 @@ input, textarea, select, button {
   font-weight: bold;
   padding: 4px 8px;
   border-radius: 50%;
-  background: rgba(168, 85, 247, 0.2);
+  background: rgba(99, 102, 241, 0.2);
   transition: all 0.2s ease;
 }
 
 .leaflet-popup-close-button:hover {
-  background: rgba(168, 85, 247, 0.4);
+  background: rgba(99, 102, 241, 0.4);
   transform: scale(1.1);
 }
 
@@ -1159,7 +1071,7 @@ input, textarea, select, button {
 
 .leaflet-marker-icon:hover {
   transform: scale(1.2);
-  filter: drop-shadow(0 4px 8px rgba(168, 85, 247, 0.4));
+  filter: drop-shadow(0 4px 8px rgba(99, 102, 241, 0.4));
 }
 
 /* Map controls styling */
@@ -1169,16 +1081,16 @@ input, textarea, select, button {
 }
 
 .leaflet-control-zoom a {
-  background: rgba(31, 41, 55, 0.9) !important;
+  background: rgba(21, 20, 26, 0.9) !important;
   color: white !important;
-  border: 1px solid rgba(75, 85, 99, 0.3) !important;
+  border: 1px solid rgba(46, 44, 54, 0.5) !important;
   backdrop-filter: blur(10px);
   transition: all 0.2s ease;
 }
 
 .leaflet-control-zoom a:hover {
-  background: rgba(168, 85, 247, 0.2) !important;
-  border-color: rgba(168, 85, 247, 0.4) !important;
+  background: rgba(99, 102, 241, 0.2) !important;
+  border-color: rgba(99, 102, 241, 0.4) !important;
 }
 
 .leaflet-control-zoom a.leaflet-control-zoom-in,
@@ -1199,7 +1111,7 @@ input, textarea, select, button {
 }
 
 .leaflet-control-attribution a {
-  color: rgba(168, 85, 247, 0.8) !important;
+  color: rgba(99, 102, 241, 0.8) !important;
 }
 
 /* Dark theme map tiles */
@@ -1215,9 +1127,9 @@ input, textarea, select, button {
 }
 
 .custom-popup .leaflet-popup-content-wrapper {
-  background: rgba(31, 41, 55, 0.95);
+  background: rgba(21, 20, 26, 0.95);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(75, 85, 99, 0.3);
+  border: 1px solid rgba(46, 44, 54, 0.5);
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -1229,14 +1141,14 @@ input, textarea, select, button {
 }
 
 .custom-popup .leaflet-popup-tip {
-  background: rgba(31, 41, 55, 0.95);
-  border: 1px solid rgba(75, 85, 99, 0.3);
+  background: rgba(21, 20, 26, 0.95);
+  border: 1px solid rgba(46, 44, 54, 0.5);
 }
 
 /* Custom tooltip styling */
 .leaflet-tooltip {
-  background: rgba(31, 41, 55, 0.95) !important;
-  border: 1px solid rgba(75, 85, 99, 0.3) !important;
+  background: rgba(21, 20, 26, 0.95) !important;
+  border: 1px solid rgba(46, 44, 54, 0.5) !important;
   border-radius: 8px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
   color: white !important;
@@ -1248,17 +1160,17 @@ input, textarea, select, button {
 }
 
 .leaflet-tooltip-top::before {
-  border-top-color: rgba(31, 41, 55, 0.95) !important;
+  border-top-color: rgba(21, 20, 26, 0.95) !important;
 }
 
 .leaflet-tooltip-bottom::before {
-  border-bottom-color: rgba(31, 41, 55, 0.95) !important;
+  border-bottom-color: rgba(21, 20, 26, 0.95) !important;
 }
 
 .leaflet-tooltip-left::before {
-  border-left-color: rgba(31, 41, 55, 0.95) !important;
+  border-left-color: rgba(21, 20, 26, 0.95) !important;
 }
 
 .leaflet-tooltip-right::before {
-  border-right-color: rgba(31, 41, 55, 0.95) !important;
+  border-right-color: rgba(21, 20, 26, 0.95) !important;
 }

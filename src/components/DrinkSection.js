@@ -64,7 +64,7 @@ function DrinkSection({ selectedCountry }) {
   return (
     <div className="space-y-4 sm:space-y-6">
       <div className="text-center">
-        <h3 className="text-xl sm:text-2xl font-semibold text-accent-primary mb-2">
+        <h3 className="text-xl sm:text-2xl font-semibold text-text-primary mb-2">
           Traditional Drinks
         </h3>
         <p className="text-sm text-text-secondary">
@@ -87,7 +87,7 @@ function DrinkSection({ selectedCountry }) {
               <motion.div
                 className={`card overflow-hidden cursor-pointer ${
                   selectedDrink === drink.id
-                    ? 'border-accent-primary'
+                    ? 'border-dark-border-hover'
                     : ''
                 }`}
                 whileHover={{ scale: 1.01 }}
@@ -139,8 +139,8 @@ function DrinkSection({ selectedCountry }) {
                     >
                       <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
                         {/* Origin Story */}
-                        <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
-                          <h5 className="text-base font-semibold mb-2 text-accent-primary flex items-center space-x-2">
+                        <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-text-primary flex items-center space-x-2">
                             <span>📖</span>
                             <span>Cultural Story</span>
                           </h5>
@@ -150,8 +150,8 @@ function DrinkSection({ selectedCountry }) {
                         </div>
 
                         {/* Ingredients */}
-                        <div className="bg-accent-secondary/5 border border-accent-secondary/20 rounded-lg p-3 sm:p-4">
-                          <h5 className="text-base font-semibold mb-2 text-accent-secondary flex items-center space-x-2">
+                        <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-text-primary flex items-center space-x-2">
                             <span>🥄</span>
                             <span>Ingredients</span>
                           </h5>
@@ -169,26 +169,26 @@ function DrinkSection({ selectedCountry }) {
                         </div>
 
                         {/* Serving Details */}
-                        <div className="bg-accent-tertiary/5 border border-accent-tertiary/20 rounded-lg p-3 sm:p-4">
-                          <h5 className="text-base font-semibold mb-2 text-accent-tertiary flex items-center space-x-2">
+                        <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-text-primary flex items-center space-x-2">
                             <span>🍷</span>
                             <span>Serving</span>
                           </h5>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                             <div>
-                              <span className="text-accent-tertiary font-medium">Glassware:</span>
+                              <span className="text-text-secondary font-medium">Glassware:</span>
                               <p className="text-text-secondary mt-1">{drink.glassware}</p>
                             </div>
                             <div>
-                              <span className="text-accent-tertiary font-medium">Garnish:</span>
+                              <span className="text-text-secondary font-medium">Garnish:</span>
                               <p className="text-text-secondary mt-1">{drink.garnish}</p>
                             </div>
                           </div>
                         </div>
 
                         {/* Substitution Suggestions */}
-                        <div className="bg-accent-primary/5 border border-accent-primary/20 rounded-lg p-3 sm:p-4">
-                          <h5 className="text-base font-semibold mb-2 text-accent-primary flex items-center space-x-2">
+                        <div className="bg-white/[0.03] border border-dark-border rounded-lg p-3 sm:p-4">
+                          <h5 className="text-base font-semibold mb-2 text-text-primary flex items-center space-x-2">
                             <span>💡</span>
                             <span>Substitution Tips</span>
                           </h5>

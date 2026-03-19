@@ -8,6 +8,7 @@ const USED_COUNTRIES_KEY = 'cultural_expo_used_countries';
  * @returns {Array} Array of country objects
  */
 export const getAllCountries = () => {
+  if (!countriesData || !countriesData.countries) return [];
   return countriesData.countries;
 };
 
@@ -196,11 +197,14 @@ export const resetSelectionCycle = () => {
 export const getRegionStats = () => {
   const allCountries = getAllCountries();
   const regionCounts = {};
-  
+
+  if (!allCountries || allCountries.length === 0) return regionCounts;
+
   allCountries.forEach(country => {
+    if (!country || !country.region) return;
     const region = country.region;
     regionCounts[region] = (regionCounts[region] || 0) + 1;
   });
-  
+
   return regionCounts;
 };

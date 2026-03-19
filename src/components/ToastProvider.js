@@ -33,7 +33,7 @@ const ToastIcon = ({ type }) => {
       return <ExclamationTriangleIcon {...iconProps} className="w-5 h-5 flex-shrink-0 text-accent-warning" />;
     case 'info':
     default:
-      return <InformationCircleIcon {...iconProps} className="w-5 h-5 flex-shrink-0 text-accent-info" />;
+      return <InformationCircleIcon {...iconProps} className="w-5 h-5 flex-shrink-0 text-indigo-400" />;
   }
 };
 
@@ -63,7 +63,7 @@ const Toast = ({ toast, onRemove }) => {
         return 'toast border-accent-warning bg-accent-warning bg-opacity-10';
       case 'info':
       default:
-        return 'toast info border-accent-info';
+        return 'toast info border-indigo-400';
     }
   };
 
@@ -77,12 +77,7 @@ const Toast = ({ toast, onRemove }) => {
         y: isRemoving ? -20 : 0
       }}
       exit={{ opacity: 0, scale: 0.8, y: -20 }}
-      transition={{ 
-        duration: 0.3,
-        type: "spring",
-        stiffness: 500,
-        damping: 30
-      }}
+      transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
       className={getToastStyles()}
       role="alert"
       aria-live="assertive"
@@ -107,7 +102,7 @@ const Toast = ({ toast, onRemove }) => {
           whileTap={{ scale: 0.9 }}
           aria-label="Dismiss notification"
         >
-                          <XMarkIcon className="w-4 h-4 text-white" />
+          <XMarkIcon className="w-4 h-4" />
         </motion.button>
       </div>
     </motion.div>

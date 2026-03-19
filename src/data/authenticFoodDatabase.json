@@ -1477,6 +1477,924 @@
         "description": "Baked pastries with meat or cheese",
         "difficulty": "Medium"
       }
+    ],
+    "peru": [
+      {
+        "name": "Ceviche",
+        "type": "main",
+        "description": "Fresh raw fish cured in citrus juices with onions, chili peppers, and cilantro",
+        "difficulty": "Easy",
+        "cultural_story": "Ceviche is considered Peru's national dish, with roots stretching back over 2,000 years to the Moche civilization along the northern coast. The dish evolved when Spanish colonizers introduced limes and onions, transforming the original preparation that used fermented banana passion fruit juice. Lima's cevicherías are cultural institutions where families gather for weekend lunches, and the dish was declared part of Peru's national heritage in 2004.",
+        "cooking_tips": "Use the freshest fish possible — corvina or sea bass are traditional. Cut fish into uniform 2cm cubes for even curing. The leche de tigre (tiger's milk) — the citrus marinade — should be freshly squeezed lime juice, never bottled. Don't over-cure: 10-15 minutes maximum or the acid will \"cook\" the fish too much, turning it rubbery. Serve immediately with sweet potato and toasted corn."
+      },
+      {
+        "name": "Lomo Saltado",
+        "type": "main",
+        "description": "Stir-fried beef with onions, tomatoes, and french fries served over rice",
+        "difficulty": "Medium",
+        "cultural_story": "Lomo Saltado is the quintessential example of chifa — the fusion of Chinese and Peruvian cuisines born in the 19th century when Chinese laborers arrived in Peru. The wok technique and soy sauce met Peruvian ají peppers and potatoes, creating a dish that perfectly embodies Peru's multicultural identity. It is one of the most ordered dishes in Peruvian restaurants worldwide.",
+        "cooking_tips": "The key is extremely high heat — the wok or pan must be smoking before adding the beef. Cut the tenderloin against the grain into thick strips. Fry the potatoes separately until crispy. Use pisco vinegar or red wine vinegar for the deglazing step. The tomatoes should be added last and barely cooked to keep their freshness. Serve with the fries half-mixed into the stir-fry."
+      },
+      {
+        "name": "Ají de Gallina",
+        "type": "main",
+        "description": "Shredded chicken in a creamy walnut and yellow pepper sauce over rice",
+        "difficulty": "Medium",
+        "cultural_story": "Ají de Gallina traces its origins to colonial-era Lima, likely adapted from a Spanish dish called manjar blanco. The Peruvian version incorporated ají amarillo (yellow chili pepper), which gives the dish its distinctive golden color and gentle heat. It became a staple of criollo home cooking, traditionally prepared by abuelas (grandmothers) using leftover roast chicken. The dish represents the comfort food tradition of Lima's middle-class households.",
+        "cooking_tips": "Toast the bread and walnuts before blending them into the sauce — this deepens the flavor significantly. Use ají amarillo paste for convenience, but fresh peppers yield the best color. Poach the chicken gently in seasoned broth rather than boiling, then shred by hand for the best texture. The sauce should be thick enough to coat a spoon. Garnish with hard-boiled egg slices, black olives, and boiled potatoes."
+      },
+      {
+        "name": "Anticuchos",
+        "type": "appetizer",
+        "description": "Marinated beef heart skewers grilled over charcoal, served with potatoes and corn",
+        "difficulty": "Medium",
+        "cultural_story": "Anticuchos date back to the Inca Empire, where llama meat was originally used. During the colonial period, Spanish colonizers gave enslaved Africans the organ meats they considered undesirable, and these communities transformed humble beef hearts into a celebrated street food. Today, anticuchos are sold by street vendors called anticucheras throughout Lima, especially during October's Señor de los Milagros festival. The dish is a powerful symbol of Afro-Peruvian culinary heritage.",
+        "cooking_tips": "Marinate the beef heart for at least 12 hours in a mixture of ají panca paste, vinegar, cumin, and garlic. Cut against the grain into 3cm cubes. The charcoal grill is essential — gas doesn't replicate the smoky flavor. Baste continuously with the remaining marinade while grilling. Cook to medium — overcooking makes the heart tough. Serve with boiled potato and a drizzle of ají sauce."
+      }
+    ],
+    "ghana": [
+      {
+        "name": "Jollof Rice",
+        "type": "main",
+        "description": "Smoky, tomato-based one-pot rice dish cooked with spices, peppers, and often served with chicken",
+        "difficulty": "Medium",
+        "cultural_story": "Jollof rice is the subject of a fierce but friendly rivalry between Ghana and Nigeria over who makes the best version. The Ghanaian style uses fragrant basmati rice and is known for its smoky flavor, achieved by letting the bottom layer slightly burn — called \"the socarrat.\" It is the centerpiece of every celebration, from weddings to funerals to Sunday gatherings.",
+        "cooking_tips": "Use ripe plum tomatoes blended with scotch bonnet peppers for the base. The key to Ghanaian jollof is the \"smoke\" — let the rice form a crust at the bottom without stirring. Cook on low heat with a tight-fitting lid. Parboil basmati rice first, then add to the tomato base. Season generously with bay leaves, thyme, and curry powder."
+      },
+      {
+        "name": "Fufu and Light Soup",
+        "type": "main",
+        "description": "Pounded cassava and plantain dough served with a spicy tomato-based soup with meat or fish",
+        "difficulty": "Hard",
+        "cultural_story": "Fufu is the soul of Ghanaian cuisine, traditionally pounded by hand in a large wooden mortar using a pestle in a rhythmic two-person process. The communal act of pounding fufu is itself a social event. Light soup — a tomato and pepper broth — is the most common pairing, with goat, chicken, or fish. Eating fufu is done with the right hand, pinching off small pieces and dipping into the soup.",
+        "cooking_tips": "For authentic texture, pound boiled cassava and ripe plantain together until completely smooth with no lumps. Modern cooks use fufu flour for convenience. The light soup base should be a blend of fresh tomatoes, onions, and scotch bonnet. Add the protein early so it absorbs the flavors. Fufu should be swallowed, not chewed — this is traditional etiquette."
+      },
+      {
+        "name": "Kelewele",
+        "type": "appetizer",
+        "description": "Spiced fried plantain cubes seasoned with ginger, cayenne, and cloves",
+        "difficulty": "Easy",
+        "cultural_story": "Kelewele is Ghana's most beloved street food, sold by vendors on nearly every corner in Accra after dark. The sweet-spicy-salty combination makes it an irresistible snack, often paired with roasted peanuts. It evolved from simple fried plantain by adding the ginger-spice mix that distinguishes it from ordinary fried plantain (which Ghanaians call \"red red\" when served with beans).",
+        "cooking_tips": "Use very ripe plantains — the skin should be almost black. Cut into 2cm cubes and toss with freshly grated ginger, cayenne pepper, ground cloves, and a pinch of salt. Let marinate for 30 minutes. Fry in hot oil until golden brown and caramelized on all edges. Drain on paper towels and serve immediately while crispy."
+      },
+      {
+        "name": "Waakye",
+        "type": "main",
+        "description": "Rice and beans cooked together with millet stalks giving a distinctive reddish-brown color",
+        "difficulty": "Medium",
+        "cultural_story": "Waakye originated in northern Ghana and is now the country's most popular breakfast and lunch dish. The distinctive reddish-brown color comes from dried millet leaf stalks or sorghum leaves added during cooking. A complete waakye plate is an art form — served with shito (black pepper sauce), spaghetti, fried plantain, boiled egg, gari (cassava flakes), and protein of choice. It's democracy on a plate.",
+        "cooking_tips": "Soak black-eyed peas overnight. Cook with rice and dried millet stalks (or baking soda as substitute for color). The beans should be tender but not mushy. Make shito separately — a slow-cooked sauce of dried shrimp, fish powder, ginger, and scotch bonnet in oil. The garnishes are essential to the experience."
+      }
+    ],
+    "kenya": [
+      {
+        "name": "Nyama Choma",
+        "type": "main",
+        "description": "Slow-grilled goat or beef seasoned simply with salt and served with ugali and kachumbari",
+        "difficulty": "Medium",
+        "cultural_story": "Nyama choma (\"roasted meat\" in Swahili) is Kenya's national obsession and social glue. Weekends in Nairobi revolve around gathering at open-air nyama choma joints, where whole goats are roasted over charcoal and carved to order. It is more than food — it is a ritual of friendship, business, and celebration. The simplicity of the preparation lets the quality of the meat shine.",
+        "cooking_tips": "Use bone-in goat for the most authentic experience. Season with nothing but coarse salt — Kenyans believe good meat needs no embellishment. Grill slowly over medium charcoal, turning frequently. The meat should be slightly charred on the outside but juicy inside. Always serve with ugali (cornmeal cake) and kachumbari (fresh tomato-onion-cilantro salad)."
+      },
+      {
+        "name": "Ugali with Sukuma Wiki",
+        "type": "main",
+        "description": "Firm cornmeal cake served with sautéed collard greens and tomatoes",
+        "difficulty": "Easy",
+        "cultural_story": "Ugali is the daily staple of most Kenyan households — a stiff cornmeal porridge that serves as the edible utensil for stews and vegetables. Sukuma wiki (\"stretch the week\" in Swahili) is its most common companion, a dish of collard greens born from the need to make affordable vegetables last through the week. Together, they represent everyday Kenyan resilience and resourcefulness.",
+        "cooking_tips": "Bring water to a boil, then add cornmeal gradually while stirring vigorously with a wooden spoon (mwiko). The mixture should become very stiff — you should be able to turn the pot upside down without it falling. For sukuma wiki, sauté onions and tomatoes first, then add thinly sliced collard greens. Cook briefly to keep them bright green."
+      },
+      {
+        "name": "Pilau",
+        "type": "main",
+        "description": "Aromatic spiced rice cooked with meat, using a blend of cumin, cardamom, cinnamon, and cloves",
+        "difficulty": "Medium",
+        "cultural_story": "Kenyan pilau reflects the centuries-old Swahili Coast trade routes that brought spices from Arabia, India, and Southeast Asia. The dish is most associated with the coastal city of Mombasa and is a must-have at celebrations, weddings, and Eid festivities. Each family has its own pilau masala blend, often passed down through generations. It bridges Kenya's diverse communities.",
+        "cooking_tips": "Toast whole spices (cumin, cardamom, cinnamon, cloves) in hot oil until fragrant before adding onions. Caramelize the onions deeply — this gives the rice its color. Use bone-in meat and cook it in the spice base before adding rice. The rice-to-water ratio is critical: use exactly 1:1.5. Cook covered on very low heat and resist lifting the lid."
+      },
+      {
+        "name": "Mandazi",
+        "type": "appetizer",
+        "description": "Lightly sweet, cardamom-spiced fried dough triangles, an East African favorite",
+        "difficulty": "Easy",
+        "cultural_story": "Mandazi are East Africa's answer to the doughnut, found at every street corner, bus station, and tea shop in Kenya. Flavored with coconut milk and cardamom, they are the quintessential accompaniment to chai (spiced tea). They're equally at home as a breakfast staple, an afternoon snack, or a party food, and their triangle shape makes them instantly recognizable.",
+        "cooking_tips": "Use coconut milk in the dough for richness and a subtle tropical flavor. Add freshly ground cardamom — pre-ground loses its punch. Knead the dough until smooth but not overworked. Roll to about 1cm thickness and cut into triangles. Fry in medium-hot oil, turning once, until golden. They should puff up and be light inside."
+      }
+    ],
+    "senegal": [
+      {
+        "name": "Thiéboudienne",
+        "type": "main",
+        "description": "Senegal's national dish — fish and rice cooked in a rich tomato sauce with vegetables",
+        "difficulty": "Hard",
+        "cultural_story": "Thiéboudienne (\"rice and fish\" in Wolof) was invented in the 19th century in Saint-Louis by Penda Mbaye, a legendary cook. It was inscribed on UNESCO's Intangible Cultural Heritage list in 2021. The dish is a complete meal: broken rice absorbs a deeply flavored tomato and tamarind sauce, surrounding a whole stuffed fish with an array of vegetables. Every Senegalese family has their version.",
+        "cooking_tips": "Stuff the fish with rof (parsley, garlic, scotch bonnet paste). Brown the fish first, then build the sauce with tomato paste, onions, and dried fish for umami. Add vegetables in order of cooking time — cassava and carrots first, eggplant and cabbage last. The rice should absorb all the sauce and turn red-orange. Serve on a large communal platter."
+      },
+      {
+        "name": "Yassa Poulet",
+        "type": "main",
+        "description": "Chicken marinated in lemon and onions, then braised in a tangy caramelized onion sauce",
+        "difficulty": "Medium",
+        "cultural_story": "Yassa originated in the Casamance region of southern Senegal and is a Diola specialty. The dish was traditionally prepared for celebrations and has become one of Senegal's most popular exports to the wider African diaspora. The key is the massive quantity of onions — a ratio of onions to chicken that would seem absurd in Western cooking but creates a silky, sweet-sour sauce.",
+        "cooking_tips": "Use at least twice as many onions by weight as chicken. Marinate the chicken overnight in lemon juice, mustard, and sliced onions. Grill or brown the chicken first for smoky flavor. Caramelize the onions slowly, then add the marinade and braise until the sauce is thick and golden. Dijon mustard is the secret ingredient that gives yassa its tang."
+      },
+      {
+        "name": "Mafé",
+        "type": "main",
+        "description": "Hearty peanut butter stew with meat and root vegetables in a rich, savory sauce",
+        "difficulty": "Medium",
+        "cultural_story": "Mafé (also called domoda) is one of West Africa's great comfort foods, originating among the Mandinka people. The dish showcases the peanut — West Africa's most important crop — in savory form. It crossed borders to become popular across Senegal, Mali, Gambia, and Guinea. The stew is rich, warming, and deeply satisfying, served over white rice.",
+        "cooking_tips": "Use natural, unsweetened peanut butter — crunchy adds texture. Brown the meat first, then build layers: tomato paste, onions, and garlic before adding peanut butter dissolved in warm water. Add root vegetables (sweet potato, cassava, carrots) and simmer until everything is tender and the sauce thickens. Season with a bouillon cube — this is authentic."
+      },
+      {
+        "name": "Pastels",
+        "type": "appetizer",
+        "description": "Crispy fried pastries filled with seasoned fish, onions, and parsley",
+        "difficulty": "Medium",
+        "cultural_story": "Pastels are Senegal's favorite street food, adapted from Portuguese empanadas that arrived via Cape Verde and the colonial era. Dakar's street vendors sell them fresh throughout the day, filled with spiced fish and deep fried to order. They are the go-to snack during Ramadan, when vendors set up special pastel stands near mosques for the evening iftar.",
+        "cooking_tips": "Make a simple dough with flour, water, and a bit of oil. The filling should be highly seasoned fresh fish mixed with sautéed onions, garlic, parsley, and scotch bonnet pepper. Roll the dough thin, fill sparingly, and seal tightly — any gaps will cause them to burst. Fry in very hot oil until golden and crispy. Serve with a squeeze of lime."
+      }
+    ],
+    "tanzania": [
+      {
+        "name": "Zanzibar Pizza",
+        "type": "appetizer",
+        "description": "A street food crepe filled with meat, vegetables, egg, and mayonnaise, folded into a square",
+        "difficulty": "Medium",
+        "cultural_story": "Despite its name, Zanzibar pizza bears no resemblance to Italian pizza. Created by the night market vendors of Forodhani Gardens in Stone Town, it is a thin dough stretched on a hot griddle, filled with minced meat, onions, peppers, and raw egg, then folded and fried until crispy. Sweet versions with banana and Nutella also exist. It is the star of Zanzibar's famous night food market.",
+        "cooking_tips": "Use a very thin, stretchy dough similar to spring roll wrappers. Heat a flat griddle or large skillet until very hot. Stretch the dough on the surface, add filling quickly (minced beef, onions, peppers, crack an egg on top), fold the edges inward to form a square, and cook until the bottom is crispy. Flip once. The egg should be just set."
+      },
+      {
+        "name": "Chipsi Mayai",
+        "type": "main",
+        "description": "French fries bound together with beaten eggs into a thick omelet, Tanzania's beloved street food",
+        "difficulty": "Easy",
+        "cultural_story": "Chipsi mayai (\"chips and eggs\" in Swahili) is Tanzania's answer to fast food — cheap, filling, and available at every street stall. It was born in the working-class neighborhoods of Dar es Salaam as an affordable protein-and-carb meal. Despite its simplicity, it has become a source of national pride, with Tanzanians fiercely defending it as a legitimate culinary creation.",
+        "cooking_tips": "Fry thick-cut potatoes until golden and slightly crispy. Beat eggs with salt, pepper, and optionally diced tomatoes and onions. Pour beaten eggs over the fries in a hot, oiled pan. Cook until the bottom sets, then flip the entire disk to cook the other side. Serve with kachumbari salad and hot sauce. The fries should remain distinct within the egg."
+      },
+      {
+        "name": "Mchuzi wa Samaki",
+        "type": "main",
+        "description": "Coconut fish curry simmered with tomatoes, tamarind, and Zanzibari spices",
+        "difficulty": "Medium",
+        "cultural_story": "This Swahili Coast fish curry reflects centuries of Indian Ocean trade that brought coconut, tamarind, and spices to East Africa. The dish is most refined in Zanzibar, where the spice trade left a lasting culinary legacy. Each cook's spice blend is unique, but typically includes turmeric, cumin, coriander, and cardamom. It is everyday food elevated by the quality of fresh-caught fish.",
+        "cooking_tips": "Use firm white fish that won't fall apart during cooking — snapper or grouper work well. Make the base by cooking onions, garlic, and spice paste until fragrant. Add tomatoes and cook until they break down. Pour in coconut milk and tamarind paste, then gently add the fish fillets. Simmer gently — never boil — until the fish is just cooked through."
+      },
+      {
+        "name": "Ugali na Maharage",
+        "type": "main",
+        "description": "Stiff cornmeal porridge served with spiced coconut bean stew",
+        "difficulty": "Easy",
+        "cultural_story": "While ugali is shared across East Africa, Tanzania's version is often served with maharage — beans simmered in coconut milk with onions and spices. This combination is the backbone of Tanzanian home cooking, providing complete protein from affordable ingredients. In rural areas, ugali and beans may be eaten three times a day, and the dish is a unifying cultural constant across Tanzania's 120+ ethnic groups.",
+        "cooking_tips": "Cook kidney or red beans until completely tender before adding coconut milk. The coconut milk should reduce and thicken into a creamy sauce. Season with turmeric, cumin, and a pinch of curry powder. For the ugali, add cornmeal to boiling water gradually, stirring constantly to prevent lumps. Cook until very stiff and pull away from the sides of the pot."
+      }
+    ],
+    "dr_congo": [
+      {
+        "name": "Moambe Chicken",
+        "type": "main",
+        "description": "Chicken braised in a rich palm nut sauce with tomatoes, onions, and spinach",
+        "difficulty": "Medium",
+        "cultural_story": "Poulet moambe (moambe chicken) is the Democratic Republic of Congo's national dish and one of the great stews of Central Africa. The palm nut sauce — called moambe or sauce graine — gives the dish its distinctive orange color and rich, nutty flavor. It is served at every important occasion and is the dish Congolese abroad miss most. The palm fruit is pounded and strained to create the thick, flavorful base.",
+        "cooking_tips": "If you can't find fresh palm fruit, canned palm nut cream (crème de palme) is an acceptable substitute. Brown the chicken pieces first for depth of flavor. Cook the sauce slowly — rush it and the palm oil will separate. Add okra or spinach in the last 15 minutes. The sauce should coat the back of a spoon. Serve over fufu or white rice."
+      },
+      {
+        "name": "Pondu",
+        "type": "main",
+        "description": "Slow-cooked cassava leaves pounded into a thick, savory green stew with dried fish",
+        "difficulty": "Hard",
+        "cultural_story": "Pondu (saka saka) is the everyday food of the Congolese people — pounded cassava leaves cooked for hours until they become a thick, intensely flavored green paste. The dish requires patience: traditional preparation involves pounding fresh cassava leaves in a mortar, then simmering for 2-3 hours. It is eaten with fufu and represents the connection between Congolese people and their land.",
+        "cooking_tips": "Fresh cassava leaves must be pounded thoroughly and cooked for at least 2 hours to neutralize naturally occurring toxins. Use frozen cassava leaves if fresh are unavailable. Add palm oil, dried fish or smoked fish, and onions for flavor. Some cooks add peanut butter for richness. The finished dish should be thick and dark green, almost paste-like in consistency."
+      },
+      {
+        "name": "Liboke",
+        "type": "main",
+        "description": "Fish or chicken steamed in banana leaf parcels with tomatoes, onions, and spices",
+        "difficulty": "Medium",
+        "cultural_story": "Liboke is a cooking method unique to the Congo Basin — wrapping fish, chicken, or vegetables in banana leaves and steaming them over coals or boiling water. The banana leaf imparts a subtle, earthy aroma and keeps the contents incredibly moist. River fish like capitaine are traditional, caught fresh from the Congo River. The parcels are opened at the table, releasing a burst of aromatic steam.",
+        "cooking_tips": "Soften banana leaves by briefly passing them over an open flame or dipping in hot water. Layer the leaf, add a bed of sliced onions and tomatoes, place seasoned fish on top, add more vegetables and a drizzle of palm oil. Fold tightly and tie with banana leaf strips or kitchen string. Steam for 30-40 minutes. The fish is done when the parcel puffs slightly."
+      },
+      {
+        "name": "Chikwanga",
+        "type": "main",
+        "description": "Fermented cassava paste wrapped in banana leaves, a staple bread-like accompaniment",
+        "difficulty": "Hard",
+        "cultural_story": "Chikwanga is the traditional starch accompaniment of the Congo Basin, made from cassava that has been soaked, fermented, and pounded into a dense, slightly sour paste, then wrapped in banana leaves and steamed. The fermentation process can take 3-5 days. It is the daily bread of rural Congo, providing the caloric base for most meals and reflecting the deep relationship between Congolese cuisine and cassava.",
+        "cooking_tips": "Soak peeled cassava in water for 3-5 days until soft and slightly fermented. Pound until completely smooth — any lumps will make the final product uneven. Form into logs, wrap tightly in banana leaves, and steam for 1-2 hours. The finished chikwanga should be firm, slightly elastic, and mildly sour. Slice and serve as you would bread, alongside stews and sauces."
+      }
+    ],
+    "cameroon": [
+      {
+        "name": "Ndolé",
+        "type": "main",
+        "description": "Bitterleaf stew with ground peanuts, crayfish, and meat or prawns",
+        "difficulty": "Hard",
+        "cultural_story": "Ndolé is Cameroon's national dish, originating from the Douala people of the coastal region. The dish combines bitterleaf (a dark leafy green) with ground peanuts to create a complex, savory stew. Preparing ndolé traditionally requires boiling the bitterleaf multiple times to reduce its bitterness — a labor-intensive process that makes the dish a symbol of care and dedication. It is the centerpiece of weddings and celebrations.",
+        "cooking_tips": "If using fresh bitterleaf, wash and boil three times, changing the water each time, to remove bitterness. Frozen ndolé leaves are pre-processed. Roast and grind peanuts to a paste. Cook the meat separately, then combine with the greens and peanut paste. Add dried crayfish for umami depth. The finished dish should be thick and rich, dark green with a nutty undertone."
+      },
+      {
+        "name": "Eru",
+        "type": "main",
+        "description": "Shredded wild spinach cooked with waterleaf, palm oil, smoked fish, and crayfish",
+        "difficulty": "Medium",
+        "cultural_story": "Eru is a specialty of Cameroon's Southwest region, particularly beloved by the Bayangi and Ejagham peoples. The dish uses eru leaves (wild spinach) that must be painstakingly shredded by hand into thin strips. It is always served with garri (cassava granules) or fufu and is considered a delicacy. The combination of smoked fish, crayfish, cow skin, and palm oil creates an extraordinarily rich, protein-dense dish.",
+        "cooking_tips": "Shred eru leaves very finely with a sharp knife — the thinner the better. Cook waterleaf first until it releases its liquid, then add palm oil and proteins (smoked fish, stockfish, cow skin). Add the shredded eru leaves last and cook briefly — they should remain slightly firm. Do not add water; the waterleaf provides all the liquid needed. Season with crayfish and salt."
+      },
+      {
+        "name": "Poulet DG",
+        "type": "main",
+        "description": "Fried chicken and plantains braised in a rich tomato and vegetable sauce",
+        "difficulty": "Medium",
+        "cultural_story": "Poulet DG (\"Director General's Chicken\") earned its name because it was considered so elaborate and expensive that only company directors could afford to order it at restaurants. The dish combines fried chicken with fried ripe plantains in a sauce of tomatoes, peppers, carrots, and green beans. It represents Cameroon's francophone culinary ambition — everyday ingredients elevated to something celebratory.",
+        "cooking_tips": "Fry the chicken pieces until golden and cooked through, then set aside. Fry ripe plantain slices until caramelized. Make the sauce by cooking onions, garlic, tomatoes, bell peppers, carrots, and green beans. Return the chicken and plantains to the sauce to marry the flavors. The dish should be vibrant and colorful. Serve with white rice."
+      },
+      {
+        "name": "Puff-Puff",
+        "type": "appetizer",
+        "description": "Deep-fried sweet dough balls, fluffy inside with a crispy golden exterior",
+        "difficulty": "Easy",
+        "cultural_story": "Puff-puff is West Africa's universal street snack, but Cameroon claims a special affection for it. Sold by vendors at road junctions, school gates, and market stalls, these golden balls of fried dough are the go-to affordable treat. During Christmas season, no Cameroonian household is without them. They can be made plain, or flavored with nutmeg, vanilla, or even banana.",
+        "cooking_tips": "Mix flour, sugar, yeast, and warm water into a thick, sticky batter — do not knead like bread dough. Let rise for at least 1 hour until bubbly and doubled. Scoop small amounts into hot oil using wet hands or two spoons. Fry until deep golden on all sides. They should puff up dramatically and be hollow inside. Roll in powdered sugar while warm."
+      }
+    ],
+    "jamaica": [
+      {
+        "name": "Jerk Chicken",
+        "type": "main",
+        "description": "Chicken marinated in fiery scotch bonnet and allspice paste, slow-smoked over pimento wood",
+        "difficulty": "Medium",
+        "cultural_story": "Jerk cooking was developed by the Maroons — escaped enslaved Africans who fled to Jamaica's Blue Mountains. They adapted West African meat-smoking techniques using indigenous pimento (allspice) wood and scotch bonnet peppers. The word \"jerk\" likely comes from the Quechua word charqui (dried meat). Boston Bay in Portland parish is considered the birthplace of jerk, where roadside smokers still use traditional methods.",
+        "cooking_tips": "The marinade must include scotch bonnet peppers, allspice (pimento), thyme, scallions, garlic, and ginger — these are non-negotiable. Marinate for at least 24 hours. Authentic jerk is smoked over pimento wood; at home, add soaked allspice berries to charcoal. Cook low and slow — the chicken should be deeply charred outside but juicy inside. Serve with festival (sweet fried dumplings) and rice and peas."
+      },
+      {
+        "name": "Ackee and Saltfish",
+        "type": "main",
+        "description": "Jamaica's national dish — sautéed ackee fruit with salted codfish, onions, tomatoes, and peppers",
+        "difficulty": "Medium",
+        "cultural_story": "Ackee was brought to Jamaica from West Africa on slave ships in the 18th century, and saltfish (salted cod) arrived via the colonial trade from Canada and Europe. Together they became Jamaica's national dish — a powerful symbol of how enslaved people created beauty from imposed circumstances. Ackee must be properly ripened and prepared, as unripe ackee contains toxins. It is traditionally a breakfast dish.",
+        "cooking_tips": "If using canned ackee, drain gently — the fruit is extremely delicate. Soak salt cod overnight, changing water twice, then boil until tender and flake. Sauté onions, tomatoes, scotch bonnet, and thyme, add the flaked saltfish, and fold in the ackee last, cooking just 2-3 minutes. Never stir vigorously or the ackee will turn to mush. Serve with fried breadfruit or johnny cakes."
+      },
+      {
+        "name": "Curry Goat",
+        "type": "main",
+        "description": "Bone-in goat slow-cooked in a rich Jamaican curry with potatoes and allspice",
+        "difficulty": "Medium",
+        "cultural_story": "Curry goat reveals Jamaica's Indian heritage — brought by indentured laborers from India after emancipation. Jamaican curry powder differs from Indian versions, incorporating allspice and scotch bonnet peppers. The dish is the centerpiece of every major celebration: no Jamaican wedding, christening, or dancehall event is complete without a pot of curry goat. It is always eaten with white rice and is best the next day.",
+        "cooking_tips": "Use bone-in goat — the marrow enriches the sauce. Marinate with Jamaican curry powder, allspice, thyme, garlic, ginger, scotch bonnet, and scallions for several hours. Brown the meat in batches for a deep fond. Add potatoes halfway through cooking so they thicken the sauce without becoming mushy. Cook low and slow for at least 2 hours. The gravy should be thick and cling to the meat."
+      },
+      {
+        "name": "Festival",
+        "type": "appetizer",
+        "description": "Slightly sweet, oblong fried dumplings made with cornmeal and flour",
+        "difficulty": "Easy",
+        "cultural_story": "Festival dumplings are the inseparable companion to jerk chicken and fried fish at every roadside cookshop in Jamaica. The name comes from the festive occasions where they were originally served. They are a Jamaican innovation — sweeter and more cornmeal-heavy than regular fried dumplings, with a slightly crunchy exterior and soft, sweet interior. Rolling them into the characteristic torpedo shape is part of the fun.",
+        "cooking_tips": "Mix cornmeal and flour in a 1:1 ratio with a little sugar, salt, and vanilla. Add just enough water to form a soft dough. Shape into finger-length torpedo forms — they should be slightly tapered at the ends. Fry in medium-hot oil, turning frequently, until golden all over. They should float when done. Serve warm alongside jerk chicken or escovitch fish."
+      }
+    ],
+    "trinidad": [
+      {
+        "name": "Doubles",
+        "type": "appetizer",
+        "description": "Two soft fried flatbreads filled with curried chickpeas, tamarind, and hot pepper sauce",
+        "difficulty": "Medium",
+        "cultural_story": "Doubles are Trinidad's iconic street food, created in the 1930s by Emamool Deen and his wife Rasulan in Princes Town. Originally sold as a single bara (flatbread) with channa (chickpeas), customers began requesting \"doubles\" — two baras — and the name stuck. Today, doubles vendors are found on every corner in Port of Spain, and Trinidadians debate their favorite vendor with the passion others reserve for sports teams.",
+        "cooking_tips": "The bara dough needs turmeric and must be soft and elastic. Let it rise well before frying in hot oil — it should puff up. The channa (curried chickpeas) should be well-seasoned with cumin, turmeric, and curry powder. Assemble to order: two baras, generous channa, then top with cucumber chutney, tamarind sauce, and pepper sauce. The baras should be slightly floppy, not crispy."
+      },
+      {
+        "name": "Pelau",
+        "type": "main",
+        "description": "One-pot rice dish with caramelized chicken, pigeon peas, coconut milk, and local seasonings",
+        "difficulty": "Medium",
+        "cultural_story": "Pelau is Trinidad's answer to the one-pot rice traditions found across the Caribbean. What makes it distinctly Trinidadian is the \"browning\" step — caramelizing sugar until nearly black before adding the chicken, which gives the dish its deep color and complex sweetness. Pelau is the go-to dish for liming (socializing), beach cookouts, and any gathering where one pot needs to feed many.",
+        "cooking_tips": "The browning sugar step is critical — heat oil and sugar until it turns very dark and smoky (but not burned). Add the chicken immediately to stop the caramelization. Coat well, then add garlic, peppers, and seasonings. Add rice, pigeon peas, and coconut milk. Cook covered on low heat until the rice is tender and has absorbed all the liquid. The bottom should form a slight crust."
+      },
+      {
+        "name": "Roti",
+        "type": "main",
+        "description": "Soft, flaky flatbread wrapped around curried fillings — chicken, goat, shrimp, or vegetables",
+        "difficulty": "Medium",
+        "cultural_story": "Trinidad's roti tradition comes from East Indian indentured laborers who arrived in the 1840s. The Trinidadian version evolved into something unique: dhalpuri roti (stuffed with ground split peas) and buss-up-shut (torn-up paratha resembling a burst shirt). Roti shops are community institutions, and the skill of making paper-thin roti is passed from mother to daughter. A proper \"roti wrap\" stuffed with curry is Trinidad's most satisfying meal.",
+        "cooking_tips": "For dhalpuri, make a filling of cooked split peas ground with cumin and garlic. Encase the filling in the dough, then roll thin — the skill is rolling without breaking the skin. Cook on a hot tawa, brushing with oil. For buss-up-shut, clap the cooked roti between your hands to shatter the layers. Fill with curry chicken or goat and wrap tightly."
+      },
+      {
+        "name": "Callaloo",
+        "type": "main",
+        "description": "Creamy soup of dasheen leaves, okra, coconut milk, and crab, flavored with scotch bonnet",
+        "difficulty": "Medium",
+        "cultural_story": "Callaloo is considered the unofficial national dish of Trinidad and is a Sunday lunch essential. Made from dasheen (taro) leaves cooked down with okra, coconut milk, and crab, it becomes a thick, velvety green soup. Trinidadians say \"to eat callaloo\" means to mix together — a metaphor for the country's multicultural identity. Every family has their recipe, and arguments about callaloo are a national pastime.",
+        "cooking_tips": "Use dasheen (taro) leaves, not spinach. Strip the leaves from the stems and chop finely. Cook with okra (which thickens the soup), coconut milk, thyme, and scotch bonnet pepper. Add blue crab for authenticity. Blend with a swizzle stick (le bois lélé) — a traditional Y-shaped wooden stirrer — until smooth and creamy. The finished callaloo should be thick enough to coat a spoon."
+      }
+    ],
+    "dominican_republic": [
+      {
+        "name": "La Bandera",
+        "type": "main",
+        "description": "The Dominican \"flag\" — white rice, red beans, stewed meat, and fried plantains",
+        "difficulty": "Medium",
+        "cultural_story": "La Bandera Dominicana (\"the Dominican flag\") is the daily lunch of the nation, eaten by virtually every Dominican household. The three components — white rice, red kidney beans, and stewed meat — mirror the colors of the flag. Add fried green plantain (tostones) and a simple salad and you have the meal that defines Dominican identity. It is so central to daily life that a day without la bandera feels incomplete.",
+        "cooking_tips": "The rice must be fluffy with separated grains — wash until the water runs clear, then cook with oil and salt. The beans should be creamy, cooked with sofrito (sautéed onion, garlic, pepper, cilantro, oregano). Stew the meat slowly until falling apart. Tostones should be smashed and fried twice until crispy. Everything is served together on one plate — the rice in the center."
+      },
+      {
+        "name": "Mangú",
+        "type": "main",
+        "description": "Mashed boiled green plantains topped with sautéed red onions, fried cheese, and salami",
+        "difficulty": "Easy",
+        "cultural_story": "Mangú is the Dominican breakfast — boiled green plantains mashed with butter and topped with pickled red onions (cebolla curtida). The full breakfast, called \"Los Tres Golpes\" (the three hits), adds fried Dominican salami, fried cheese, and eggs. Legend says the name came from a US soldier during the 1916 occupation who tasted the dish and exclaimed \"Man, good!\" which Dominicans heard as \"mangú.\"",
+        "cooking_tips": "Use very green, unripe plantains. Boil in salted water until soft, then mash with butter and a splash of the cooking water — add liquid gradually to control consistency. It should be smooth but thick. Pickle the red onions in lime juice and vinegar. Fry Dominican salami until crispy at the edges and queso de freír until golden. Serve everything together."
+      },
+      {
+        "name": "Sancocho",
+        "type": "main",
+        "description": "Rich, hearty seven-meat stew with root vegetables, corn, and herbs",
+        "difficulty": "Hard",
+        "cultural_story": "Sancocho is the great communal dish of the Dominican Republic — a massive stew traditionally made with seven different meats and an array of root vegetables. It is the dish of celebrations, holidays, and recovery from hangovers. Making sancocho is a community event: families gather around huge pots, each contributing ingredients. The seven-meat version represents abundance and is reserved for special occasions.",
+        "cooking_tips": "The seven meats traditionally include beef, pork, chicken, goat, longaniza sausage, and various cuts. Add meats in order of cooking time — toughest first. Use a variety of root vegetables: yuca, yam, plantain, potato, and malanga. The broth should be rich and golden. Add a whole sour orange and fresh cilantro near the end. Serve with white rice and avocado slices on the side."
+      },
+      {
+        "name": "Tostones",
+        "type": "appetizer",
+        "description": "Twice-fried smashed green plantains, crispy outside and tender inside",
+        "difficulty": "Easy",
+        "cultural_story": "Tostones are ubiquitous across the Caribbean and Latin America, but Dominicans have a special relationship with them. They accompany nearly every meal, from la bandera to seafood dishes. The technique — fry once, smash flat with a tostonera (wooden press), fry again — creates the perfect contrast of crispy exterior and starchy interior. Street vendors serve them as snacks topped with cabbage slaw or ketchup.",
+        "cooking_tips": "Use very green plantains — any ripeness will make them too sweet and soft. Cut into 3cm rounds and fry at medium heat until just starting to color. Remove, smash flat with a tostonera or the bottom of a glass (to about 5mm thick). Fry again at high heat until golden and crispy. Salt immediately. They must be served right away — tostones wait for no one."
+      }
+    ],
+    "haiti": [
+      {
+        "name": "Griot",
+        "type": "main",
+        "description": "Marinated pork shoulder, braised then fried until crispy, served with pikliz",
+        "difficulty": "Medium",
+        "cultural_story": "Griot is Haiti's most celebrated dish — cubes of pork shoulder marinated in sour orange, braised until tender, then deep-fried until the edges are gloriously crispy while the interior stays moist. It is inseparable from pikliz, a fiery pickled cabbage slaw. Griot is the centerpiece of every Haitian celebration: no wedding, baptism, or holiday is complete without it. The two-stage cooking process — braising then frying — is the genius of Haitian culinary technique.",
+        "cooking_tips": "Marinate pork shoulder cubes in sour orange (or a mix of lime and orange juice), garlic, shallots, scotch bonnet, and thyme for at least 4 hours. Braise slowly with the marinade until tender and the liquid is almost gone. Then fry the pieces in hot oil until deeply golden and crispy on all sides. The contrast of crispy exterior and tender interior is essential. Always serve with pikliz."
+      },
+      {
+        "name": "Diri ak Djon Djon",
+        "type": "main",
+        "description": "Black mushroom rice — a fragrant, jet-black rice dish made with dried Haitian mushrooms",
+        "difficulty": "Medium",
+        "cultural_story": "Diri ak djon djon is Haiti's most distinctive dish — rice turned jet black by djon djon, tiny dried mushrooms found only in Haiti's northern mountains. The mushrooms release an intense, earthy, almost truffle-like flavor and dramatic color. This dish is reserved for special occasions and holidays, particularly Christmas and New Year's. The rarity of djon djon mushrooms makes the dish precious and deeply tied to Haitian terroir.",
+        "cooking_tips": "Soak dried djon djon mushrooms in hot water for at least 30 minutes. Strain the liquid carefully — it will be deep black — and use this to cook the rice. Discard the mushroom stems (they are too tough to eat). Sauté shallots, garlic, and thyme in oil, add the mushroom liquid and rice. Cook covered on low heat. Add green peas and parsley near the end. The rice should be deeply black and fragrant."
+      },
+      {
+        "name": "Soup Joumou",
+        "type": "main",
+        "description": "Pumpkin soup with beef, pasta, and vegetables — Haiti's independence day tradition",
+        "difficulty": "Medium",
+        "cultural_story": "Soup joumou is arguably the most historically significant dish in the Caribbean. During enslavement, enslaved Haitians were forbidden from eating the squash soup reserved for French colonists. When Haiti won independence on January 1, 1804, the newly free people celebrated by making and eating this forbidden soup. Every January 1st, every Haitian household prepares soup joumou — it is a taste of freedom. UNESCO inscribed it as Intangible Cultural Heritage in 2021.",
+        "cooking_tips": "Use calabaza squash (or butternut as substitute). Boil and purée the squash for the soup base. Marinate beef with sour orange and épices — a Haitian spice blend. Cook the beef until tender, add the squash purée, cabbage, carrots, potatoes, turnip, celery, and pasta (spaghetti or macaroni, broken). The soup should be thick and golden. Season with parsley, thyme, and cloves. It gets better overnight."
+      },
+      {
+        "name": "Pikliz",
+        "type": "appetizer",
+        "description": "Fiery pickled cabbage and vegetable condiment with scotch bonnet peppers",
+        "difficulty": "Easy",
+        "cultural_story": "Pikliz is the soul of Haitian cooking — a crunchy, vinegary, scorchingly hot pickled slaw that accompanies virtually every Haitian meal. Made from shredded cabbage, carrots, bell peppers, and an alarming number of scotch bonnet peppers, it bridges every dish on the Haitian table. No griot, no fritay (fried food), no meal is complete without it. Haitian grandmothers are judged by their pikliz, and every family recipe is considered the best.",
+        "cooking_tips": "Shred cabbage, carrots, and bell peppers finely. Add generous scotch bonnet peppers — sliced, not minced, so diners can avoid them if needed. Add whole cloves and black peppercorns. Cover with white vinegar and refrigerate for at least 24 hours before eating. Pikliz improves over time and keeps for weeks in the refrigerator. The ratio of scotch bonnet to vegetables defines the heat level."
+      }
+    ],
+    "uzbekistan": [
+      {
+        "name": "Plov",
+        "type": "main",
+        "description": "Celebratory rice pilaf layered with lamb, carrots, chickpeas, and a blend of cumin and barberries",
+        "difficulty": "Hard",
+        "cultural_story": "Plov (osh) is the king of Uzbek cuisine and the centerpiece of every celebration. The dish is so revered that UNESCO inscribed it as Intangible Cultural Heritage. In Uzbekistan, plov is traditionally cooked by men in a massive cast-iron cauldron called a kazan, often for hundreds of guests at weddings. Tashkent, Samarkand, and Bukhara each have their own regional style. The oshpaz (plov master) is one of the most respected figures in the community.",
+        "cooking_tips": "The layering is critical: first render lamb fat, then brown meat, then add julienned carrots (use 1:1 ratio of carrots to rice), then chickpeas and raisins. Add water and cook until the meat and carrots form the zirvak base. Only then add the rice on top — never stir the layers. Cook covered on very low heat until the rice absorbs all the liquid. Add whole garlic heads in the center and dried barberries on top."
+      },
+      {
+        "name": "Somsa",
+        "type": "appetizer",
+        "description": "Flaky tandoor-baked pastries filled with spiced lamb and onions",
+        "difficulty": "Medium",
+        "cultural_story": "Somsa (samosa's Central Asian cousin) is Uzbekistan's premier street food, baked in tandoor clay ovens at bakeries across the country. Unlike their Indian relatives, Uzbek somsa use a laminated pastry dough and are always baked, never fried. The filling is traditionally lamb with a generous amount of onion and cumin. Watching a somsa maker slap the triangular pastries onto the inside walls of a scorching tandoor is a mesmerizing sight.",
+        "cooking_tips": "Make a laminated dough by rolling butter or lamb fat into the layers — similar to rough puff pastry. The filling should be roughly equal parts minced lamb and diced onion, seasoned with cumin, salt, and black pepper. Shape into triangles, brush with egg wash, and sprinkle with sesame or nigella seeds. Bake at the highest heat your oven allows. The pastry should shatter when you bite into it."
+      },
+      {
+        "name": "Shashlik",
+        "type": "main",
+        "description": "Marinated lamb skewers grilled over charcoal, served with raw onion rings and flatbread",
+        "difficulty": "Easy",
+        "cultural_story": "Shashlik (kebab) culture runs deep in Uzbekistan — every restaurant, every roadside stall, every park has a shashlik grill. The Uzbek version is distinguished by its simplicity: quality lamb, salt, and the smoke of charcoal. The social ritual of shashlik — gathering around the grill, eating with your hands, tearing fresh bread — is central to Uzbek male bonding culture. No business deal or friendship is complete without shared shashlik.",
+        "cooking_tips": "Use lamb with some fat — the tail fat (kurdiuk) is traditional and prized. Cut into 3cm cubes, alternating lean and fatty pieces on the skewer. Season with just salt and a squeeze of vinegar. Grill over very hot charcoal, turning frequently. The fat should render and drip onto the coals, creating smoke. Serve with thinly sliced raw onion rings, vinegar, and fresh non (flatbread)."
+      },
+      {
+        "name": "Lagman",
+        "type": "main",
+        "description": "Hand-pulled noodles in a savory lamb and vegetable broth with tomatoes and peppers",
+        "difficulty": "Hard",
+        "cultural_story": "Lagman represents the Chinese influence on Central Asian cuisine, arriving via the Silk Road and evolving into something distinctly Uzbek. The hand-pulled noodles are made by repeatedly stretching and folding the dough — a skill that takes years to master. The soupy version (with broth) and the stir-fried version (without) are equally popular. In Tashkent's Chorsu Bazaar, lagman stalls draw crowds who watch the noodle-pulling with admiration.",
+        "cooking_tips": "The dough needs rest and oil — mix flour, water, and salt, knead until smooth, coat in oil, and rest for at least 2 hours. Pull by stretching and folding repeatedly until you get thin, even noodles. The sauce is a lamb and vegetable stir-fry with tomatoes, peppers, onions, and garlic. Cook the noodles in boiling water for just 2-3 minutes. Ladle the sauce over the noodles. Garnish with fresh herbs."
+      }
+    ],
+    "kazakhstan": [
+      {
+        "name": "Beshbarmak",
+        "type": "main",
+        "description": "Boiled horse meat or lamb served over wide flat noodles in onion broth — Kazakhstan's national dish",
+        "difficulty": "Hard",
+        "cultural_story": "Beshbarmak (\"five fingers\") is named for the traditional way of eating it — with your hands. It is Kazakhstan's most important dish, served at every significant gathering. The host allocates specific cuts of meat to guests based on their status: the head goes to the most honored guest. The dish embodies Kazakh nomadic heritage, using the two things always available on the steppe: meat and flour. Making beshbarmak for guests is the highest expression of Kazakh hospitality.",
+        "cooking_tips": "Use bone-in horse meat or lamb — the bones make the broth. Boil the meat for 2-3 hours until very tender and falling off the bone. Roll the dough thin and cut into large diamond shapes. Cook the noodles briefly in the meat broth. Layer noodles on a platter, top with sliced meat and caramelized onions. Serve the broth separately in bowls (sorpa). The meat must be sliced, not shredded."
+      },
+      {
+        "name": "Kazy",
+        "type": "main",
+        "description": "Traditional horse meat sausage, dry-cured or smoked, sliced thin and served cold",
+        "difficulty": "Hard",
+        "cultural_story": "Kazy is the most prized delicacy in Kazakh cuisine — a sausage made from horse rib meat, fat, and spices, stuffed into natural casings and cold-smoked or air-dried. It is prepared in late autumn during the sogym season, when families butcher a horse and prepare preserved meats for winter. The quality of a family's kazy reflects their prosperity and skill. It is served at every festive dastarkhan (table spread).",
+        "cooking_tips": "Traditionally made from horse rib meat with the fat left on, seasoned with salt, pepper, and garlic. Stuff into cleaned horse intestine casings. Smoke over cold fruit wood smoke for several days or air-dry in a cool, ventilated space for weeks. To serve, simmer the dried kazy in water for 2 hours until the fat is translucent. Slice thinly on the diagonal and serve at room temperature."
+      },
+      {
+        "name": "Baursak",
+        "type": "appetizer",
+        "description": "Puffy fried bread pieces, golden and slightly sweet, served at every Kazakh gathering",
+        "difficulty": "Easy",
+        "cultural_story": "Baursak is the bread of the Kazakh table — small pieces of yeasted dough fried until golden and puffy. No celebration, no holiday, no guest visit is complete without a mountain of baursak. They symbolize the sun, prosperity, and hospitality. At Nauryz (New Year), they are piled high on the dastarkhan. Kazakh grandmothers judge each other by their baursak — the pieces should be uniformly golden, light as air, and slightly sweet.",
+        "cooking_tips": "Make a simple yeasted dough with flour, milk, eggs, butter, sugar, and salt. Let rise until doubled. Roll out to about 1.5cm thickness and cut into small diamond or triangle shapes. Fry in hot oil, turning once — they should puff up dramatically. Drain on paper towels. Serve warm in a large pile. Some cooks drizzle with honey; purists serve them plain. They are best eaten the day they are made."
+      },
+      {
+        "name": "Kurt",
+        "type": "appetizer",
+        "description": "Dried fermented milk balls — a salty, tangy nomadic snack that lasts for months",
+        "difficulty": "Medium",
+        "cultural_story": "Kurt (qurt) is the ultimate nomadic food — balls of dried, salted fermented milk that can last for years without refrigeration. It sustained Kazakh nomads on long migrations across the steppe and was carried by Silk Road traders. Today it is sold at every market and bus station in Kazakhstan. The intense salty-sour flavor is an acquired taste for outsiders, but for Kazakhs, kurt is nostalgic comfort — the taste of grandmothers and the open steppe.",
+        "cooking_tips": "Strain yogurt or ayran (fermented milk) through cheesecloth until very thick. Season generously with salt. Shape into small balls (about 2-3cm) by rolling in your palms. Dry in the sun or a low oven for several days until completely hard. They should be rock-hard when done — you may need to suck on them rather than chew. Store in a dry place; they will keep for months."
+      }
+    ],
+    "georgia": [
+      {
+        "name": "Khachapuri",
+        "type": "main",
+        "description": "Cheese-filled bread in various regional shapes, with the boat-shaped Adjarian version topped with egg and butter",
+        "difficulty": "Medium",
+        "cultural_story": "Khachapuri is Georgia's most iconic dish, with at least 13 regional variations. The Adjarian version — a boat-shaped bread filled with melting sulguni cheese, topped with a raw egg and butter pat — is the most famous. Georgians consume an estimated 50 million khachapuri per year. The dish is so culturally significant that the Georgian government tracks the \"khachapuri index\" as an informal measure of inflation. Every region fiercely defends its version as the best.",
+        "cooking_tips": "For Adjarian khachapuri: make a soft yeasted dough, shape into a boat, fill generously with a mix of sulguni and imeruli cheese (or substitute mozzarella and feta). Bake until the bread is golden and the cheese is melted and bubbling. Add a raw egg and a chunk of butter just as it comes out of the oven. Stir the egg into the molten cheese at the table — this is the ritual. Tear bread from the ends to scoop."
+      },
+      {
+        "name": "Khinkali",
+        "type": "main",
+        "description": "Giant soup dumplings filled with spiced meat, with a twisted top knot used as a handle",
+        "difficulty": "Hard",
+        "cultural_story": "Khinkali originated in the mountainous regions of Pshavi and Tusheti and have become Georgia's most beloved comfort food. Each dumpling is a self-contained soup — the meat filling releases juices during cooking that create a savory broth inside. The top knot (kuchi) serves as a handle and is traditionally not eaten but left on the plate as a count of how many you've consumed. Eating fewer than five is considered unserious.",
+        "cooking_tips": "The dough should be simple: flour, water, and salt, rolled very thin. The filling is a mix of beef and pork (or lamb in mountain regions) with copious onion, cilantro, cumin, and chili flakes. The pleating is critical — aim for at least 18 folds to seal properly. Boil in salted water for 10-12 minutes. Eat by holding the knot, tilting slightly, and biting to release the hot broth. Sprinkle with black pepper."
+      },
+      {
+        "name": "Pkhali",
+        "type": "appetizer",
+        "description": "Finely chopped vegetable and walnut pâté, formed into balls and topped with pomegranate seeds",
+        "difficulty": "Easy",
+        "cultural_story": "Pkhali represents the vegetable-forward side of Georgian cuisine, showcasing the country's incredible walnut tradition. The technique — finely chop vegetables, mix with ground walnuts, garlic, herbs, and vinegar — is applied to spinach, beets, eggplant, green beans, and cabbage. A proper Georgian supra (feast) includes multiple colors of pkhali arranged on a platter. The dish reflects the sophistication of Georgian vegetarian cooking, influenced by the many fasting days in the Orthodox calendar.",
+        "cooking_tips": "The walnut paste is the base: grind walnuts with garlic, blue fenugreek (utskho suneli), coriander, and vinegar. Cook your chosen vegetable until tender, squeeze out all excess water (this is crucial), chop very finely, and mix with the walnut paste. Shape into balls, flatten slightly, and garnish with pomegranate seeds. Serve at room temperature. Make multiple varieties (spinach, beet, eggplant) for visual impact."
+      },
+      {
+        "name": "Churchkhela",
+        "type": "appetizer",
+        "description": "Candle-shaped walnut and grape must candy — Georgia's ancient energy snack",
+        "difficulty": "Medium",
+        "cultural_story": "Churchkhela is often called \"Georgian Snickers\" — strings of walnuts dipped repeatedly in thickened grape juice until coated in a chewy, sweet shell. This ancient confection dates back thousands of years and was the energy food of Georgian soldiers and travelers. In autumn, you can see strings of churchkhela hanging to dry from balconies and porches across the countryside. Each grape variety produces a different color, from deep purple to amber. It is the taste of the Georgian harvest.",
+        "cooking_tips": "Thread walnut halves onto strong thread using a needle, leaving a loop at the top for hanging. Make tatara by slowly cooking fresh grape juice with flour until it thickens to a pudding consistency. Dip the walnut strings repeatedly, letting each layer dry slightly before the next dip — aim for 3-4 layers. Hang to dry in a cool, airy place for 5-7 days. The finished churchkhela should be firm but chewy, not hard."
+      }
+    ],
+    "new_zealand": [
+      {
+        "name": "Hāngi",
+        "type": "main",
+        "description": "Traditional Māori earth oven feast — meats and root vegetables slow-cooked underground on heated rocks",
+        "difficulty": "Hard",
+        "cultural_story": "The hāngi is the traditional Māori method of cooking food in an earth oven using heated volcanic rocks. The practice dates back centuries and remains central to Māori celebrations, marae (meeting ground) gatherings, and tangi (funerals). Preparing a hāngi is communal work — digging the pit, heating the stones, wrapping the food in flax or wet cloths, and burying it for hours. The resulting food has a distinctive smoky, earthy flavor that cannot be replicated by any other method.",
+        "cooking_tips": "Dig a pit, heat river rocks in a large fire until white-hot. Layer rocks in the pit, add wet sacking or cloth, then arrange food in wire baskets — meat on the bottom (pork, lamb, chicken), vegetables on top (kumara/sweet potato, pumpkin, potato, cabbage). Cover with wet cloth and soil. Cook for 3-4 hours. The steam and earth create a unique flavor. Modern \"above-ground hāngi\" use large pots but lack the earthy taste."
+      },
+      {
+        "name": "Pavlova",
+        "type": "appetizer",
+        "description": "Crispy-shelled meringue with a marshmallow center, topped with whipped cream and fresh fruit",
+        "difficulty": "Medium",
+        "cultural_story": "New Zealand and Australia have a fierce, decades-long rivalry over who invented the pavlova, named for Russian ballerina Anna Pavlova after her 1920s tour. New Zealanders insist it was created in Wellington by chef Keith Money in 1929. Regardless of origin, pavlova is New Zealand's definitive dessert, served at every Christmas dinner and summer gathering. The combination of shattering meringue crust, soft interior, cream, and kiwifruit is iconic.",
+        "cooking_tips": "Beat egg whites until stiff, then gradually add caster sugar and continue beating until glossy and thick. Fold in cornflour, vinegar, and vanilla — these create the marshmallow center. Shape on parchment and bake at low heat (120°C) for about 90 minutes. Turn off the oven and let it cool inside completely — do not open the door. Top with whipped cream and seasonal fruit (kiwifruit, passionfruit, strawberries) just before serving."
+      },
+      {
+        "name": "Rewena Bread",
+        "type": "main",
+        "description": "Māori potato bread made with a fermented potato starter, dense and slightly tangy",
+        "difficulty": "Medium",
+        "cultural_story": "Rewena parāoa (potato bread) uses a fermented potato bug — a natural sourdough starter made from cooked potatoes left to ferment for several days. This bread was an innovation born when Māori first encountered European flour and combined it with their existing knowledge of kūmara cultivation and fermentation. The bread is dense, slightly sweet and tangy, and was traditionally cooked in camp ovens over open fires. It remains a staple at marae gatherings.",
+        "cooking_tips": "Make the rewena bug by mashing cooked potatoes, mixing with flour and sugar, and leaving in a warm place for 3-5 days until bubbly and sour-smelling. Mix the bug with more flour, sugar, and salt to form a dough. Knead well and let rise. The dough will be stickier than regular bread dough. Bake in a greased pot or bread tin at moderate heat. The bread should be dense with a golden crust and slightly tangy crumb."
+      },
+      {
+        "name": "Hokey Pokey Ice Cream",
+        "type": "appetizer",
+        "description": "Vanilla ice cream studded with crunchy honeycomb toffee pieces — New Zealand's favorite flavor",
+        "difficulty": "Medium",
+        "cultural_story": "Hokey pokey is New Zealand's most popular ice cream flavor, outselling all others combined. The \"hokey pokey\" is honeycomb toffee — crunchy, caramelized sugar aerated with baking soda. The combination of creamy vanilla ice cream and shattering toffee pieces is a national obsession. The name may come from the Italian gelato vendors (\"ecco un poco\" — here, a little) who sold ice cream in New Zealand in the early 20th century.",
+        "cooking_tips": "For the honeycomb: boil sugar and golden syrup until deep amber, remove from heat and quickly whisk in baking soda — it will foam dramatically. Pour onto a lined tray and let it set completely. Break into small pieces. Make a rich vanilla ice cream base with egg yolks, cream, milk, sugar, and vanilla bean. Churn and fold in the honeycomb pieces in the last minute. Freeze immediately — the toffee will soften over time."
+      }
+    ],
+    "fiji": [
+      {
+        "name": "Kokoda",
+        "type": "main",
+        "description": "Raw fish cured in lime juice and mixed with coconut cream, chili, and vegetables",
+        "difficulty": "Easy",
+        "cultural_story": "Kokoda is Fiji's version of ceviche — fresh fish \"cooked\" in citrus and enriched with coconut cream. It is the signature dish of Fijian cuisine, served at every family gathering, village feast, and resort restaurant. The combination of fresh-caught reef fish, tart lime, and rich lolo (coconut cream) embodies the flavors of the South Pacific. Traditionally served in a halved coconut shell, kokoda connects modern Fijians to their maritime heritage.",
+        "cooking_tips": "Use the freshest firm white fish — walu (Spanish mackerel) or mahi-mahi. Dice into small cubes and marinate in lime juice for at least 2 hours until opaque. Drain most of the lime juice, then fold in thick coconut cream, diced tomato, red onion, capsicum, and fresh chili. Season with salt. Serve cold in coconut shells or bowls. The balance of acid and fat is key — it should be creamy, not soupy."
+      },
+      {
+        "name": "Lovo",
+        "type": "main",
+        "description": "Traditional Fijian earth oven feast with meats, fish, and root vegetables wrapped in banana leaves",
+        "difficulty": "Hard",
+        "cultural_story": "Lovo is Fiji's communal earth-oven cooking method, similar to the Māori hāngi. A pit is dug, stones are heated in a fire, and food wrapped in banana leaves is placed on the stones, covered with more leaves and earth, and slow-cooked for several hours. Lovo is central to meke (celebrations), church gatherings, and village life. The communal preparation — men dig and tend the fire, women prepare the food — reinforces social bonds.",
+        "cooking_tips": "Heat river stones in a fire pit for at least 2 hours until white-hot. Wrap seasoned chicken, pork, fish, and root vegetables (taro, cassava, kumala) individually in banana leaves. Place on the hot stones, cover with more banana leaves, old sacks, and earth. Cook for 3-4 hours. The banana leaves impart a subtle flavor and keep everything moist. For home cooking, wrap in banana leaves and bake in a very low oven for several hours."
+      },
+      {
+        "name": "Rourou",
+        "type": "main",
+        "description": "Taro leaves simmered in rich coconut cream until meltingly tender",
+        "difficulty": "Easy",
+        "cultural_story": "Rourou (taro leaves in coconut cream) is the everyday accompaniment to almost every Fijian meal. Taro is the most important crop in Fijian agriculture, and using both the root and the leaves is fundamental to Pacific Island resourcefulness. The dish is simple — young taro leaves cooked slowly in lolo (coconut cream) until silky soft — but the flavor is deeply satisfying. It is comfort food in its purest form.",
+        "cooking_tips": "Use young, tender taro leaves — older leaves are tougher and more fibrous. Wash thoroughly and remove the thick central stem. Simmer in coconut cream (not coconut milk — it must be thick) on low heat for at least 30 minutes. The leaves will reduce dramatically and become very soft. Season with salt and a squeeze of lemon. Some cooks add onion and chili. Must be cooked thoroughly — raw taro leaves contain calcium oxalate crystals."
+      },
+      {
+        "name": "Cassava Cake",
+        "type": "appetizer",
+        "description": "Dense, sweet cake made from grated cassava and coconut cream, baked until golden",
+        "difficulty": "Easy",
+        "cultural_story": "Vakalolo (cassava cake) is the beloved dessert of Fiji, made from grated fresh cassava mixed with coconut cream and sugar, then baked until firm and golden. It is served at every Fijian gathering, from church potlucks to wedding receptions. The texture is unique — dense, chewy, and slightly sticky, with the richness of coconut. Variations include adding banana or pumpkin, but the classic cassava-coconut combination is the most popular.",
+        "cooking_tips": "Peel fresh cassava and grate finely — do not use a food processor, which makes it too smooth. Squeeze out excess moisture. Mix with coconut cream, sugar, and a pinch of salt. Pour into a greased baking dish and bake at 180°C for about 45 minutes until set and golden on top. Let cool before cutting into squares. The cake should be dense and chewy, not fluffy. Serve at room temperature."
+      }
+    ],
+    "papua_new_guinea": [
+      {
+        "name": "Mumu",
+        "type": "main",
+        "description": "Traditional earth oven feast with pork, sweet potato, greens, and bananas cooked on hot stones",
+        "difficulty": "Hard",
+        "cultural_story": "Mumu is the communal earth-oven cooking tradition central to Papua New Guinean highland culture. For thousands of years, food has been cooked on hot stones in pits, wrapped in banana leaves and covered with earth. Mumu is the centerpiece of sing-sings (festivals), bride price ceremonies, and conflict resolutions. In the highlands, pigs are the most valued possession, and a mumu with pig is the ultimate expression of wealth, generosity, and social standing.",
+        "cooking_tips": "Heat river stones in a fire until white-hot. Line a pit with banana leaves, add hot stones, then layer food: pork and root vegetables (sweet potato, taro, yam) on the bottom, green vegetables and bananas on top. Cover with banana leaves and earth. Cook for 3-5 hours. The slow steaming creates incredibly tender, smoky food. For home cooking, layer in a large Dutch oven with very low heat for several hours."
+      },
+      {
+        "name": "Sago Pancake",
+        "type": "main",
+        "description": "Flat, dense pancakes made from sago palm starch — the staple food of coastal and lowland communities",
+        "difficulty": "Easy",
+        "cultural_story": "Sago is the dietary backbone of Papua New Guinea's lowland and coastal peoples. The starch is extracted from the sago palm in a labor-intensive process of felling, splitting, and washing the pith. The resulting flour is cooked into dense, somewhat flavorless pancakes that serve as the edible utensil for sauces, fish, and vegetables. Processing sago is communal work, and sago palms are carefully managed resources passed down through generations.",
+        "cooking_tips": "Mix sago starch with water to form a thick paste. Heat a dry pan or flat stone and spread the paste into a thin, even layer. Cook until the bottom sets and firms up, then flip. The finished pancake should be dense and slightly translucent. It will be bland on its own — it is meant to be eaten with flavorful accompaniments like fish in coconut sauce, greens, or stews. Store dried sago pancakes for long periods."
+      },
+      {
+        "name": "Tulip (Aibika) Greens",
+        "type": "main",
+        "description": "Sautéed aibika leaves in coconut cream, a nutritious daily staple across Papua New Guinea",
+        "difficulty": "Easy",
+        "cultural_story": "Aibika (also called tulip or slippery cabbage) is the most widely consumed green vegetable in Papua New Guinea. The leaves have a slightly mucilaginous texture when cooked, similar to okra. Every household garden grows aibika, and it is cooked daily — simply boiled or, more deliciously, simmered in coconut cream. The plant grows prolifically in Papua New Guinea's tropical climate, making it an accessible source of vitamins for communities across the country.",
+        "cooking_tips": "Pick young, tender aibika leaves and wash well. Simmer in coconut cream with a pinch of salt for 10-15 minutes until the leaves are soft and the coconut cream has thickened. Some cooks add sliced onion or garlic. The leaves will release a slightly slippery liquid — this is normal and adds body to the dish. Serve over sago, rice, or sweet potato. Do not overcook — the leaves should be tender but still green."
+      },
+      {
+        "name": "Kaukau",
+        "type": "main",
+        "description": "Roasted sweet potato — the highland staple, simply cooked in earth ovens or over open fire",
+        "difficulty": "Easy",
+        "cultural_story": "Kaukau (sweet potato) is the cornerstone of Papua New Guinea's highland diet and has been cultivated in the island's fertile highlands for thousands of years. It is the single most important crop, with over 5,000 cultivated varieties. Highland communities eat kaukau at every meal, and its cultivation structures daily life, land use, and social relationships. The simplest preparation — roasted directly in the coals of a fire — is considered the most delicious.",
+        "cooking_tips": "Choose firm, medium-sized sweet potatoes. Wash but do not peel. The most authentic method is to bury them in hot coals and ash, cooking for 30-45 minutes until tender when pierced. Alternatively, roast in a hot oven at 200°C for 45 minutes. The skin should be charred in places, and the flesh should be creamy and sweet. Eat with a pinch of salt. No embellishment needed — the smoky char and natural sweetness are the entire experience."
+      }
+    ],
+    "malaysia": [
+      {
+        "name": "Nasi Lemak",
+        "type": "main",
+        "description": "Coconut rice with sambal, crispy anchovies, peanuts, boiled egg, and cucumber — Malaysia's national dish",
+        "difficulty": "Medium",
+        "cultural_story": "Nasi lemak (\"rich rice\") is Malaysia's undisputed national dish, eaten for breakfast, lunch, dinner, and everything in between. The fragrant coconut rice wrapped in a banana leaf with spicy sambal is sold by roadside stalls, wrapped in newspaper, from as early as 5 AM. While it began as a Malay dish, it has been adopted by all of Malaysia's communities. Debates over the best nasi lemak stall are a national sport.",
+        "cooking_tips": "Cook jasmine rice with coconut milk, pandan leaves, ginger, and a pinch of salt — the rice should be fragrant and slightly sticky. The sambal is key: blend dried chilies, shallots, and belacan (shrimp paste), then cook slowly in oil until dark and thick. Fry ikan bilis (dried anchovies) until crispy, toast peanuts, boil eggs. Arrange on banana leaf. The sambal makes or breaks the dish — it should be sweet, spicy, and savory."
+      },
+      {
+        "name": "Rendang",
+        "type": "main",
+        "description": "Dry beef curry slow-cooked for hours in coconut milk with lemongrass, galangal, and toasted coconut",
+        "difficulty": "Hard",
+        "cultural_story": "Rendang is a Minangkabau dish that has become central to Malaysian Malay cuisine, served at every Hari Raya (Eid) celebration. The dish is a masterclass in patience — beef simmers for hours as coconut milk reduces, concentrating flavor until the meat is coated in a dry, intensely aromatic paste. In 2017, CNN crowned rendang the world's most delicious food. The long cooking process makes rendang a natural preservative, lasting for weeks — perfect for its origins as travel food.",
+        "cooking_tips": "Use beef chuck or shin with some fat. The spice paste needs lemongrass, galangal, turmeric, garlic, shallots, and dried chilies. Add coconut milk and kerisik (toasted grated coconut) and cook on low heat for 3-4 hours, stirring regularly. The dish transitions through stages: from soupy (kalio) to dry (rendang). Stop only when the coconut oil separates and the meat is dark and coated. Never rush — the slow reduction is everything."
+      },
+      {
+        "name": "Char Kway Teow",
+        "type": "main",
+        "description": "Smoky wok-fried flat rice noodles with prawns, cockles, bean sprouts, and chives",
+        "difficulty": "Medium",
+        "cultural_story": "Char kway teow is Malaysia's beloved hawker dish, born in Penang's Chinese community as a cheap, filling meal for laborers. The magic is in the wok hei — the breath of the wok — achieved only by cooking at extreme heat in a well-seasoned wok. Penang and KL argue endlessly about whose version is superior. The best char kway teow is made by elderly hawkers who have spent decades perfecting their wok technique over charcoal fire stoves.",
+        "cooking_tips": "The wok must be screaming hot — this is non-negotiable. Use flat rice noodles (kway teow), not dried. Fry in lard for authenticity. Add dark soy sauce, light soy sauce, and a dash of fish sauce. Crack an egg in and scramble quickly with the noodles. Add prawns, cockles, Chinese sausage, bean sprouts, and chives. The entire process should take less than 3 minutes. The noodles should be slightly charred and smoky — that is wok hei."
+      },
+      {
+        "name": "Roti Canai",
+        "type": "appetizer",
+        "description": "Flaky, buttery flatbread served with dhal and curry sauces, Malaysia's breakfast staple",
+        "difficulty": "Medium",
+        "cultural_story": "Roti canai arrived with Indian Muslim (mamak) immigrants and evolved into one of Malaysia's most essential foods. Watching a roti canai maker flip and stretch the dough is mesmerizing — the paper-thin sheet is tossed in the air, folded, and griddled with ghee until flaky and golden. Mamak stalls are Malaysia's great equalizer — open 24 hours, serving everyone from ministers to students. Late-night roti canai with teh tarik (pulled tea) is a Malaysian ritual.",
+        "cooking_tips": "Make a soft dough with flour, water, ghee, condensed milk, and salt. Knead until very smooth and elastic, oil generously, and rest for at least 4 hours (overnight is better). Stretch the dough paper-thin on an oiled surface — you should see through it. Fold into a square or spiral. Cook on a hot griddle with plenty of ghee, flipping once. Clap between your palms when done to separate the layers. Serve with dhal and fish curry."
+      }
+    ],
+    "myanmar": [
+      {
+        "name": "Mohinga",
+        "type": "main",
+        "description": "Rich catfish chowder with rice noodles, banana stem, and crispy fritters — Myanmar's national dish",
+        "difficulty": "Hard",
+        "cultural_story": "Mohinga is Myanmar's de facto national dish, eaten primarily for breakfast by millions of people every morning. The complex fish broth is built from catfish, lemongrass, ginger, and chickpea flour (which gives it body), ladled over thin rice noodles and garnished with a dazzling array of toppings. Every region and city has its version, and mohinga stalls are the backbone of Myanmar's street food culture. The dish is so central to national identity that it has become a symbol of Myanmar itself.",
+        "cooking_tips": "Simmer catfish (or any firm white fish) with lemongrass, ginger, turmeric, and onions to make the base. Remove fish, flake, and return to the broth. Thicken with toasted chickpea flour — add gradually to control consistency. The broth should be thick and creamy, not watery. Cook thin rice vermicelli separately. Serve with sliced banana stem, hard-boiled egg, crispy fried fritters (akyaw), fresh cilantro, lime, and fish sauce with chili."
+      },
+      {
+        "name": "Laphet Thoke",
+        "type": "appetizer",
+        "description": "Fermented tea leaf salad mixed with crunchy beans, sesame seeds, tomatoes, and garlic",
+        "difficulty": "Easy",
+        "cultural_story": "Laphet thoke (tea leaf salad) is uniquely Burmese — no other cuisine ferments tea leaves for eating. The practice dates back centuries, and laphet holds deep social significance: it is served to settle disputes, seal agreements, and welcome guests. Offering laphet is a gesture of respect. The salad combines fermented tea leaves with an array of crunchy toppings, creating an addictive mix of sour, salty, bitter, and umami. It is often the most memorable dish for visitors to Myanmar.",
+        "cooking_tips": "Fermented tea leaves (laphet) can be bought prepared in Asian grocery stores. If making from scratch, pack fresh green tea leaves with salt and press under weight for weeks. Mix with shredded cabbage, diced tomatoes, toasted sesame seeds, roasted peanuts, fried garlic slices, fried broad beans, dried shrimp, and green chili. Dress with fish sauce, lime juice, and peanut oil. Toss just before serving to keep toppings crunchy."
+      },
+      {
+        "name": "Shan Noodles",
+        "type": "main",
+        "description": "Flat rice noodles with chicken or pork in a light tomato-based sauce, topped with crispy shallots",
+        "difficulty": "Easy",
+        "cultural_story": "Shan noodles come from the Shan State in eastern Myanmar and are one of the country's most popular noodle dishes. Unlike the rich, complex mohinga, Shan noodles are lighter and more delicate — thin flat rice noodles with a simple chicken or pork sauce flavored with tomatoes and turmeric. The dish reflects the Shan people's cuisine, which is generally milder and more subtly seasoned than Bamar (ethnic Burmese) cooking. Both soupy and dry versions exist.",
+        "cooking_tips": "Cook ground chicken or pork with turmeric, tomato paste, garlic, and a little oil until the meat is well-seasoned and the sauce is concentrated. Cook flat rice noodles briefly in boiling water, drain well. Toss noodles with the meat sauce, a splash of soy sauce, and roasted chickpea flour for body. Top with crispy fried shallots, fresh cilantro, and chili flakes. For the soup version, add light chicken broth. Serve with pickled mustard greens."
+      },
+      {
+        "name": "Htamin Jin",
+        "type": "main",
+        "description": "Tangy rice and potato balls served with fried fish floss and a bright tamarind sauce",
+        "difficulty": "Medium",
+        "cultural_story": "Htamin jin (\"squeezed rice\") is a popular Burmese snack and light meal — balls of rice mixed with fish or potato, oil, and turmeric, shaped by hand and served with accompaniments. It is a common monastery offering and market snack, available throughout Myanmar from dawn. The dish reflects the Burmese talent for transforming simple ingredients — rice, oil, turmeric — into something flavorful and satisfying. The balls are often dyed bright yellow with turmeric.",
+        "cooking_tips": "Cook rice until slightly overcooked and sticky. Mix with turmeric, oil, and mashed potato or flaked fish while still warm. Wet your hands and shape into golf-ball-sized rounds, pressing firmly so they hold together. Serve with fried onion oil, crispy fried dried fish floss, and a dipping sauce of tamarind, chili, and fish sauce. Garnish with fresh cilantro and sliced raw onion. Eat by breaking apart and dipping."
+      }
+    ],
+    "sri_lanka": [
+      {
+        "name": "Rice and Curry",
+        "type": "main",
+        "description": "A spread of multiple small curries, sambols, and accompaniments served with rice — the Sri Lankan meal",
+        "difficulty": "Medium",
+        "cultural_story": "Sri Lankan rice and curry is not a single dish but a concept — a plate of rice surrounded by numerous small dishes, each with different flavors, textures, and heat levels. A typical meal might include 5-8 curries plus sambols, papadam, and pickles. The variety reflects Sri Lanka's position as the \"spice island\" — cinnamon, cardamom, cloves, and curry leaves grow abundantly. The generous spread embodies the Sri Lankan belief that a meal should be an event of abundance and variety.",
+        "cooking_tips": "Cook 3-5 curries with different bases: a dhal curry, a meat or fish curry, a potato curry, a green vegetable curry, and a beetroot curry for color. Each should use roasted or raw curry powder (Sri Lankan curry powder is darker and more aromatic than Indian). Always include pol sambol (coconut sambol with chili and lime). Serve everything simultaneously on a large plate. The joy is in mixing different curries with each bite of rice."
+      },
+      {
+        "name": "Hoppers",
+        "type": "main",
+        "description": "Bowl-shaped crispy rice flour and coconut milk pancakes with soft, spongy centers",
+        "difficulty": "Medium",
+        "cultural_story": "Hoppers (appa) are Sri Lanka's signature breakfast and dinner dish — fermented rice flour and coconut milk batter swirled in a small wok to create a bowl-shaped pancake that is crispy at the edges and soft in the center. Egg hoppers have a whole egg cracked into the center. String hoppers (idiyappam) — steamed nests of rice flour noodles — are the cousin. Hopper stalls operate from late afternoon into the night, and no Sri Lankan trip is complete without eating hoppers straight from the pan.",
+        "cooking_tips": "Ferment the batter (rice flour, coconut milk, sugar, yeast) for at least 8 hours until bubbly. Heat a small, deep wok-like hopper pan. Add a ladleful of batter, swirl to coat the sides (creating thin, crispy edges), and cover. The center should be spongy, the edges lacy and crisp. For egg hoppers, crack an egg into the center after the base sets, cover and cook until the white is set but the yolk is still runny. Serve with lunu miris (chili-onion-lime relish)."
+      },
+      {
+        "name": "Kottu Roti",
+        "type": "main",
+        "description": "Chopped flatbread stir-fried with vegetables, egg, and spices on a hot griddle",
+        "difficulty": "Medium",
+        "cultural_story": "Kottu roti is Sri Lanka's most exciting street food — shredded godamba roti (flatbread) chopped and stir-fried on a hot griddle with vegetables, egg, and curry sauce. The rhythmic clang-clang-clang of metal blades chopping the kottu on the griddle is the soundtrack of Sri Lankan evenings, audible from blocks away, acting as both cooking technique and advertising. The dish was invented as a way to use leftover roti and has become a national obsession.",
+        "cooking_tips": "Make or buy godamba roti (or use paratha as substitute), let it cool, and tear or chop into strips. Heat a large flat griddle until very hot. Stir-fry onions, leeks, and green chilies, add beaten egg and scramble, then add the shredded roti and curry sauce. Chop vigorously with two metal scrapers or cleavers — this is the signature technique. Add precooked chicken, beef, or cheese if desired. The finished kottu should be slightly crispy in places and well-coated with sauce."
+      },
+      {
+        "name": "Pol Sambol",
+        "type": "appetizer",
+        "description": "Fresh coconut relish with red chili, onion, lime, and Maldive fish — the essential Sri Lankan condiment",
+        "difficulty": "Easy",
+        "cultural_story": "Pol sambol (coconut sambol) is the condiment that ties every Sri Lankan meal together — freshly grated coconut mixed with red chili powder, sliced onion, lime juice, salt, and umashi (Maldive fish flakes). It appears at breakfast with hoppers, at lunch with rice and curry, and at dinner with kottu. The quality of a household's pol sambol is a matter of pride. Freshly grated coconut is essential — desiccated coconut produces an inferior version that no self-respecting Sri Lankan would accept.",
+        "cooking_tips": "Use freshly grated coconut — this is the single most important rule. Mix with Kashmiri red chili powder (for color without excessive heat), very thinly sliced red onion, a generous squeeze of lime juice, salt, and a pinch of Maldive fish flakes for umami. Some cooks add a tiny bit of sugar to balance the heat. Pound briefly in a mortar to partially crush the coconut (but not to a paste). Serve immediately — pol sambol does not store well."
+      }
+    ],
+    "nepal": [
+      {
+        "name": "Dal Bhat",
+        "type": "main",
+        "description": "The Nepali national meal — steamed rice with lentil soup, vegetable curries, and pickles",
+        "difficulty": "Medium",
+        "cultural_story": "Dal bhat (lentils and rice) is not just a meal in Nepal — it is THE meal, eaten twice daily by virtually every Nepali. The saying \"dal bhat power, 24 hour\" is both a joke and a truth: Sherpas, trekkers, and laborers credit dal bhat as the fuel for everything from Everest summits to marathon days in the fields. A complete dal bhat plate includes rice, lentil soup, tarkari (vegetable curry), achar (pickle), and often meat. It is unlimited — refills are always offered.",
+        "cooking_tips": "Cook lentils (yellow or red dal) with turmeric until very soft, then temper with ghee, cumin, garlic, ginger, and dried chili. The dal should be soupy, not thick. Cook basmati rice separately. Make at least one tarkari (seasonal vegetable curry with Nepali spices: jimbu, timur/Sichuan pepper, fenugreek). Prepare a tomato-based achar (pickle/chutney). Serve everything on a large metal thali plate. Always offer seconds."
+      },
+      {
+        "name": "Momo",
+        "type": "main",
+        "description": "Steamed or fried dumplings filled with spiced buffalo meat or vegetables, served with tomato achar",
+        "difficulty": "Medium",
+        "cultural_story": "Momos are Nepal's most popular snack and street food, brought to Kathmandu from Tibet by Newar traders. While similar to Chinese jiaozi and Tibetan momos, the Nepali version has evolved its own identity — the filling includes Nepali spices, and the accompanying tomato-based achar (dipping sauce) is uniquely Nepali. Momo restaurants are on every street in Kathmandu, and momos have become a symbol of modern Nepali food culture. Buff (buffalo) momos are the most popular variety.",
+        "cooking_tips": "For the filling: mix minced buffalo (or chicken) with finely diced onion, ginger, garlic, cilantro, cumin, turmeric, and a splash of oil. The filling should be well-seasoned and slightly moist. Make a simple dough of flour and water, roll thin, and cut into circles. Pleat carefully — the folds should be decorative. Steam for 10-12 minutes. Make the achar by roasting tomatoes, then blending with sesame seeds, timur (Sichuan pepper), chili, garlic, and cilantro."
+      },
+      {
+        "name": "Sel Roti",
+        "type": "appetizer",
+        "description": "Crispy, ring-shaped rice flour bread, deep-fried and slightly sweet — Nepal's festive bread",
+        "difficulty": "Medium",
+        "cultural_story": "Sel roti is Nepal's traditional ring-shaped bread, made from rice flour batter and deep-fried into crispy, golden rings. It is the essential food of Dashain and Tihar — Nepal's two biggest festivals — but is also made for weddings, pujas, and special occasions. Making sel roti is a communal family activity during festivals, with women gathering to fry batches of the rings over open fires. The skill of forming the perfect ring by hand takes practice.",
+        "cooking_tips": "Soak rice overnight, then grind to a smooth paste. Mix with sugar, cardamom, ghee, and a little milk to make a thick, pourable batter. Let it rest for a few hours. Heat oil in a deep pan. Pour batter in a circular motion to form a ring — this takes practice and a steady hand. Fry until golden on both sides. The outside should be crispy and the inside slightly soft and chewy. Serve warm with yogurt or tea."
+      },
+      {
+        "name": "Chatamari",
+        "type": "main",
+        "description": "Newar-style rice crepe topped with minced meat, egg, and vegetables — \"Nepali pizza\"",
+        "difficulty": "Medium",
+        "cultural_story": "Chatamari is a specialty of Nepal's Newar community from the Kathmandu Valley. Often called \"Nepali pizza\" by tourists, it is actually a thin rice flour crepe topped with minced meat, eggs, and vegetables. It is a staple of Newar feasts (bhoj) and festivals, particularly during Indra Jatra and other Kathmandu Valley celebrations. The dish represents the sophisticated culinary tradition of the Newar people, who are considered Nepal's finest cooks.",
+        "cooking_tips": "Make a thin batter from rice flour and water. Heat a flat pan or tawa and pour a thin layer of batter, spreading it like a crepe. Add toppings while the base is still wet: minced buffalo meat, beaten egg, chopped onion, and green chilies. Cover and cook until the base is crispy and the toppings are cooked through. The crepe should be thin and crispy — not thick or doughy. Cut into wedges and serve with tomato achar."
+      }
+    ],
+    "iraq": [
+      {
+        "name": "Masgouf",
+        "type": "main",
+        "description": "Whole butterflied carp slow-grilled over wood fire, seasoned with tamarind and turmeric",
+        "difficulty": "Medium",
+        "cultural_story": "Masgouf is Iraq's national dish — a whole freshwater carp, butterflied and grilled upright on stakes around a wood fire on the banks of the Tigris River. The tradition dates back to ancient Mesopotamia, making it one of the world's oldest continuously prepared dishes. Baghdad's Abu Nawas Street was once lined with masgouf restaurants. Despite decades of conflict, the ritual of sharing masgouf along the river endures as an act of normalcy and cultural resilience.",
+        "cooking_tips": "Use a whole, large freshwater fish (carp, or substitute sea bass). Butterfly by cutting along the belly, opening flat, and removing the backbone. Season inside with salt, turmeric, and tamarind paste. Traditionally, stake the fish upright around a wood fire of citrus or tamarind wood. At home, grill skin-side down on a charcoal grill on low heat for 30-40 minutes. Finish by turning briefly to char the flesh side. Serve with flatbread, onion, and tomato salad."
+      },
+      {
+        "name": "Dolma",
+        "type": "main",
+        "description": "Grape leaves and vegetables stuffed with spiced rice and lamb, slow-cooked in a tangy broth",
+        "difficulty": "Hard",
+        "cultural_story": "Iraqi dolma is more elaborate than its Middle Eastern neighbors' versions — in addition to stuffed grape leaves, Iraqis stuff onions, tomatoes, peppers, eggplant, and zucchini, creating a dramatic pot of jewel-toned stuffed vegetables. The dish is a labor of love, often prepared communally by women who sit together rolling and stuffing for hours. It is the dish of special occasions, Fridays, and family gatherings, and every Iraqi mother's recipe is considered the definitive version.",
+        "cooking_tips": "Prepare the filling: medium-grain rice, ground lamb, tomato paste, lemon juice, and spices (allspice, cinnamon, dried lime). Blanch grape leaves briefly if using fresh. Core and hollow vegetables. Stuff loosely — the rice will expand. Line the pot bottom with extra grape leaves or lamb chops to prevent sticking. Layer stuffed vegetables tightly, add tomato-tamarind broth, weight with a plate, and simmer for 90 minutes. The grape leaves should be tender and the rice fully cooked."
+      },
+      {
+        "name": "Kubba",
+        "type": "main",
+        "description": "Torpedo-shaped croquettes with a bulgur wheat shell and spiced ground lamb filling",
+        "difficulty": "Hard",
+        "cultural_story": "Kubba (kibbeh) is one of Iraq's most refined dishes, requiring considerable skill to shape. The outer shell of fine bulgur wheat and meat paste must be paper-thin, encasing a filling of sautéed ground lamb with onions, pine nuts, and spices. Kubba comes in many Iraqi forms — fried (kubba halab), in soup (kubba hamuth), and baked. The kubba hamuth — swimming in a tangy beetroot and Swiss chard broth — is a specifically Iraqi-Jewish creation that has been adopted across Iraqi culture.",
+        "cooking_tips": "For the shell: soak fine bulgur, then blend with ground lean beef, onion, and spices until smooth and paste-like. For the filling: sauté ground lamb with onions, raisins, and pine nuts. Take a golf-ball-sized piece of shell, hollow it with a wet finger, fill, and seal into a torpedo shape — keep hands wet to prevent sticking. For kubba hamuth: simmer in a broth of tomatoes, beetroot, Swiss chard, lemon, and sugar. Deep-fried kubba should be golden and shatteringly crispy."
+      },
+      {
+        "name": "Kleicha",
+        "type": "appetizer",
+        "description": "Date-filled cookies spiced with cardamom and rose water — Iraq's most beloved sweet",
+        "difficulty": "Medium",
+        "cultural_story": "Kleicha are Iraq's national cookie, with a history stretching back to ancient Sumeria — cuneiform tablets from 1700 BCE describe similar date-filled pastries. They are baked for every celebration — Eid, Christmas, Nowruz — transcending Iraq's diverse religious communities. Two versions exist: date-filled (the most popular) and walnut-cardamom filled. Iraqi families bake massive batches, and the sweet, cardamom-scented aroma of kleicha baking is the smell of Iraqi holidays.",
+        "cooking_tips": "Make a buttery dough with flour, butter, rose water, cardamom, and a touch of yeast. For the filling: cook pitted dates with butter, cardamom, and a splash of rose water until soft and paste-like. Roll dough thin, spread date filling, roll into a log, and slice into rounds, or fill individual pieces. Stamp with a traditional mold (qaleb) for decorative patterns. Bake until just golden — do not overbake. They should be tender, not crunchy."
+      }
+    ],
+    "jordan": [
+      {
+        "name": "Mansaf",
+        "type": "main",
+        "description": "Lamb cooked in fermented dried yogurt sauce, served over rice and flatbread — Jordan's national dish",
+        "difficulty": "Hard",
+        "cultural_story": "Mansaf is the pride of Jordanian cuisine and Bedouin hospitality — lamb slow-cooked in jameed (fermented dried yogurt) sauce, served over a bed of rice and shrak (paper-thin flatbread). It is served at every important occasion: weddings, funerals, holidays, and honored guest visits. Mansaf is eaten communally from a large platter, standing, using only the right hand. The host ensures the best cuts of lamb go to the most honored guests. Making mansaf is an expression of generosity.",
+        "cooking_tips": "Dissolve jameed (dried yogurt balls) in warm water, strain, and cook until it becomes a smooth, tangy sauce. Simmer lamb shanks in the jameed sauce with turmeric, allspice, and cardamom for 2-3 hours until falling off the bone. Layer a large platter with shrak bread, then rice, then lamb, and ladle the jameed sauce over everything. Garnish with toasted almonds and pine nuts. Traditionally, the head of the lamb is placed on top for the guest of honor."
+      },
+      {
+        "name": "Maqluba",
+        "type": "main",
+        "description": "An upside-down layered rice, vegetable, and meat casserole, flipped dramatically to serve",
+        "difficulty": "Medium",
+        "cultural_story": "Maqluba (\"upside-down\") is the dramatic showpiece of Jordanian home cooking. Layers of fried eggplant, cauliflower, potatoes, and spiced rice are cooked in a pot, then flipped upside-down onto a platter to reveal a beautiful layered cake. The moment of flipping is theatrical — the entire family gathers to watch, and a successful flip is a moment of triumph. It is a Friday lunch staple and the dish most associated with Jordanian family life.",
+        "cooking_tips": "Fry eggplant and cauliflower until golden. Layer in a heavy pot: meat (chicken or lamb) on the bottom, then fried vegetables, then rice soaked with turmeric, cinnamon, and allspice. Add spiced broth to just cover. Cook on low heat until the rice is done and a crust forms on the bottom. Let it rest for 10 minutes, then place a platter on top and flip confidently in one quick motion. Garnish with toasted nuts and serve with yogurt salad."
+      },
+      {
+        "name": "Zarb",
+        "type": "main",
+        "description": "Bedouin underground barbecue — meats and vegetables slow-cooked in a buried oven in the desert",
+        "difficulty": "Hard",
+        "cultural_story": "Zarb is the signature cooking method of Jordan's Bedouin communities, particularly in Wadi Rum. A metal rack of seasoned meats and vegetables is lowered into a pit of hot coals in the desert sand, covered, and slow-cooked for several hours. The result is impossibly tender, smoky meat with an earthy, mineral quality from the desert itself. Experiencing zarb in Wadi Rum, under a blanket of stars, surrounded by towering sandstone, is one of Jordan's great culinary experiences.",
+        "cooking_tips": "Dig a pit in sandy ground, build a large fire and let it burn down to very hot coals. Season chicken, lamb, and vegetables (potatoes, carrots, onions) with salt, cumin, turmeric, and cardamom. Arrange on a multi-tiered metal rack — meat on lower levels (closer to heat), vegetables above. Lower into the pit, cover with a metal lid, and bury with sand and embers. Cook for 2-3 hours. The meat should be fall-off-the-bone tender. Serve with rice and yogurt."
+      },
+      {
+        "name": "Knafeh",
+        "type": "appetizer",
+        "description": "Crispy shredded pastry filled with melting cheese, soaked in rose-scented sugar syrup",
+        "difficulty": "Medium",
+        "cultural_story": "Knafeh is the ultimate Middle Eastern dessert, and Jordanians (especially in the city of Nablus-origin communities) are fiercely proud of their version. The dish layers crispy, butter-soaked kadaif pastry over stretchy white cheese, baked until golden, then drenched in rose water-scented sugar syrup. The contrast of crunchy, salty-sweet, and floral is extraordinary. Knafeh is sold in shops throughout Amman and is the celebratory dessert of choice.",
+        "cooking_tips": "Use kadaif (shredded phyllo) pastry, toss with melted butter until well-coated. Press half into a round baking pan, add a layer of desalted Nabulsi cheese (or mozzarella as substitute), top with remaining pastry, and press firmly. Bake at 180°C until deeply golden and crispy. Meanwhile, make a simple syrup with sugar, water, lemon juice, and rose water. Pour the cold syrup over the hot knafeh immediately. Invert onto a plate. Garnish with crushed pistachios."
+      }
+    ],
+    "uae": [
+      {
+        "name": "Machboos",
+        "type": "main",
+        "description": "Spiced rice with meat, dried limes, and baharat, slow-cooked until fragrant and golden",
+        "difficulty": "Medium",
+        "cultural_story": "Machboos (also called kabsa) is the UAE's most important traditional dish — spiced rice cooked with meat (usually lamb or chicken), dried black limes (loomi), and a complex baharat spice blend. It reflects the Bedouin heritage of the Gulf, where rice arrived through the pearl-diving trade routes with India. Despite the UAE's rapid modernization, machboos remains the centerpiece of Emirati home cooking and is served at every national celebration and family gathering.",
+        "cooking_tips": "Toast whole spices (cardamom, cinnamon, cloves, black peppercorns) in ghee. Brown the meat, then add onions, tomatoes, dried limes (pierce them first), and baharat. Add rice and broth, cook covered on low heat. The dried limes are essential — they add a unique sour-musty flavor that defines Gulf cuisine. The rice should be fluffy with each grain separate. Some cooks add a layer of crispy fried onions (barzeh) on top. Serve with dakous (tomato-garlic sauce)."
+      },
+      {
+        "name": "Harees",
+        "type": "main",
+        "description": "Slow-cooked wheat and meat porridge, stirred for hours until smooth and silky",
+        "difficulty": "Medium",
+        "cultural_story": "Harees is one of the oldest dishes in Emirati cuisine, dating back centuries. Cracked wheat and meat are cooked together for hours, stirred continuously until they merge into a smooth, porridge-like consistency. It is the essential dish of Ramadan — served at every iftar table across the UAE. The long, patient stirring process is almost meditative, and the resulting dish is deeply comforting and easy to digest after a day of fasting.",
+        "cooking_tips": "Soak cracked wheat overnight. Cook with bone-in lamb or chicken in plenty of water on very low heat for 4-6 hours, stirring regularly. The wheat and meat should completely break down into a smooth porridge. Some cooks use a stick blender near the end. Season with salt, cinnamon, and ghee. The consistency should be like thick oatmeal. Serve in bowls with a generous drizzle of ghee and a sprinkle of cinnamon. The simplicity is the point."
+      },
+      {
+        "name": "Luqaimat",
+        "type": "appetizer",
+        "description": "Crispy fried dough balls drizzled with date syrup and sesame seeds",
+        "difficulty": "Easy",
+        "cultural_story": "Luqaimat are the UAE's most beloved sweet — small balls of yeasted dough, deep-fried until golden and crispy, then drizzled with date syrup (dibs) and sprinkled with sesame seeds. They are the quintessential Ramadan treat, served at iftar gatherings, and are also popular at weddings and national day celebrations. The name means \"small bites\" in Arabic, and they are meant to be popped into the mouth one after another — eating just one is impossible.",
+        "cooking_tips": "Make a loose, sticky batter with flour, yeast, sugar, saffron, cardamom, and warm water. Let rise for 1 hour until very bubbly. Drop small spoonfuls into hot oil using a wet spoon or your hand (pinch off small amounts). Fry until deep golden and crispy. They should be hollow and light inside. While hot, drizzle generously with date syrup (dibs) and sprinkle with sesame seeds. Serve immediately — they lose their crunch quickly."
+      },
+      {
+        "name": "Balaleet",
+        "type": "main",
+        "description": "Sweet saffron and cardamom vermicelli topped with a savory egg omelet — a traditional Emirati breakfast",
+        "difficulty": "Easy",
+        "cultural_story": "Balaleet is the unique Emirati breakfast dish that combines sweet and savory in one plate — thin vermicelli noodles cooked with sugar, saffron, cardamom, and rose water, topped with a thin, folded egg omelet. The contrast is surprisingly harmonious. The dish reflects the UAE's historical trade connections with India (where vermicelli originated). It is a beloved breakfast during Ramadan and Eid, and represents the distinctive sweet-savory palate of Gulf cuisine.",
+        "cooking_tips": "Toast thin vermicelli in ghee until golden, then cook with water, sugar, saffron threads, cardamom, and rose water until tender and the liquid is absorbed. The vermicelli should be sweet and fragrant. Separately, make a thin omelet with eggs, salt, and a pinch of turmeric. Fold the omelet and place on top of the sweet vermicelli. Serve warm. The trick is balancing the sweetness — it should be noticeable but not cloying, with the savory egg providing contrast."
+      }
+    ],
+    "tunisia": [
+      {
+        "name": "Couscous",
+        "type": "main",
+        "description": "Hand-rolled semolina couscous steamed over a spiced lamb and vegetable stew",
+        "difficulty": "Hard",
+        "cultural_story": "Couscous is Tunisia's national dish and was inscribed on UNESCO's Intangible Cultural Heritage list in 2020. While couscous is shared across North Africa, Tunisians consider their version — steamed over a spicy lamb stew with chickpeas and vegetables — the finest. Friday couscous is a sacred tradition: families gather after mosque for a communal plate. Hand-rolling couscous is a social activity for women, and the skill is passed from grandmother to granddaughter.",
+        "cooking_tips": "For authentic couscous, use a couscoussier (steamer). Steam the couscous three times, fluffing and adding oil between each steaming. The grains should be separate and fluffy, never clumpy. The stew base is lamb, onions, tomato paste, harissa, chickpeas, and seasonal vegetables (turnips, carrots, zucchini, pumpkin). The broth should be rich and spicy. Mound the couscous on a large platter, make a well, add the stew, and arrange vegetables decoratively."
+      },
+      {
+        "name": "Brik",
+        "type": "appetizer",
+        "description": "Crispy fried pastry triangle filled with egg, tuna, capers, and harissa",
+        "difficulty": "Medium",
+        "cultural_story": "Brik is Tunisia's signature appetizer — paper-thin malsouka pastry folded around a filling that always includes a whole raw egg, plus tuna, capers, parsley, and harissa. The egg cooks inside the pastry during frying, remaining runny. Eating brik is a skill — you must bite carefully to avoid the egg yolk running down your chin. During Ramadan, brik is the traditional first bite at iftar. Legend has it that Tunisian mothers-in-law judge future sons-in-law by how neatly they eat their brik.",
+        "cooking_tips": "Use malsouka pastry (or substitute spring roll wrappers). Place filling on one half: flaked tuna, capers, chopped parsley, a squeeze of lemon, and a pinch of harissa. Crack a whole raw egg on top. Fold into a triangle and seal edges with egg wash. Fry immediately in hot oil — delay and the egg will soak through. Fry for just 2-3 minutes until golden and crispy. The egg inside should still be runny. Serve immediately with lemon wedges."
+      },
+      {
+        "name": "Lablabi",
+        "type": "main",
+        "description": "Hearty chickpea soup served over torn bread with cumin, harissa, olive oil, and a poached egg",
+        "difficulty": "Easy",
+        "cultural_story": "Lablabi is Tunisia's great comfort food and winter warmer — a rustic chickpea soup ladled over torn stale bread and loaded with toppings. It is the food of the people, sold from early morning in hole-in-the-wall shops across Tunis. Workers, students, and taxi drivers crowd around steaming pots of lablabi before dawn. The dish is endlessly customizable — each person adds their own combination of harissa, cumin, olive oil, capers, tuna, and egg to their bowl.",
+        "cooking_tips": "Cook dried chickpeas until very tender in plenty of garlicky broth (or use canned for shortcut). Tear day-old bread into chunks and place in bowls. Ladle hot chickpeas and broth over the bread. Let each person customize with: harissa, ground cumin, olive oil, capers, canned tuna, chopped hard-boiled egg, lemon juice, and salt. The bread should absorb the broth and become soft. The dish is meant to be humble and generous."
+      },
+      {
+        "name": "Mechouia",
+        "type": "appetizer",
+        "description": "Smoky grilled vegetable salad with roasted peppers, tomatoes, onions, and harissa",
+        "difficulty": "Easy",
+        "cultural_story": "Mechouia (\"the grilled one\") is Tunisia's beloved roasted salad — charred peppers, tomatoes, and onions peeled, chopped, and dressed with olive oil, lemon, and harissa. It appears at the beginning of almost every Tunisian meal, alongside bread and olives. The smoky sweetness of the roasted vegetables against the heat of harissa is quintessentially Tunisian. During summer, the aroma of roasting peppers fills every neighborhood as families prepare mechouia on balconies and rooftops.",
+        "cooking_tips": "Grill green peppers, tomatoes, and onions over charcoal or directly on a gas flame until completely blackened on all sides. Let them sweat in a covered bowl, then peel and seed. Chop coarsely — the salad should be chunky, not smooth. Dress with good olive oil, lemon juice, and a generous spoonful of harissa. Add canned tuna, capers, and hard-boiled egg for a more substantial version. Let it sit for 30 minutes before serving to let the flavors meld."
+      }
+    ],
+    "guatemala": [
+      {
+        "name": "Pepián",
+        "type": "main",
+        "description": "Rich, brick-red meat stew thickened with toasted seeds, dried chilis, and spices — Guatemala's national dish",
+        "difficulty": "Hard",
+        "cultural_story": "Pepián is considered Guatemala's national dish and one of the oldest recipes in the Americas, with roots in pre-Columbian Maya cuisine. The complex sauce is built from toasted pumpkin seeds, sesame seeds, dried chilies, tomatoes, and tomatillos, creating a thick, earthy stew. It is the centerpiece of celebrations, holidays, and Día de los Muertos observances. The toasting and grinding of seeds connects modern cooks to thousands of years of Maya culinary tradition.",
+        "cooking_tips": "Toast pumpkin seeds, sesame seeds, dried guajillo and pasilla chilies separately until fragrant — be careful not to burn. Roast tomatoes and tomatillos. Blend everything together to form a thick paste. Brown chicken pieces, then simmer in the sauce with potatoes, green beans, and chayote squash. The sauce should be thick and brick-red. Add a pinch of cinnamon and Mexican chocolate for depth. Serve with white rice and fresh tortillas."
+      },
+      {
+        "name": "Kak'ik",
+        "type": "main",
+        "description": "Maya turkey soup in a rich red chile broth, considered Guatemala's most iconic indigenous dish",
+        "difficulty": "Hard",
+        "cultural_story": "Kak'ik is a ceremonial turkey soup from the Q'eqchi' Maya people of Alta Verapaz. The deep red broth gets its color and flavor from dried chiles, achiote, and tomatoes. Turkey (chompipe) was domesticated by the ancient Maya, and kak'ik represents an unbroken culinary tradition stretching back millennia. It is prepared for weddings, patron saint festivals, and important community events. UNESCO recognized Guatemala's ancestral cuisine, including kak'ik, as intangible heritage.",
+        "cooking_tips": "Use bone-in turkey pieces for rich broth. Toast dried guaque and cobanero chilies, then blend with roasted tomatoes, tomatillos, achiote paste, and cilantro. Simmer the turkey in this red broth for at least an hour until tender. The broth should be deeply red and fragrant. Traditionally served with rice and fresh corn tortillas. Garnish with fresh cilantro. Some cooks add mint leaves, which add an unexpected brightness to the rich broth."
+      },
+      {
+        "name": "Tamales Colorados",
+        "type": "main",
+        "description": "Corn masa filled with recado-sauced meat, wrapped in banana leaves and steamed",
+        "difficulty": "Hard",
+        "cultural_story": "Guatemalan tamales are wrapped in banana leaves (not corn husks like Mexican ones), giving them a distinctive earthy aroma. Tamales colorados, dyed red with achiote and tomato recado, are the most celebratory variety. Making tamales is a community event — families gather, especially at Christmas, to produce hundreds of tamales over two days. The process of spreading masa, adding filling, wrapping, and tying is a choreographed team effort. Saturday morning tamales are a beloved Guatemalan tradition.",
+        "cooking_tips": "Prepare a recado (sauce) by roasting and blending tomatoes, tomatillos, dried chilies, achiote, and sesame seeds. Cook chicken or pork in the recado. Make a smooth masa by beating corn flour with broth and lard until a spoonful floats in water. Spread masa on softened banana leaves, add meat with sauce, olives, capers, and peppers. Fold into rectangular parcels and tie with banana leaf strips. Steam upright for 1.5-2 hours until the masa is firm."
+      },
+      {
+        "name": "Rellenitos",
+        "type": "appetizer",
+        "description": "Sweet plantain dough stuffed with black bean paste and fried, dusted with sugar and cinnamon",
+        "difficulty": "Easy",
+        "cultural_story": "Rellenitos de plátano are Guatemala's favorite sweet snack — mashed ripe plantain formed around a filling of sweetened black bean paste, then fried until golden. The combination of sweet plantain and earthy black beans is a flavor pairing unique to Mesoamerican cuisine. They are sold by street vendors, in markets, and made at home as an afternoon treat with coffee. The dish exemplifies the Guatemalan genius for turning the simplest ingredients — plantains and beans — into something memorable.",
+        "cooking_tips": "Boil very ripe plantains until soft, then mash until smooth — no lumps. Cook black beans with sugar and cinnamon until thick enough to hold its shape, then mash into a paste. Take a portion of plantain, flatten in your palm, place a spoonful of bean paste in the center, and shape into an oval, completely enclosing the filling. Fry in hot oil until golden on all sides. Drain and roll in sugar mixed with cinnamon while warm."
+      }
+    ],
+    "costa_rica": [
+      {
+        "name": "Gallo Pinto",
+        "type": "main",
+        "description": "Rice and black beans fried together with Lizano sauce, onions, and peppers — Costa Rica's national breakfast",
+        "difficulty": "Easy",
+        "cultural_story": "Gallo pinto (\"spotted rooster\") is the undisputed national dish of Costa Rica, eaten at breakfast by virtually everyone, every day. The dish is simple — yesterday's rice fried with black beans, onions, and the essential Salsa Lizano — but it is a source of enormous national pride. Costa Rica and Nicaragua have a friendly rivalry over gallo pinto ownership (the Nicaraguan version uses red beans). A proper Tico breakfast is gallo pinto with eggs, sour cream, fried plantain, and a cup of café chorreado.",
+        "cooking_tips": "Use day-old rice — fresh rice will be too moist. Sauté onion and red bell pepper in oil, add cooked black beans with some of their liquid, then add the rice. The key ingredient is Salsa Lizano — a mild, slightly sweet Costa Rican sauce that gives gallo pinto its distinctive flavor. If unavailable, Worcestershire sauce is a rough substitute. Cook until the rice absorbs the bean liquid and everything is well combined. Season with cilantro."
+      },
+      {
+        "name": "Casado",
+        "type": "main",
+        "description": "The \"married\" plate — rice, beans, salad, plantains, and a protein, the quintessential Costa Rican lunch",
+        "difficulty": "Medium",
+        "cultural_story": "Casado (\"married man\") is the standard Costa Rican lunch plate, named because it is the kind of complete, home-style meal a married man could expect his wife to prepare (though this origin story is debated). Every soda (casual restaurant) in Costa Rica serves casado, and it always includes rice, black beans, salad, fried sweet plantains, and a choice of meat, fish, or chicken. The beauty is in its completeness — every food group, every flavor, every texture in one harmonious plate.",
+        "cooking_tips": "Cook white rice and black beans separately (beans with garlic, cumin, and Salsa Lizano). Make a simple cabbage-tomato salad with lime dressing. Fry ripe plantain slices until caramelized. Prepare your protein — grilled chicken, fish in garlic sauce, or beef stew. Arrange everything on a large oval plate: rice on one side, beans on the other, salad, plantains, and protein. Include a slice of fresh white cheese if available. The plate should look abundant and colorful."
+      },
+      {
+        "name": "Chifrijo",
+        "type": "appetizer",
+        "description": "Layered bowl of rice, beans, chicharrones, pico de gallo, and avocado — Costa Rica's bar snack",
+        "difficulty": "Easy",
+        "cultural_story": "Chifrijo was invented in the 1990s at a bar in San José called Cordero's and quickly became Costa Rica's favorite bar snack. The name combines chicharrón (fried pork) and frijoles (beans). It is the perfect drinking food — salty, rich, and fresh all at once, served with tortilla chips for scooping. Chifrijo spread from bars to restaurants to home kitchens and is now a symbol of modern Costa Rican food culture.",
+        "cooking_tips": "Layer in a bowl: rice on the bottom, then soupy black beans (they should be brothy, not dry), then crispy chicharrones (fried pork belly or pork rinds), then fresh pico de gallo (diced tomato, onion, cilantro, lime juice), and top with sliced avocado. Serve with crispy tortilla chips on the side. The key is temperature contrast — hot beans, warm rice, crispy chicharrones, and cold pico de gallo. A squeeze of lime over the top is essential."
+      },
+      {
+        "name": "Tres Leches Cake",
+        "type": "appetizer",
+        "description": "Light sponge cake soaked in three milks — evaporated, condensed, and cream — topped with whipped cream",
+        "difficulty": "Medium",
+        "cultural_story": "While tres leches is claimed by several Latin American countries, Costa Rica has made it a national obsession. Every bakery, every soda, and every grandmother makes tres leches. The Costa Rican version is particularly moist and generous with the milk soaking. It is the birthday cake, the celebration cake, the anytime cake. The combination of airy sponge and rich, sweet triple-milk soaking creates what many consider the most satisfying cake in the Americas.",
+        "cooking_tips": "Bake a light, airy sponge cake (genoise style — eggs beaten until tripled in volume). Let cool completely. Mix evaporated milk, sweetened condensed milk, and heavy cream. Poke holes all over the cake and slowly pour the milk mixture over, letting it absorb gradually. Refrigerate for at least 4 hours (overnight is better). Top with whipped cream and a sprinkle of cinnamon. The cake should be completely saturated but not falling apart. Serve cold."
+      }
     ]
   }
 }

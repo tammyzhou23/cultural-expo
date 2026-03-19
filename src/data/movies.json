@@ -4,56 +4,79 @@
       "id": "spirited_away",
       "title": "Spirited Away",
       "year": 2001,
-      "genre": ["Animation", "Adventure", "Fantasy"],
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
       "duration": 125,
       "rating": 8.6,
       "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, where humans are changed into beasts.",
       "category": "Oscar Winner",
       "director": "Hayao Miyazaki",
       "emoji": "👻",
-      "awards": ["Academy Award for Best Animated Feature"],
+      "awards": [
+        "Academy Award for Best Animated Feature"
+      ],
       "cultural_significance": "Considered one of the greatest animated films ever made, it showcases Japanese animation excellence and traditional folklore."
     },
     {
       "id": "seven_samurai",
       "title": "Seven Samurai",
       "year": 1954,
-      "genre": ["Action", "Drama", "Adventure"],
+      "genre": [
+        "Action",
+        "Drama",
+        "Adventure"
+      ],
       "duration": 207,
       "rating": 8.6,
       "description": "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.",
       "category": "Classic",
       "director": "Akira Kurosawa",
       "emoji": "⚔️",
-      "awards": ["Silver Lion at Venice Film Festival"],
+      "awards": [
+        "Silver Lion at Venice Film Festival"
+      ],
       "cultural_significance": "Revolutionary film that influenced countless action movies and established Kurosawa as a master filmmaker."
     },
     {
       "id": "your_name",
       "title": "Your Name",
       "year": 2016,
-      "genre": ["Animation", "Drama", "Romance"],
+      "genre": [
+        "Animation",
+        "Drama",
+        "Romance"
+      ],
       "duration": 106,
       "rating": 8.4,
       "description": "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
       "category": "Recent Hit",
       "director": "Makoto Shinkai",
       "emoji": "🌟",
-      "awards": ["Japan Academy Prize for Animation of the Year"],
+      "awards": [
+        "Japan Academy Prize for Animation of the Year"
+      ],
       "cultural_significance": "Modern anime masterpiece that became a global phenomenon, showcasing contemporary Japanese animation."
     },
     {
       "id": "tokyo_story",
       "title": "Tokyo Story",
       "year": 1953,
-      "genre": ["Drama", "Family"],
+      "genre": [
+        "Drama",
+        "Family"
+      ],
       "duration": 136,
       "rating": 8.1,
       "description": "An elderly couple visit their children and grandchildren in Tokyo, but receive little attention and warm hospitality.",
       "category": "Classic",
       "director": "Yasujirō Ozu",
       "emoji": "🏠",
-      "awards": ["Sight & Sound Top 50 Films"],
+      "awards": [
+        "Sight & Sound Top 50 Films"
+      ],
       "cultural_significance": "Ozu's masterpiece exploring family dynamics and generational change in post-war Japan."
     }
   ],
@@ -62,56 +85,77 @@
       "id": "life_is_beautiful",
       "title": "Life Is Beautiful",
       "year": 1997,
-      "genre": ["Comedy", "Drama", "Romance"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "duration": 116,
       "rating": 8.6,
       "description": "When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.",
       "category": "Oscar Winner",
       "director": "Roberto Benigni",
       "emoji": "❤️",
-      "awards": ["Academy Award for Best Actor", "Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Actor",
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Unique Holocaust film that combines humor with tragedy, showcasing Italian resilience and creativity."
     },
     {
       "id": "cinema_paradiso",
       "title": "Cinema Paradiso",
       "year": 1988,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 155,
       "rating": 8.5,
       "description": "A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema's projectionist.",
       "category": "Oscar Winner",
       "director": "Giuseppe Tornatore",
       "emoji": "🎬",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Celebrates the magic of cinema and Italian cultural heritage through the lens of a small Sicilian town."
     },
     {
       "id": "bicycle_thief",
       "title": "The Bicycle Thief",
       "year": 1948,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 89,
       "rating": 8.3,
       "description": "In post-war Italy, a working-class man's bicycle is stolen, endangering his efforts to find work. He and his son set out to find it.",
       "category": "Classic",
       "director": "Vittorio De Sica",
       "emoji": "🚲",
-      "awards": ["Honorary Academy Award"],
+      "awards": [
+        "Honorary Academy Award"
+      ],
       "cultural_significance": "Landmark of Italian neorealism, depicting post-war poverty and human dignity."
     },
     {
       "id": "la_dolce_vita",
       "title": "La Dolce Vita",
       "year": 1960,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 174,
-      "rating": 8.0,
+      "rating": 8,
       "description": "A series of stories following a week in the life of a philandering tabloid journalist living in Rome.",
       "category": "Classic",
       "director": "Federico Fellini",
       "emoji": "🍷",
-      "awards": ["Palme d'Or at Cannes Film Festival"],
+      "awards": [
+        "Palme d'Or at Cannes Film Festival"
+      ],
       "cultural_significance": "Defined the 'sweet life' of 1960s Rome and influenced fashion, culture, and cinema worldwide."
     }
   ],
@@ -120,56 +164,78 @@
       "id": "coco",
       "title": "Coco",
       "year": 2017,
-      "genre": ["Animation", "Adventure", "Comedy"],
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
       "duration": 105,
       "rating": 8.4,
       "description": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
       "category": "Oscar Winner",
       "director": "Lee Unkrich",
       "emoji": "💀",
-      "awards": ["Academy Award for Best Animated Feature", "Academy Award for Best Original Song"],
+      "awards": [
+        "Academy Award for Best Animated Feature",
+        "Academy Award for Best Original Song"
+      ],
       "cultural_significance": "Celebrates Mexican culture, particularly Day of the Dead traditions, and family bonds."
     },
     {
       "id": "amores_perros",
       "title": "Amores Perros",
       "year": 2000,
-      "genre": ["Drama", "Thriller"],
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
       "duration": 154,
       "rating": 7.9,
       "description": "A horrific car accident connects three stories, each involving characters dealing with loss, regret, and life's harsh realities.",
       "category": "Recent Hit",
       "director": "Alejandro G. Iñárritu",
       "emoji": "🐕",
-      "awards": ["Academy Award nomination for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Launched the Mexican New Wave in cinema and established Iñárritu as a major director."
     },
     {
       "id": "roma",
       "title": "Roma",
       "year": 2018,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 135,
       "rating": 7.7,
       "description": "A year in the life of a middle-class family's maid in Mexico City in the early 1970s.",
       "category": "Oscar Winner",
       "director": "Alfonso Cuarón",
       "emoji": "🏠",
-      "awards": ["Academy Award for Best Director", "Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Director",
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Personal film exploring class, race, and gender in 1970s Mexico through intimate storytelling."
     },
     {
       "id": "y_tu_mama_tambien",
       "title": "Y Tu Mamá También",
       "year": 2001,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 106,
       "rating": 7.6,
       "description": "In Mexico, two teenage boys and an attractive older woman embark on a road trip and learn a thing or two about life, friendship, sex, and each other.",
       "category": "Recent Hit",
       "director": "Alfonso Cuarón",
       "emoji": "🚗",
-      "awards": ["Academy Award nomination for Best Original Screenplay"],
+      "awards": [
+        "Academy Award nomination for Best Original Screenplay"
+      ],
       "cultural_significance": "Coming-of-age story that captures the social and political climate of late 1990s Mexico."
     }
   ],
@@ -178,56 +244,77 @@
       "id": "lagaan",
       "title": "Lagaan: Once Upon a Time in India",
       "year": 2001,
-      "genre": ["Adventure", "Drama", "Sport"],
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Sport"
+      ],
       "duration": 224,
       "rating": 8.1,
       "description": "The people of a small village in Victorian India stake their future on a game of cricket against their ruthless British rulers.",
       "category": "Oscar Winner",
       "director": "Ashutosh Gowariker",
       "emoji": "🏏",
-      "awards": ["Academy Award nomination for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Epic sports drama that showcases Indian resilience and became a global phenomenon."
     },
     {
       "id": "three_idiots",
       "title": "3 Idiots",
       "year": 2009,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 170,
       "rating": 8.4,
       "description": "Two friends looking for a lost buddy deal with a forgotten bet, a wedding they have to crash and a reunion.",
       "category": "Recent Hit",
       "director": "Rajkumar Hirani",
       "emoji": "🎓",
-      "awards": ["National Film Award for Best Popular Film"],
+      "awards": [
+        "National Film Award for Best Popular Film"
+      ],
       "cultural_significance": "Addresses India's education system and societal pressures while entertaining audiences worldwide."
     },
     {
       "id": "pather_panchali",
       "title": "Pather Panchali",
       "year": 1955,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 125,
       "rating": 8.3,
       "description": "Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work.",
       "category": "Classic",
       "director": "Satyajit Ray",
       "emoji": "🌾",
-      "awards": ["Cannes Film Festival Best Human Document"],
+      "awards": [
+        "Cannes Film Festival Best Human Document"
+      ],
       "cultural_significance": "First film in Ray's Apu Trilogy, establishing Indian cinema on the world stage."
     },
     {
       "id": "dangal",
       "title": "Dangal",
       "year": 2016,
-      "genre": ["Action", "Biography", "Drama"],
+      "genre": [
+        "Action",
+        "Biography",
+        "Drama"
+      ],
       "duration": 161,
       "rating": 8.3,
       "description": "Former wrestler Mahavir Singh Phogat and his two wrestler daughters struggle towards glory at the Commonwealth Games in the face of societal oppression.",
       "category": "Recent Hit",
       "director": "Nitesh Tiwari",
       "emoji": "🤼",
-      "awards": ["National Film Award for Best Film"],
+      "awards": [
+        "National Film Award for Best Film"
+      ],
       "cultural_significance": "Based on true story, challenges gender stereotypes and celebrates women's empowerment in sports."
     }
   ],
@@ -236,115 +323,84 @@
       "id": "amelie",
       "title": "Amélie",
       "year": 2001,
-      "genre": ["Comedy", "Romance"],
+      "genre": [
+        "Comedy",
+        "Romance"
+      ],
       "duration": 122,
       "rating": 8.3,
       "description": "Amélie, an innocent and naive girl in Paris, with her own sense of justice, decides to help those around her and along the way, discovers love.",
-      "category": "Recent Hit",
+      "category": "French Classic",
       "director": "Jean-Pierre Jeunet",
-      "emoji": "💚",
-      "awards": ["Academy Award nominations for Best Foreign Language Film", "Best Original Screenplay"],
-      "cultural_significance": "Whimsical love letter to Paris that captured the world's imagination with its magical realism."
+      "emoji": "🇫🇷",
+      "awards": [
+        "César Award for Best Film",
+        "César Award for Best Director"
+      ],
+      "cultural_significance": "Celebrates Parisian culture and the magic of everyday life in France."
     },
     {
-      "id": "400_blows",
-      "title": "The 400 Blows",
-      "year": 1959,
-      "genre": ["Crime", "Drama"],
-      "duration": 99,
-      "rating": 8.1,
-      "description": "A young boy, left without attention, delves into a life of petty crime.",
-      "category": "Classic",
-      "director": "François Truffaut",
-      "emoji": "👦",
-      "awards": ["Cannes Film Festival Best Director"],
-      "cultural_significance": "Seminal film of the French New Wave, revolutionizing cinema with its naturalistic style."
-    },
-    {
-      "id": "blue_warmest_color",
-      "title": "Blue Is the Warmest Color",
-      "year": 2013,
-      "genre": ["Drama", "Romance"],
-      "duration": 180,
-      "rating": 7.7,
-      "description": "Adèle's life is changed when she meets Emma, a young woman with blue hair, who will allow her to discover desire and assert herself as a woman and as an adult.",
-      "category": "Recent Hit",
-      "director": "Abdellatif Kechiche",
-      "emoji": "💙",
-      "awards": ["Palme d'Or at Cannes Film Festival"],
-      "cultural_significance": "Groundbreaking film exploring female sexuality and coming-of-age with unprecedented honesty."
-    },
-    {
-      "id": "breathless",
-      "title": "Breathless",
-      "year": 1960,
-      "genre": ["Crime", "Drama"],
-      "duration": 90,
-      "rating": 7.7,
-      "description": "A small-time thief steals a car and impulsively murders a motorcycle policeman. Wanted by the authorities, he attempts to persuade a girl to run away to Italy with him.",
-      "category": "Classic",
-      "director": "Jean-Luc Godard",
-      "emoji": "🚗",
-      "awards": ["Berlin Film Festival Silver Bear for Best Director"],
-      "cultural_significance": "Revolutionary film that broke all cinematic conventions and defined the French New Wave."
+      "id": "la_la_land",
+      "title": "La La Land",
+      "year": 2016,
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Musical"
+      ],
+      "duration": 128,
+      "rating": 8,
+      "description": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
+      "category": "Modern Musical",
+      "director": "Damien Chazelle",
+      "emoji": "🎭",
+      "awards": [
+        "Academy Award for Best Director",
+        "Academy Award for Best Actress"
+      ],
+      "cultural_significance": "Revitalizes the musical genre and celebrates artistic dreams and love."
     }
   ],
   "germany": [
     {
-      "id": "metropolis",
-      "title": "Metropolis",
-      "year": 1927,
-      "genre": ["Drama", "Sci-Fi"],
-      "duration": 153,
-      "rating": 8.3,
-      "description": "In a futuristic city sharply divided between the working class and the city planners, the son of the city's mastermind falls in love with a working class prophet who predicts the coming of a savior to mediate their differences.",
-      "category": "Classic",
-      "director": "Fritz Lang",
-      "emoji": "🏙️",
-      "awards": ["UNESCO Memory of the World Register"],
-      "cultural_significance": "Revolutionary silent film that influenced science fiction cinema and visual storytelling for decades."
-    },
-    {
       "id": "run_lola_run",
       "title": "Run Lola Run",
       "year": 1998,
-      "genre": ["Action", "Crime", "Thriller"],
+      "genre": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "duration": 80,
       "rating": 7.6,
       "description": "After a botched money delivery, Lola has 20 minutes to come up with 100,000 Deutschmarks to save her boyfriend's life.",
-      "category": "Recent Hit",
+      "category": "German Thriller",
       "director": "Tom Tykwer",
       "emoji": "🏃‍♀️",
-      "awards": ["Bavarian Film Award for Best Director"],
-      "cultural_significance": "Innovative film that explores fate and chance through multiple narrative paths and fast-paced storytelling."
+      "awards": [
+        "Bavarian Film Awards",
+        "German Film Awards"
+      ],
+      "cultural_significance": "Revolutionary German film that explores fate, time, and the consequences of choices."
     },
     {
-      "id": "lives_of_others",
+      "id": "the_lives_of_others",
       "title": "The Lives of Others",
       "year": 2006,
-      "genre": ["Drama", "Thriller"],
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
       "duration": 137,
       "rating": 8.4,
       "description": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.",
       "category": "Oscar Winner",
       "director": "Florian Henckel von Donnersmarck",
       "emoji": "👂",
-      "awards": ["Academy Award for Best Foreign Language Film"],
-      "cultural_significance": "Powerful examination of surveillance, art, and human dignity in East Germany before the fall of the Berlin Wall."
-    },
-    {
-      "id": "goodbye_lenin",
-      "title": "Good Bye, Lenin!",
-      "year": 2003,
-      "genre": ["Comedy", "Drama", "Romance"],
-      "duration": 121,
-      "rating": 7.7,
-      "description": "In 1990, to protect his fragile mother from a fatal shock after a long coma, a young man must keep her from learning that her beloved nation of East Germany has disappeared.",
-      "category": "Recent Hit",
-      "director": "Wolfgang Becker",
-      "emoji": "🏠",
-      "awards": ["European Film Award for Best Film"],
-      "cultural_significance": "Heartwarming comedy that explores the personal impact of German reunification and family bonds."
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
+      "cultural_significance": "Explores the surveillance state in East Germany and the power of art and human connection."
     }
   ],
   "china": [
@@ -352,56 +408,82 @@
       "id": "crouching_tiger",
       "title": "Crouching Tiger, Hidden Dragon",
       "year": 2000,
-      "genre": ["Action", "Adventure", "Drama", "Fantasy"],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
       "duration": 120,
       "rating": 7.8,
       "description": "A young Chinese warrior steals a sword from a famed swordsman and then escapes into a world of romantic adventure with a mysterious man in the frontier of the nation.",
       "category": "Oscar Winner",
       "director": "Ang Lee",
       "emoji": "⚔️",
-      "awards": ["Academy Award for Best Foreign Language Film", "4 Oscar nominations"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film",
+        "4 Oscar nominations"
+      ],
       "cultural_significance": "Revolutionized martial arts cinema and brought Chinese wuxia films to global audiences. Showcases traditional Chinese philosophy and martial arts culture."
     },
     {
       "id": "farewell_my_concubine",
       "title": "Farewell My Concubine",
       "year": 1993,
-      "genre": ["Drama", "History", "Romance"],
+      "genre": [
+        "Drama",
+        "History",
+        "Romance"
+      ],
       "duration": 171,
       "rating": 8.1,
       "description": "Two boys meet at an opera training school in Peking in 1924. Their 44-year friendship reflects the troubled history of China.",
       "category": "Oscar Winner",
       "director": "Chen Kaige",
       "emoji": "🎭",
-      "awards": ["Palme d'Or at Cannes", "Oscar nomination for Best Foreign Language Film"],
+      "awards": [
+        "Palme d'Or at Cannes",
+        "Oscar nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Masterpiece of Chinese cinema that explores the intersection of art, politics, and personal relationships during China's turbulent 20th century."
     },
     {
       "id": "hero",
       "title": "Hero",
       "year": 2002,
-      "genre": ["Action", "Adventure", "Drama"],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
       "duration": 99,
       "rating": 7.9,
       "description": "A defense officer, Nameless, was summoned by the King of Qin regarding his success of terminating three warriors.",
       "category": "Recent Hit",
       "director": "Zhang Yimou",
       "emoji": "🗡️",
-      "awards": ["Oscar nomination for Best Foreign Language Film"],
+      "awards": [
+        "Oscar nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Beautifully shot martial arts film that explores themes of sacrifice, honor, and the unification of China. Features stunning cinematography and choreography."
     },
     {
       "id": "in_the_mood_for_love",
       "title": "In the Mood for Love",
       "year": 2000,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 98,
       "rating": 8.1,
       "description": "A man and a woman move into neighboring Hong Kong apartments and form a bond when they both suspect their spouses of infidelity.",
       "category": "Classic",
       "director": "Wong Kar-wai",
       "emoji": "💔",
-      "awards": ["Cannes Film Festival Technical Grand Prize"],
+      "awards": [
+        "Cannes Film Festival Technical Grand Prize"
+      ],
       "cultural_significance": "Masterpiece of Hong Kong cinema that captures the mood and atmosphere of 1960s Hong Kong. Known for its stunning cinematography and emotional depth."
     }
   ],
@@ -410,56 +492,75 @@
       "id": "memories_of_underdevelopment",
       "title": "Memories of Underdevelopment",
       "year": 1968,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 97,
       "rating": 7.8,
       "description": "A bourgeois intellectual struggles to adapt to the new socialist reality in post-revolutionary Cuba.",
       "category": "Classic",
       "director": "Tomás Gutiérrez Alea",
       "emoji": "🏛️",
-      "awards": ["International recognition as a masterpiece of Cuban cinema"],
+      "awards": [
+        "International recognition as a masterpiece of Cuban cinema"
+      ],
       "cultural_significance": "Landmark film of Cuban cinema that explores the social and political changes following the Cuban Revolution. Considered one of the most important Latin American films."
     },
     {
       "id": "strawberry_and_chocolate",
       "title": "Strawberry and Chocolate",
       "year": 1993,
-      "genre": ["Comedy", "Drama", "Romance"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "duration": 110,
       "rating": 7.6,
       "description": "A young communist student and a gay artist form an unlikely friendship in Havana.",
       "category": "Oscar Nominee",
       "director": "Tomás Gutiérrez Alea",
       "emoji": "🍓",
-      "awards": ["Oscar nomination for Best Foreign Language Film"],
+      "awards": [
+        "Oscar nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Groundbreaking Cuban film that addresses homosexuality and tolerance in Cuban society. One of the first Cuban films to receive international recognition."
     },
     {
       "id": "buena_vista_social_club",
       "title": "Buena Vista Social Club",
       "year": 1999,
-      "genre": ["Documentary", "Music"],
+      "genre": [
+        "Documentary",
+        "Music"
+      ],
       "duration": 105,
       "rating": 7.8,
       "description": "Documentary about Cuban musicians and their traditional music, featuring the legendary Buena Vista Social Club.",
       "category": "Documentary",
       "director": "Wim Wenders",
       "emoji": "🎵",
-      "awards": ["Oscar nomination for Best Documentary Feature"],
+      "awards": [
+        "Oscar nomination for Best Documentary Feature"
+      ],
       "cultural_significance": "Brought international attention to Cuban music and culture. The film and album helped revive interest in traditional Cuban son music worldwide."
     },
     {
       "id": "honey_for_oshun",
       "title": "Honey for Oshún",
       "year": 2001,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 108,
       "rating": 7.2,
       "description": "A Cuban-American returns to Cuba to find his mother and discovers his cultural roots.",
       "category": "Recent",
       "director": "Humberto Solás",
       "emoji": "🍯",
-      "awards": ["Multiple Cuban film awards"],
+      "awards": [
+        "Multiple Cuban film awards"
+      ],
       "cultural_significance": "Explores themes of Cuban diaspora and cultural identity. Represents the connection between Cuban-Americans and their homeland."
     }
   ],
@@ -468,56 +569,84 @@
       "id": "parasite",
       "title": "Parasite",
       "year": 2019,
-      "genre": ["Comedy", "Drama", "Thriller"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 132,
       "rating": 8.6,
       "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
       "category": "Oscar Winner",
       "director": "Bong Joon-ho",
       "emoji": "🏆",
-      "awards": ["Academy Award for Best Picture", "Palme d'Or at Cannes", "4 Oscars total"],
+      "awards": [
+        "Academy Award for Best Picture",
+        "Palme d'Or at Cannes",
+        "4 Oscars total"
+      ],
       "cultural_significance": "First non-English language film to win Best Picture at the Oscars. Brilliantly satirizes class inequality and showcases the excellence of Korean cinema."
     },
     {
       "id": "oldboy",
       "title": "Oldboy",
       "year": 2003,
-      "genre": ["Action", "Drama", "Mystery", "Thriller"],
+      "genre": [
+        "Action",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
       "duration": 120,
       "rating": 8.4,
       "description": "After being kidnapped and imprisoned for fifteen years, Oh Dae-Su is released, only to find that he must find his captor in five days.",
       "category": "Classic",
       "director": "Park Chan-wook",
       "emoji": "🔒",
-      "awards": ["Grand Prix at Cannes Film Festival"],
+      "awards": [
+        "Grand Prix at Cannes Film Festival"
+      ],
       "cultural_significance": "Revolutionary Korean thriller that redefined the revenge genre. Known for its shocking plot twists and innovative cinematography."
     },
     {
       "id": "train_to_busan",
       "title": "Train to Busan",
       "year": 2016,
-      "genre": ["Action", "Horror", "Thriller"],
+      "genre": [
+        "Action",
+        "Horror",
+        "Thriller"
+      ],
       "duration": 118,
       "rating": 7.6,
       "description": "While a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan.",
       "category": "Recent Hit",
       "director": "Yeon Sang-ho",
       "emoji": "🚂",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Successful Korean zombie film that combines horror with social commentary. Helped popularize Korean genre films internationally."
     },
     {
       "id": "memories_of_murder",
       "title": "Memories of Murder",
       "year": 2003,
-      "genre": ["Crime", "Drama", "Mystery", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
       "duration": 132,
       "rating": 8.1,
       "description": "In a small Korean province in 1986, two detectives struggle with the case of multiple young women being found raped and murdered by an unknown culprit.",
       "category": "Hidden Gem",
       "director": "Bong Joon-ho",
       "emoji": "🔍",
-      "awards": ["Multiple Korean film awards"],
+      "awards": [
+        "Multiple Korean film awards"
+      ],
       "cultural_significance": "Based on true events, this film explores the psychology of crime investigation and showcases early work from acclaimed director Bong Joon-ho."
     }
   ],
@@ -526,56 +655,78 @@
       "id": "stalker",
       "title": "Stalker",
       "year": 1979,
-      "genre": ["Drama", "Sci-Fi"],
+      "genre": [
+        "Drama",
+        "Sci-Fi"
+      ],
       "duration": 162,
       "rating": 8.1,
       "description": "A guide leads two men through an area known as the Zone to find a room that grants wishes.",
       "category": "Classic",
       "director": "Andrei Tarkovsky",
       "emoji": "🌌",
-      "awards": ["Cannes Film Festival Prize of the Ecumenical Jury"],
+      "awards": [
+        "Cannes Film Festival Prize of the Ecumenical Jury"
+      ],
       "cultural_significance": "Masterpiece of Soviet cinema that explores philosophical themes through science fiction. Known for its meditative pace and stunning cinematography."
     },
     {
       "id": "the_mirror",
       "title": "The Mirror",
       "year": 1975,
-      "genre": ["Biography", "Drama"],
+      "genre": [
+        "Biography",
+        "Drama"
+      ],
       "duration": 107,
       "rating": 8.1,
       "description": "A dying man in his forties remembers his past. His childhood, his mother, the war, personal moments and things that tell of the recent history of all the Russian nation.",
       "category": "Classic",
       "director": "Andrei Tarkovsky",
       "emoji": "🪞",
-      "awards": ["Multiple international film festival awards"],
+      "awards": [
+        "Multiple international film festival awards"
+      ],
       "cultural_significance": "Autobiographical masterpiece that weaves personal memory with Russian history. Considered one of the most poetic films ever made."
     },
     {
       "id": "leviathan",
       "title": "Leviathan",
       "year": 2014,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 140,
       "rating": 7.6,
       "description": "In a Russian coastal town, Kolya is forced to fight the corrupt mayor when he is told that his house will be demolished.",
       "category": "Recent Hit",
       "director": "Andrey Zvyagintsev",
       "emoji": "🐋",
-      "awards": ["Golden Globe for Best Foreign Language Film", "Cannes Film Festival Best Screenplay"],
+      "awards": [
+        "Golden Globe for Best Foreign Language Film",
+        "Cannes Film Festival Best Screenplay"
+      ],
       "cultural_significance": "Modern Russian masterpiece that critiques corruption and power structures in contemporary Russia. Known for its powerful social commentary."
     },
     {
       "id": "battle_for_sevastopol",
       "title": "Battle for Sevastopol",
       "year": 2015,
-      "genre": ["Action", "Biography", "Drama", "War"],
+      "genre": [
+        "Action",
+        "Biography",
+        "Drama",
+        "War"
+      ],
       "duration": 110,
       "rating": 7.1,
       "description": "The story of Soviet sniper Lyudmila Pavlichenko, the most successful female sniper in world history.",
       "category": "Hidden Gem",
       "director": "Sergey Mokritskiy",
       "emoji": "🎯",
-      "awards": ["Multiple Russian film awards"],
+      "awards": [
+        "Multiple Russian film awards"
+      ],
       "cultural_significance": "Based on the true story of a legendary Soviet sniper, this film showcases Russian war cinema and female heroism during World War II."
     }
   ],
@@ -584,56 +735,77 @@
       "id": "cairo_station",
       "title": "Cairo Station",
       "year": 1958,
-      "genre": ["Crime", "Drama", "Romance"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Romance"
+      ],
       "duration": 77,
       "rating": 7.6,
       "description": "A crippled newspaper seller at Cairo's main train station develops an unhealthy obsession with a beautiful drinks seller.",
       "category": "Classic",
       "director": "Youssef Chahine",
       "emoji": "🚉",
-      "awards": ["Berlin International Film Festival Official Selection"],
+      "awards": [
+        "Berlin International Film Festival Official Selection"
+      ],
       "cultural_significance": "Landmark Egyptian film that introduced neorealism to Arab cinema. Explores social issues and urban life in 1950s Cairo."
     },
     {
       "id": "the_mummy",
       "title": "The Mummy",
       "year": 1999,
-      "genre": ["Action", "Adventure", "Fantasy"],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "duration": 125,
       "rating": 7.1,
       "description": "At an archaeological dig in the ancient city of Hamunaptra, an American serving in the French Foreign Legion accidentally awakens a mummy.",
       "category": "Recent Hit",
       "director": "Stephen Sommers",
       "emoji": "🏺",
-      "awards": ["Academy Award for Best Sound"],
+      "awards": [
+        "Academy Award for Best Sound"
+      ],
       "cultural_significance": "Hollywood blockbuster that brought ancient Egyptian mythology to global audiences. While not Egyptian-made, it popularized Egyptian cultural elements."
     },
     {
       "id": "yacoubian_building",
       "title": "The Yacoubian Building",
       "year": 2006,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 165,
       "rating": 7.3,
       "description": "The lives of the residents of a once-elegant apartment building in downtown Cairo reflect the changes in Egyptian society.",
       "category": "Hidden Gem",
       "director": "Marwan Hamed",
       "emoji": "🏢",
-      "awards": ["Multiple Egyptian film awards"],
+      "awards": [
+        "Multiple Egyptian film awards"
+      ],
       "cultural_significance": "Important Egyptian film that explores social change and class dynamics in modern Cairo. Based on a bestselling novel."
     },
     {
       "id": "clash",
       "title": "Clash",
       "year": 2016,
-      "genre": ["Drama", "Thriller"],
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
       "duration": 97,
       "rating": 7.2,
       "description": "A group of journalists and protesters from opposing political sides are trapped in a police truck during the Egyptian revolution.",
       "category": "Recent Hit",
       "director": "Mohamed Diab",
       "emoji": "🚔",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Powerful film about the Egyptian revolution that captures the political tensions and human drama of the period."
     }
   ],
@@ -642,49 +814,65 @@
       "id": "lamb",
       "title": "Lamb",
       "year": 2015,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 94,
       "rating": 7.1,
       "description": "A young Ethiopian boy is sent to live with distant relatives, but he struggles to adapt to his new life.",
       "category": "Hidden Gem",
       "director": "Yared Zeleke",
       "emoji": "🐑",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "First Ethiopian film to be selected for the Cannes Film Festival. Provides a rare glimpse into rural Ethiopian life and culture."
     },
     {
       "id": "difret",
       "title": "Difret",
       "year": 2014,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 99,
       "rating": 7.2,
       "description": "A young Ethiopian girl is kidnapped as part of a traditional abduction marriage practice, but she fights back.",
       "category": "Recent Hit",
       "director": "Zeresenay Berhane Mehari",
       "emoji": "⚖️",
-      "awards": ["Sundance Film Festival Audience Award"],
+      "awards": [
+        "Sundance Film Festival Audience Award"
+      ],
       "cultural_significance": "Important Ethiopian film that addresses traditional practices and women's rights. Based on a true story and shot in Ethiopia."
     },
     {
       "id": "teza",
       "title": "Teza",
       "year": 2008,
-      "genre": ["Drama", "History"],
+      "genre": [
+        "Drama",
+        "History"
+      ],
       "duration": 140,
       "rating": 7.4,
       "description": "An Ethiopian intellectual returns home after studying abroad, only to find his country under military rule.",
       "category": "Classic",
       "director": "Haile Gerima",
       "emoji": "🏠",
-      "awards": ["Venice Film Festival Special Jury Prize"],
+      "awards": [
+        "Venice Film Festival Special Jury Prize"
+      ],
       "cultural_significance": "Landmark Ethiopian film that explores the country's political history and the experience of returning intellectuals."
     },
     {
       "id": "price_of_love",
       "title": "Price of Love",
       "year": 2015,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 120,
       "rating": 6.8,
       "description": "A taxi driver in Addis Ababa falls in love with a prostitute, but their relationship faces many challenges.",
@@ -699,56 +887,82 @@
       "id": "the_official_story",
       "title": "The Official Story",
       "year": 1985,
-      "genre": ["Drama", "History"],
+      "genre": [
+        "Drama",
+        "History"
+      ],
       "duration": 112,
       "rating": 7.8,
       "description": "A high school teacher begins to question the origins of her adopted daughter during the military dictatorship in Argentina.",
       "category": "Oscar Winner",
       "director": "Luis Puenzo",
       "emoji": "📚",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "First Argentine film to win an Oscar. Addresses the painful legacy of the military dictatorship and the stolen children scandal."
     },
     {
       "id": "wild_tales",
       "title": "Wild Tales",
       "year": 2014,
-      "genre": ["Comedy", "Drama", "Thriller"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 122,
       "rating": 7.8,
       "description": "Six short stories about people in distress, exploring the thin line that separates civilization from barbarism.",
       "category": "Recent Hit",
       "director": "Damián Szifron",
       "emoji": "🎭",
-      "awards": ["Oscar nomination for Best Foreign Language Film", "Cannes Film Festival Official Selection"],
+      "awards": [
+        "Oscar nomination for Best Foreign Language Film",
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Modern Argentine masterpiece that explores themes of revenge and social justice. Showcases contemporary Argentine cinema excellence."
     },
     {
       "id": "nine_queens",
       "title": "Nine Queens",
       "year": 2000,
-      "genre": ["Crime", "Drama", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 114,
       "rating": 7.7,
       "description": "Two con artists try to sell a sheet of counterfeit stamps to a collector.",
       "category": "Hidden Gem",
       "director": "Fabián Bielinsky",
       "emoji": "🎯",
-      "awards": ["Multiple Argentine film awards"],
+      "awards": [
+        "Multiple Argentine film awards"
+      ],
       "cultural_significance": "Clever Argentine thriller that showcases the country's talent for complex, engaging storytelling."
     },
     {
       "id": "the_secret_in_their_eyes",
       "title": "The Secret in Their Eyes",
       "year": 2009,
-      "genre": ["Crime", "Drama", "Mystery", "Romance", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Romance",
+        "Thriller"
+      ],
       "duration": 129,
       "rating": 8.2,
       "description": "A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases.",
       "category": "Oscar Winner",
       "director": "Juan José Campanella",
       "emoji": "👁️",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Second Argentine film to win an Oscar. Combines crime thriller with romance and explores Argentina's judicial system."
     }
   ],
@@ -757,56 +971,82 @@
       "id": "city_of_god",
       "title": "City of God",
       "year": 2002,
-      "genre": ["Crime", "Drama", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 130,
       "rating": 8.6,
       "description": "Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer.",
       "category": "Recent Hit",
       "director": "Fernando Meirelles",
       "emoji": "🏙️",
-      "awards": ["Oscar nomination for Best Director", "4 Oscar nominations total"],
+      "awards": [
+        "Oscar nomination for Best Director",
+        "4 Oscar nominations total"
+      ],
       "cultural_significance": "Revolutionary Brazilian film that brought favela life to global audiences. Known for its innovative cinematography and powerful social commentary."
     },
     {
       "id": "central_station",
       "title": "Central Station",
       "year": 1998,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 113,
       "rating": 7.8,
       "description": "An emotive journey of a former school teacher who writes letters for illiterate people and a young boy whose mother has just died.",
       "category": "Oscar Winner",
       "director": "Walter Salles",
       "emoji": "🚉",
-      "awards": ["Oscar nomination for Best Foreign Language Film", "Golden Globe for Best Foreign Language Film"],
+      "awards": [
+        "Oscar nomination for Best Foreign Language Film",
+        "Golden Globe for Best Foreign Language Film"
+      ],
       "cultural_significance": "Beautiful Brazilian road movie that explores the vastness of Brazil and the human connections that transcend social barriers."
     },
     {
       "id": "elite_squad",
       "title": "Elite Squad",
       "year": 2007,
-      "genre": ["Action", "Crime", "Drama", "Thriller"],
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 115,
       "rating": 8.1,
       "description": "Based on true events, the film shows how BOPE, a special police unit in Rio de Janeiro, tries to take control of the slums.",
       "category": "Recent Hit",
       "director": "José Padilha",
       "emoji": "👮",
-      "awards": ["Berlin Film Festival Golden Bear"],
+      "awards": [
+        "Berlin Film Festival Golden Bear"
+      ],
       "cultural_significance": "Gritty Brazilian crime film that provides an unflinching look at police corruption and violence in Rio's favelas."
     },
     {
       "id": "black_orpheus",
       "title": "Black Orpheus",
       "year": 1959,
-      "genre": ["Drama", "Fantasy", "Romance"],
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
       "duration": 107,
       "rating": 7.5,
       "description": "A retelling of the Orpheus and Eurydice myth, set during the Carnival in Rio de Janeiro.",
       "category": "Classic",
       "director": "Marcel Camus",
       "emoji": "🎭",
-      "awards": ["Academy Award for Best Foreign Language Film", "Palme d'Or at Cannes"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film",
+        "Palme d'Or at Cannes"
+      ],
       "cultural_significance": "Classic Brazilian film that introduced global audiences to Brazilian music, culture, and the magic of Carnival."
     }
   ],
@@ -815,56 +1055,81 @@
       "id": "uncle_boonmee",
       "title": "Uncle Boonmee Who Can Recall His Past Lives",
       "year": 2010,
-      "genre": ["Drama", "Fantasy"],
+      "genre": [
+        "Drama",
+        "Fantasy"
+      ],
       "duration": 114,
-      "rating": 7.0,
+      "rating": 7,
       "description": "Suffering from acute kidney failure, Uncle Boonmee treks through the jungle with his family to a mysterious hilltop cave.",
       "category": "Oscar Winner",
       "director": "Apichatpong Weerasethakul",
       "emoji": "🌿",
-      "awards": ["Palme d'Or at Cannes Film Festival"],
+      "awards": [
+        "Palme d'Or at Cannes Film Festival"
+      ],
       "cultural_significance": "First Thai film to win the Palme d'Or. Explores Buddhist concepts of reincarnation and Thai spiritual beliefs."
     },
     {
       "id": "bad_genius",
       "title": "Bad Genius",
       "year": 2017,
-      "genre": ["Crime", "Drama", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 130,
       "rating": 7.6,
       "description": "A genius high school student who makes money by helping other students cheat on tests gets involved in an international cheating ring.",
       "category": "Recent Hit",
       "director": "Nattawut Poonpiriya",
       "emoji": "🧠",
-      "awards": ["Multiple Thai film awards"],
+      "awards": [
+        "Multiple Thai film awards"
+      ],
       "cultural_significance": "Successful Thai thriller that explores academic pressure and corruption in education. Became a hit across Asia."
     },
     {
       "id": "tropical_malady",
       "title": "Tropical Malady",
       "year": 2004,
-      "genre": ["Drama", "Fantasy", "Romance"],
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
       "duration": 118,
-      "rating": 7.0,
+      "rating": 7,
       "description": "A soldier and a country boy fall in love, but their relationship is tested when the boy transforms into a shaman.",
       "category": "Hidden Gem",
       "director": "Apichatpong Weerasethakul",
       "emoji": "🌴",
-      "awards": ["Cannes Film Festival Jury Prize"],
+      "awards": [
+        "Cannes Film Festival Jury Prize"
+      ],
       "cultural_significance": "Experimental Thai film that blends reality with folklore and explores themes of love, transformation, and Thai mythology."
     },
     {
       "id": "ong_bak",
       "title": "Ong-Bak: The Thai Warrior",
       "year": 2003,
-      "genre": ["Action", "Adventure", "Comedy", "Crime", "Thriller"],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Crime",
+        "Thriller"
+      ],
       "duration": 108,
       "rating": 7.2,
       "description": "When the head of a statue sacred to a village is stolen, a young martial artist goes to the big city and finds himself taking on the underworld.",
       "category": "Recent Hit",
       "director": "Prachya Pinkaew",
       "emoji": "🥋",
-      "awards": ["Multiple international action film awards"],
+      "awards": [
+        "Multiple international action film awards"
+      ],
       "cultural_significance": "Revolutionary Thai action film that introduced Muay Thai to global audiences and launched Tony Jaa's international career."
     }
   ],
@@ -873,57 +1138,41 @@
       "id": "pan_labyrinth",
       "title": "Pan's Labyrinth",
       "year": 2006,
-      "genre": ["Drama", "Fantasy", "War"],
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "War"
+      ],
       "duration": 118,
       "rating": 8.2,
       "description": "In the Falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.",
       "category": "Oscar Winner",
       "director": "Guillermo del Toro",
       "emoji": "🧚",
-      "awards": ["3 Academy Awards", "7 Oscar nominations total"],
-      "cultural_significance": "Masterpiece of Spanish cinema that combines historical reality with dark fantasy. Explores the brutality of Franco's Spain through magical realism."
-    },
-    {
-      "id": "all_about_my_mother",
-      "title": "All About My Mother",
-      "year": 1999,
-      "genre": ["Drama"],
-      "duration": 101,
-      "rating": 7.9,
-      "description": "Young Esteban wants to become a writer and also to discover the identity of his second mother, a trans woman, carefully concealed by his mother Manuela.",
-      "category": "Oscar Winner",
-      "director": "Pedro Almodóvar",
-      "emoji": "🎭",
-      "awards": ["Academy Award for Best Foreign Language Film"],
-      "cultural_significance": "Landmark Spanish film that explores gender identity and motherhood. Showcases Pedro Almodóvar's unique vision and Spanish cinema excellence."
-    },
-    {
-      "id": "open_your_eyes",
-      "title": "Open Your Eyes",
-      "year": 1997,
-      "genre": ["Drama", "Romance", "Sci-Fi", "Thriller"],
-      "duration": 119,
-      "rating": 7.7,
-      "description": "A very handsome man finds the love of his life, but he suffers an accident and needs to have his face rebuilt by surgery after it is severely disfigured.",
-      "category": "Hidden Gem",
-      "director": "Alejandro Amenábar",
-      "emoji": "👁️",
-      "awards": ["Multiple Spanish film awards"],
-      "cultural_significance": "Innovative Spanish thriller that explores identity and reality. Later remade as 'Vanilla Sky' in Hollywood, showcasing Spanish cinema's influence."
+      "awards": [
+        "Academy Award for Best Cinematography",
+        "Academy Award for Best Art Direction"
+      ],
+      "cultural_significance": "Spanish-Mexican co-production that explores the horrors of war through magical realism."
     },
     {
       "id": "volver",
       "title": "Volver",
       "year": 2006,
-      "genre": ["Comedy", "Drama", "Mystery"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 121,
       "rating": 7.6,
       "description": "After her death, a mother returns to her home town in order to fix the situations she couldn't resolve during her life.",
-      "category": "Recent Hit",
+      "category": "Spanish Drama",
       "director": "Pedro Almodóvar",
       "emoji": "👻",
-      "awards": ["Cannes Film Festival Best Actress Award"],
-      "cultural_significance": "Celebrates female strength and Spanish family bonds. Features strong female characters and explores themes of motherhood and redemption."
+      "awards": [
+        "Cannes Film Festival Best Actress Award"
+      ],
+      "cultural_significance": "Celebrates Spanish culture, family bonds, and the strength of women."
     }
   ],
   "greece": [
@@ -931,56 +1180,83 @@
       "id": "never_on_sunday",
       "title": "Never on Sunday",
       "year": 1960,
-      "genre": ["Comedy", "Drama", "Romance"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "duration": 91,
       "rating": 7.3,
       "description": "An American tourist in Greece attempts to make a prostitute into a respectable woman.",
       "category": "Classic",
       "director": "Jules Dassin",
       "emoji": "🏛️",
-      "awards": ["Academy Award for Best Song", "Oscar nomination for Best Actress"],
+      "awards": [
+        "Academy Award for Best Song",
+        "Oscar nomination for Best Actress"
+      ],
       "cultural_significance": "Iconic Greek film that introduced international audiences to Greek culture and music. The title song became a global hit."
     },
     {
       "id": "dogtooth",
       "title": "Dogtooth",
       "year": 2009,
-      "genre": ["Drama", "Thriller"],
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
       "duration": 94,
       "rating": 7.3,
       "description": "A controlling, manipulative father locks his three adult offspring in a state of perpetual childhood by keeping them prisoner within the sprawling family compound.",
       "category": "Recent Hit",
       "director": "Yorgos Lanthimos",
       "emoji": "🦷",
-      "awards": ["Cannes Film Festival Un Certain Regard Award"],
+      "awards": [
+        "Cannes Film Festival Un Certain Regard Award"
+      ],
       "cultural_significance": "Revolutionary Greek film that established the 'Greek Weird Wave' movement. Known for its unique style and disturbing themes."
     },
     {
       "id": "the_lobster",
       "title": "The Lobster",
       "year": 2015,
-      "genre": ["Comedy", "Drama", "Romance", "Sci-Fi"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Sci-Fi"
+      ],
       "duration": 118,
       "rating": 7.1,
       "description": "In a dystopian near future, single people, according to the laws of The City, are taken to The Hotel, where they are obliged to find a romantic partner in 45 days or are transformed into beasts and sent off into The Woods.",
       "category": "Recent Hit",
       "director": "Yorgos Lanthimos",
       "emoji": "🦞",
-      "awards": ["Cannes Film Festival Jury Prize"],
+      "awards": [
+        "Cannes Film Festival Jury Prize"
+      ],
       "cultural_significance": "International co-production directed by Greek filmmaker Yorgos Lanthimos. Showcases the global reach of Greek cinema talent."
     },
     {
       "id": "z",
       "title": "Z",
       "year": 1969,
-      "genre": ["Crime", "Drama", "History", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "History",
+        "Thriller"
+      ],
       "duration": 127,
       "rating": 8.3,
       "description": "The public prosecutor's investigation of a prominent politician's assassination reveals the involvement of the military and the police.",
       "category": "Classic",
       "director": "Costa-Gavras",
       "emoji": "⚖️",
-      "awards": ["Academy Award for Best Foreign Language Film", "2 Oscars total"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film",
+        "2 Oscars total"
+      ],
       "cultural_significance": "Powerful Greek political thriller that critiques authoritarianism. Based on real events and showcases Greek cinema's political engagement."
     }
   ],
@@ -989,56 +1265,75 @@
       "id": "omar_killed_me",
       "title": "Omar Killed Me",
       "year": 2011,
-      "genre": ["Biography", "Crime", "Drama"],
+      "genre": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
       "duration": 100,
       "rating": 6.8,
       "description": "The story of Omar Raddad, a Moroccan gardener who was convicted of murdering his employer in 1991 and spent seven years in prison.",
       "category": "Recent Hit",
       "director": "Roschdy Zem",
       "emoji": "🔍",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Important Moroccan film that explores justice and social issues. Based on a true story that captured national attention."
     },
     {
       "id": "much_loved",
       "title": "Much Loved",
       "year": 2015,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 105,
       "rating": 6.5,
       "description": "The story of four prostitutes in Marrakech and their daily struggles with family, love, and society.",
       "category": "Hidden Gem",
       "director": "Nabil Ayouch",
       "emoji": "🌹",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Controversial Moroccan film that addresses taboo subjects. Banned in Morocco but internationally acclaimed for its honesty."
     },
     {
       "id": "the_way",
       "title": "The Way",
       "year": 2010,
-      "genre": ["Drama", "Adventure"],
+      "genre": [
+        "Drama",
+        "Adventure"
+      ],
       "duration": 123,
       "rating": 7.4,
       "description": "A father heads overseas to recover the body of his estranged son who died while traveling the 'El camino de Santiago' from France to Spain.",
       "category": "Recent Hit",
       "director": "Emilio Estevez",
       "emoji": "🚶",
-      "awards": ["Multiple international film festival awards"],
+      "awards": [
+        "Multiple international film festival awards"
+      ],
       "cultural_significance": "While not Moroccan-made, this film showcases the cultural and spiritual significance of the Camino de Santiago pilgrimage route."
     },
     {
       "id": "horses_of_god",
       "title": "Horses of God",
       "year": 2012,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 115,
       "rating": 7.2,
       "description": "Based on the 2003 Casablanca bombings, the film follows four friends from the slums of Casablanca who become suicide bombers.",
       "category": "Hidden Gem",
       "director": "Nabil Ayouch",
       "emoji": "🐎",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Powerful Moroccan film that explores the roots of extremism. Based on real events and provides insight into contemporary Moroccan society."
     }
   ],
@@ -1047,28 +1342,37 @@
       "id": "the_babymaker",
       "title": "The Babymaker",
       "year": 2012,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
-      "rating": 7.0,
+      "rating": 7,
       "description": "A young woman's journey to become a surrogate mother, exploring family and cultural expectations.",
       "category": "Recent Hit",
       "director": "Khoo Eng Yow",
       "emoji": "👶",
-      "awards": ["Malaysian Film Festival Awards"],
+      "awards": [
+        "Malaysian Film Festival Awards"
+      ],
       "cultural_significance": "Addresses contemporary Malaysian social issues and family dynamics."
     },
     {
       "id": "the_second_life_of_thieves",
       "title": "The Second Life of Thieves",
       "year": 2016,
-      "genre": ["Drama", "Crime"],
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
       "duration": 100,
       "rating": 7.1,
       "description": "Two former thieves try to go straight but find themselves drawn back into their old ways.",
       "category": "Recent Hit",
       "director": "Ming Jin Woo",
       "emoji": "🔄",
-      "awards": ["Malaysian Film Festival Awards"],
+      "awards": [
+        "Malaysian Film Festival Awards"
+      ],
       "cultural_significance": "Explores themes of redemption and second chances in Malaysian society."
     }
   ],
@@ -1077,28 +1381,37 @@
       "id": "i_loaf_u",
       "title": "I Loaf U",
       "year": 2015,
-      "genre": ["Comedy", "Romance"],
+      "genre": [
+        "Comedy",
+        "Romance"
+      ],
       "duration": 90,
       "rating": 6.8,
       "description": "A romantic comedy about a baker who falls in love with a customer.",
       "category": "Recent Hit",
       "director": "Daniel Yam",
       "emoji": "🥖",
-      "awards": ["Singapore International Film Festival"],
+      "awards": [
+        "Singapore International Film Festival"
+      ],
       "cultural_significance": "Showcases Singaporean culture and the local food scene."
     },
     {
       "id": "7_letters",
       "title": "7 Letters",
       "year": 2015,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 120,
       "rating": 7.2,
       "description": "Seven short films by seven Singaporean directors exploring the nation's identity.",
       "category": "Recent Hit",
       "director": "Various",
       "emoji": "📝",
-      "awards": ["Singapore International Film Festival"],
+      "awards": [
+        "Singapore International Film Festival"
+      ],
       "cultural_significance": "Celebrates Singapore's 50th anniversary and showcases local filmmaking talent."
     }
   ],
@@ -1107,42 +1420,58 @@
       "id": "the_act_of_killing",
       "title": "The Act of Killing",
       "year": 2012,
-      "genre": ["Documentary", "Crime", "Drama"],
+      "genre": [
+        "Documentary",
+        "Crime",
+        "Drama"
+      ],
       "duration": 159,
       "rating": 8.2,
       "description": "Filmmakers challenge former Indonesian death-squad leaders to reenact their mass-killings in various cinematic genres.",
       "category": "Oscar Winner",
       "director": "Joshua Oppenheimer",
       "emoji": "🎭",
-      "awards": ["Oscar nomination for Best Documentary Feature"],
+      "awards": [
+        "Oscar nomination for Best Documentary Feature"
+      ],
       "cultural_significance": "Powerful documentary that explores Indonesia's dark history and the perpetrators of mass violence."
     },
     {
       "id": "the_look_of_silence",
       "title": "The Look of Silence",
       "year": 2014,
-      "genre": ["Documentary"],
+      "genre": [
+        "Documentary"
+      ],
       "duration": 103,
       "rating": 8.3,
       "description": "A family that survives the genocide in Indonesia confronts the men who killed one of their brothers.",
       "category": "Recent Hit",
       "director": "Joshua Oppenheimer",
       "emoji": "👁️",
-      "awards": ["Oscar nomination for Best Documentary Feature"],
+      "awards": [
+        "Oscar nomination for Best Documentary Feature"
+      ],
       "cultural_significance": "Companion piece to 'The Act of Killing' that gives voice to the victims and their families."
     },
     {
       "id": "marlina_the_murderer",
       "title": "Marlina the Murderer in Four Acts",
       "year": 2017,
-      "genre": ["Drama", "Thriller", "Western"],
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Western"
+      ],
       "duration": 93,
       "rating": 7.1,
       "description": "A woman seeks revenge after being robbed and sexually assaulted by a group of men.",
       "category": "Recent Hit",
       "director": "Mouly Surya",
       "emoji": "🔪",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Revolutionary Indonesian film that reimagines the western genre and explores female empowerment."
     }
   ],
@@ -1151,42 +1480,59 @@
       "id": "himala",
       "title": "Himala",
       "year": 1982,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 125,
       "rating": 7.8,
       "description": "A young woman claims to have seen the Virgin Mary and begins performing miracles.",
       "category": "Classic",
       "director": "Ishmael Bernal",
       "emoji": "🙏",
-      "awards": ["Berlin Film Festival Official Selection"],
+      "awards": [
+        "Berlin Film Festival Official Selection"
+      ],
       "cultural_significance": "Iconic Filipino film that explores faith, miracles, and the human condition."
     },
     {
       "id": "metro_manila",
       "title": "Metro Manila",
       "year": 2013,
-      "genre": ["Crime", "Drama", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 115,
       "rating": 7.4,
       "description": "A farmer moves to Manila with his family in search of a better life, but gets caught up in the city's criminal underworld.",
       "category": "Recent Hit",
       "director": "Sean Ellis",
       "emoji": "🌃",
-      "awards": ["Sundance Film Festival Audience Award"],
+      "awards": [
+        "Sundance Film Festival Audience Award"
+      ],
       "cultural_significance": "Explores the challenges of rural-urban migration and the harsh realities of life in Manila."
     },
     {
       "id": "birdshot",
       "title": "Birdshot",
       "year": 2016,
-      "genre": ["Crime", "Drama", "Mystery", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
       "duration": 125,
       "rating": 6.9,
       "description": "A young farm girl accidentally kills a protected eagle, setting off a chain of events involving corrupt police and government officials.",
       "category": "Recent Hit",
       "director": "Mikhail Red",
       "emoji": "🦅",
-      "awards": ["Tokyo International Film Festival Best Picture"],
+      "awards": [
+        "Tokyo International Film Festival Best Picture"
+      ],
       "cultural_significance": "Addresses environmental protection and corruption in the Philippines."
     }
   ],
@@ -1195,42 +1541,56 @@
       "id": "the_scent_of_green_papaya",
       "title": "The Scent of Green Papaya",
       "year": 1993,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 104,
       "rating": 7.6,
       "description": "A young girl from the countryside is sent to work as a servant in a Saigon household.",
       "category": "Oscar Winner",
       "director": "Tran Anh Hung",
       "emoji": "🥭",
-      "awards": ["Oscar nomination for Best Foreign Language Film"],
+      "awards": [
+        "Oscar nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "First Vietnamese film to be nominated for an Oscar. Showcases Vietnamese culture and family life."
     },
     {
       "id": "cyclo",
       "title": "Cyclo",
       "year": 1995,
-      "genre": ["Crime", "Drama"],
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
       "duration": 123,
       "rating": 7.4,
       "description": "A young cyclo driver in Ho Chi Minh City gets involved in organized crime to support his family.",
       "category": "Recent Hit",
       "director": "Tran Anh Hung",
       "emoji": "🚲",
-      "awards": ["Venice Film Festival Golden Lion"],
+      "awards": [
+        "Venice Film Festival Golden Lion"
+      ],
       "cultural_significance": "Award-winning Vietnamese film that explores urban poverty and crime in Ho Chi Minh City."
     },
     {
       "id": "the_vertical_ray_of_the_sun",
       "title": "The Vertical Ray of the Sun",
       "year": 2000,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 112,
       "rating": 7.2,
       "description": "Three sisters prepare for their mother's death anniversary while dealing with their own relationships and secrets.",
       "category": "Recent Hit",
       "director": "Tran Anh Hung",
       "emoji": "☀️",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Explores Vietnamese family dynamics and the importance of tradition and memory."
     }
   ],
@@ -1239,28 +1599,43 @@
       "id": "the_killing_fields",
       "title": "The Killing Fields",
       "year": 1984,
-      "genre": ["Biography", "Drama", "History", "War"],
+      "genre": [
+        "Biography",
+        "Drama",
+        "History",
+        "War"
+      ],
       "duration": 141,
       "rating": 7.8,
       "description": "A journalist is trapped in Cambodia during tyrant Pol Pot's deadly 'Year Zero' cleansing campaign.",
       "category": "Oscar Winner",
       "director": "Roland Joffé",
       "emoji": "⚰️",
-      "awards": ["3 Academy Awards", "7 Oscar nominations total"],
+      "awards": [
+        "3 Academy Awards",
+        "7 Oscar nominations total"
+      ],
       "cultural_significance": "While not Cambodian-made, this film brought global attention to the Cambodian genocide and its devastating impact."
     },
     {
       "id": "first_they_killed_my_father",
       "title": "First They Killed My Father",
       "year": 2017,
-      "genre": ["Biography", "Drama", "History", "War"],
+      "genre": [
+        "Biography",
+        "Drama",
+        "History",
+        "War"
+      ],
       "duration": 136,
       "rating": 7.2,
       "description": "Based on the memoir of Loung Ung, a young girl's experience during the Cambodian genocide.",
       "category": "Recent Hit",
       "director": "Angelina Jolie",
       "emoji": "👧",
-      "awards": ["Golden Globe nomination for Best Foreign Language Film"],
+      "awards": [
+        "Golden Globe nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Important film that tells the Cambodian genocide story from a child's perspective, directed by Angelina Jolie."
     }
   ],
@@ -1269,28 +1644,39 @@
       "id": "dearest_sister",
       "title": "Dearest Sister",
       "year": 2016,
-      "genre": ["Drama", "Horror", "Mystery"],
+      "genre": [
+        "Drama",
+        "Horror",
+        "Mystery"
+      ],
       "duration": 91,
       "rating": 6.8,
       "description": "A young woman from rural Laos moves to the city to care for her wealthy cousin who is going blind.",
       "category": "Recent Hit",
       "director": "Mattie Do",
       "emoji": "👁️",
-      "awards": ["Fantastic Fest Official Selection"],
+      "awards": [
+        "Fantastic Fest Official Selection"
+      ],
       "cultural_significance": "First Laotian horror film to gain international recognition. Explores class differences and supernatural beliefs."
     },
     {
       "id": "the_long_walk",
       "title": "The Long Walk",
       "year": 2019,
-      "genre": ["Drama", "Sci-Fi"],
+      "genre": [
+        "Drama",
+        "Sci-Fi"
+      ],
       "duration": 87,
       "rating": 6.9,
       "description": "An old Laotian man who can see ghosts embarks on a journey to find the ghost of his dead wife.",
       "category": "Recent Hit",
       "director": "Mattie Do",
       "emoji": "👻",
-      "awards": ["Venice Film Festival Official Selection"],
+      "awards": [
+        "Venice Film Festival Official Selection"
+      ],
       "cultural_significance": "Innovative Laotian film that blends science fiction with traditional beliefs and explores themes of love and loss."
     }
   ],
@@ -1299,28 +1685,36 @@
       "id": "the_road_to_mandalay",
       "title": "The Road to Mandalay",
       "year": 2016,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
-      "rating": 7.0,
+      "rating": 7,
       "description": "Two young people from Myanmar try to make a living in Thailand while dealing with their relationship.",
       "category": "Recent Hit",
       "director": "Midi Z",
       "emoji": "🛣️",
-      "awards": ["Venice Film Festival Official Selection"],
+      "awards": [
+        "Venice Film Festival Official Selection"
+      ],
       "cultural_significance": "Explores the challenges faced by Myanmar migrants in Thailand and the complexities of their relationships."
     },
     {
       "id": "ice_poison",
       "title": "Ice Poison",
       "year": 2014,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
       "rating": 6.8,
       "description": "A father and son from rural Myanmar travel to the city to sell drugs to support their family.",
       "category": "Recent Hit",
       "director": "Midi Z",
       "emoji": "❄️",
-      "awards": ["Berlin Film Festival Official Selection"],
+      "awards": [
+        "Berlin Film Festival Official Selection"
+      ],
       "cultural_significance": "Addresses the drug trade and rural poverty in Myanmar, showing the desperate choices people make to survive."
     }
   ],
@@ -1329,28 +1723,36 @@
       "id": "khuda_ke_liye",
       "title": "Khuda Ke Liye",
       "year": 2007,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 168,
       "rating": 8.1,
       "description": "Two musicians face religious extremism and cultural conflicts in Pakistan and Afghanistan.",
       "category": "Recent Hit",
       "director": "Shoaib Mansoor",
       "emoji": "🎵",
-      "awards": ["Lux Style Awards"],
+      "awards": [
+        "Lux Style Awards"
+      ],
       "cultural_significance": "Addresses religious extremism and cultural identity in Pakistan. One of the most successful Pakistani films."
     },
     {
       "id": "bol",
       "title": "Bol",
       "year": 2011,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 156,
       "rating": 7.8,
       "description": "A father on death row tells his story of family struggles and societal issues.",
       "category": "Recent Hit",
       "director": "Shoaib Mansoor",
       "emoji": "⚖️",
-      "awards": ["Lux Style Awards"],
+      "awards": [
+        "Lux Style Awards"
+      ],
       "cultural_significance": "Explores social issues in Pakistan including gender discrimination and family dynamics."
     }
   ],
@@ -1359,28 +1761,36 @@
       "id": "the_clay_bird",
       "title": "The Clay Bird",
       "year": 2002,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 98,
       "rating": 7.4,
       "description": "A young boy is sent to a religious school during the turbulent 1960s in East Pakistan.",
       "category": "Recent Hit",
       "director": "Tareque Masud",
       "emoji": "🐦",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "First Bangladeshi film to be selected for Cannes. Explores religious education and political turmoil."
     },
     {
       "id": "antaratma",
       "title": "Antaratma",
       "year": 2016,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
       "rating": 7.2,
       "description": "A woman's journey of self-discovery and spiritual awakening.",
       "category": "Recent Hit",
       "director": "Amitabh Reza Chowdhury",
       "emoji": "🧘",
-      "awards": ["Bangladesh National Film Awards"],
+      "awards": [
+        "Bangladesh National Film Awards"
+      ],
       "cultural_significance": "Explores spiritual themes and women's empowerment in Bangladeshi society."
     }
   ],
@@ -1389,28 +1799,37 @@
       "id": "between_two_worlds",
       "title": "Between Two Worlds",
       "year": 2009,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
       "rating": 7.1,
       "description": "A young woman navigates between traditional and modern life in Sri Lanka.",
       "category": "Recent Hit",
       "director": "Vimukthi Jayasundara",
       "emoji": "🌍",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Explores the clash between tradition and modernity in Sri Lankan society."
     },
     {
       "id": "with_love_to_you",
       "title": "With Love to You",
       "year": 2015,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 120,
-      "rating": 7.0,
+      "rating": 7,
       "description": "A love story set against the backdrop of Sri Lanka's beautiful landscapes.",
       "category": "Recent Hit",
       "director": "Sanjeewa Pushpakumara",
       "emoji": "💕",
-      "awards": ["Sri Lankan Film Awards"],
+      "awards": [
+        "Sri Lankan Film Awards"
+      ],
       "cultural_significance": "Showcases Sri Lankan culture and landscapes through a romantic narrative."
     }
   ],
@@ -1419,28 +1838,36 @@
       "id": "highway",
       "title": "Highway",
       "year": 2012,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 90,
       "rating": 7.3,
       "description": "A road movie exploring the lives of people along Nepal's highways.",
       "category": "Recent Hit",
       "director": "Deepak Rauniyar",
       "emoji": "🛣️",
-      "awards": ["Venice Film Festival Official Selection"],
+      "awards": [
+        "Venice Film Festival Official Selection"
+      ],
       "cultural_significance": "First Nepali film to be selected for Venice. Explores life along Nepal's transportation routes."
     },
     {
       "id": "white_sun",
       "title": "White Sun",
       "year": 2016,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 88,
-      "rating": 7.0,
+      "rating": 7,
       "description": "A political drama set in post-civil war Nepal.",
       "category": "Recent Hit",
       "director": "Deepak Rauniyar",
       "emoji": "☀️",
-      "awards": ["Venice Film Festival Official Selection"],
+      "awards": [
+        "Venice Film Festival Official Selection"
+      ],
       "cultural_significance": "Addresses post-war reconciliation and political tensions in Nepal."
     }
   ],
@@ -1449,28 +1876,37 @@
       "id": "the_cup",
       "title": "The Cup",
       "year": 1999,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 93,
       "rating": 7.2,
       "description": "Young Buddhist monks in Bhutan are excited about the World Cup soccer tournament.",
       "category": "Recent Hit",
       "director": "Khyentse Norbu",
       "emoji": "⚽",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "First Bhutanese film to gain international recognition. Shows the intersection of tradition and modernity."
     },
     {
       "id": "travellers_and_magicians",
       "title": "Travellers and Magicians",
       "year": 2003,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 108,
       "rating": 7.1,
       "description": "A government official's journey through Bhutan's beautiful landscapes.",
       "category": "Recent Hit",
       "director": "Khyentse Norbu",
       "emoji": "🏔️",
-      "awards": ["International Film Festival Awards"],
+      "awards": [
+        "International Film Festival Awards"
+      ],
       "cultural_significance": "Showcases Bhutan's stunning landscapes and traditional culture."
     }
   ],
@@ -1479,28 +1915,40 @@
       "id": "mad_max_fury_road",
       "title": "Mad Max: Fury Road",
       "year": 2015,
-      "genre": ["Action", "Adventure", "Sci-Fi"],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
       "duration": 120,
       "rating": 8.1,
       "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.",
       "category": "Oscar Winner",
       "director": "George Miller",
       "emoji": "🏎️",
-      "awards": ["Academy Award for Best Costume Design", "Academy Award for Best Production Design"],
+      "awards": [
+        "Academy Award for Best Costume Design",
+        "Academy Award for Best Production Design"
+      ],
       "cultural_significance": "Revolutionary action film that showcases Australian filmmaking excellence and post-apocalyptic storytelling."
     },
     {
       "id": "the_water_diviner",
       "title": "The Water Diviner",
       "year": 2014,
-      "genre": ["Drama", "War"],
+      "genre": [
+        "Drama",
+        "War"
+      ],
       "duration": 111,
-      "rating": 7.0,
+      "rating": 7,
       "description": "An Australian farmer travels to Turkey after the Battle of Gallipoli to try to locate his three missing sons.",
       "category": "Historical Drama",
       "director": "Russell Crowe",
       "emoji": "💧",
-      "awards": ["Australian Academy of Cinema and Television Arts Awards"],
+      "awards": [
+        "Australian Academy of Cinema and Television Arts Awards"
+      ],
       "cultural_significance": "Explores Australia's involvement in World War I and the Gallipoli campaign."
     }
   ],
@@ -1509,28 +1957,39 @@
       "id": "room",
       "title": "Room",
       "year": 2015,
-      "genre": ["Drama", "Thriller"],
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
       "duration": 118,
       "rating": 8.1,
       "description": "A young boy is raised within the confines of a small room where his mother has been held captive for seven years.",
       "category": "Oscar Winner",
       "director": "Lenny Abrahamson",
       "emoji": "🚪",
-      "awards": ["Academy Award for Best Actress"],
+      "awards": [
+        "Academy Award for Best Actress"
+      ],
       "cultural_significance": "Canadian-Irish co-production that showcases powerful storytelling and emotional depth."
     },
     {
       "id": "bon_cop_bad_cop",
       "title": "Bon Cop, Bad Cop",
       "year": 2006,
-      "genre": ["Action", "Comedy", "Crime"],
+      "genre": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
       "duration": 116,
-      "rating": 7.0,
+      "rating": 7,
       "description": "Two police officers from different provinces must work together to solve a murder case.",
       "category": "Canadian Comedy",
       "director": "Érik Canuel",
       "emoji": "👮",
-      "awards": ["Genie Award for Best Motion Picture"],
+      "awards": [
+        "Genie Award for Best Motion Picture"
+      ],
       "cultural_significance": "Celebrates Canadian bilingualism and cultural diversity through comedy."
     }
   ],
@@ -1539,119 +1998,42 @@
       "id": "the_kings_speech",
       "title": "The King's Speech",
       "year": 2010,
-      "genre": ["Biography", "Drama", "History"],
+      "genre": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
       "duration": 118,
-      "rating": 8.0,
+      "rating": 8,
       "description": "The story of King George VI, his impromptu ascension to the throne of the British Empire in 1936, and the speech therapist who helped the unsure monarch overcome his stammer.",
       "category": "Oscar Winner",
       "director": "Tom Hooper",
       "emoji": "👑",
-      "awards": ["Academy Award for Best Picture", "Academy Award for Best Actor"],
+      "awards": [
+        "Academy Award for Best Picture",
+        "Academy Award for Best Actor"
+      ],
       "cultural_significance": "Showcases British royal history and the power of determination and friendship."
     },
     {
       "id": "slumdog_millionaire",
       "title": "Slumdog Millionaire",
       "year": 2008,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 120,
-      "rating": 8.0,
+      "rating": 8,
       "description": "A Mumbai teenager reflects on his upbringing in the slums when he is asked to appear on the Indian version of 'Who Wants To Be A Millionaire?'",
       "category": "Oscar Winner",
       "director": "Danny Boyle",
       "emoji": "🏆",
-      "awards": ["Academy Award for Best Picture", "Academy Award for Best Director"],
+      "awards": [
+        "Academy Award for Best Picture",
+        "Academy Award for Best Director"
+      ],
       "cultural_significance": "British film that explores Indian culture and the power of hope and determination."
-    }
-  ],
-  "france": [
-    {
-      "id": "amelie",
-      "title": "Amélie",
-      "year": 2001,
-      "genre": ["Comedy", "Romance"],
-      "duration": 122,
-      "rating": 8.3,
-      "description": "Amélie, an innocent and naive girl in Paris, with her own sense of justice, decides to help those around her and along the way, discovers love.",
-      "category": "French Classic",
-      "director": "Jean-Pierre Jeunet",
-      "emoji": "🇫🇷",
-      "awards": ["César Award for Best Film", "César Award for Best Director"],
-      "cultural_significance": "Celebrates Parisian culture and the magic of everyday life in France."
-    },
-    {
-      "id": "la_la_land",
-      "title": "La La Land",
-      "year": 2016,
-      "genre": ["Comedy", "Drama", "Musical"],
-      "duration": 128,
-      "rating": 8.0,
-      "description": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
-      "category": "Modern Musical",
-      "director": "Damien Chazelle",
-      "emoji": "🎭",
-      "awards": ["Academy Award for Best Director", "Academy Award for Best Actress"],
-      "cultural_significance": "Revitalizes the musical genre and celebrates artistic dreams and love."
-    }
-  ],
-  "germany": [
-    {
-      "id": "run_lola_run",
-      "title": "Run Lola Run",
-      "year": 1998,
-      "genre": ["Action", "Crime", "Thriller"],
-      "duration": 80,
-      "rating": 7.6,
-      "description": "After a botched money delivery, Lola has 20 minutes to come up with 100,000 Deutschmarks to save her boyfriend's life.",
-      "category": "German Thriller",
-      "director": "Tom Tykwer",
-      "emoji": "🏃‍♀️",
-      "awards": ["Bavarian Film Awards", "German Film Awards"],
-      "cultural_significance": "Revolutionary German film that explores fate, time, and the consequences of choices."
-    },
-    {
-      "id": "the_lives_of_others",
-      "title": "The Lives of Others",
-      "year": 2006,
-      "genre": ["Drama", "Thriller"],
-      "duration": 137,
-      "rating": 8.4,
-      "description": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.",
-      "category": "Oscar Winner",
-      "director": "Florian Henckel von Donnersmarck",
-      "emoji": "👂",
-      "awards": ["Academy Award for Best Foreign Language Film"],
-      "cultural_significance": "Explores the surveillance state in East Germany and the power of art and human connection."
-    }
-  ],
-  "spain": [
-    {
-      "id": "pan_labyrinth",
-      "title": "Pan's Labyrinth",
-      "year": 2006,
-      "genre": ["Drama", "Fantasy", "War"],
-      "duration": 118,
-      "rating": 8.2,
-      "description": "In the Falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.",
-      "category": "Oscar Winner",
-      "director": "Guillermo del Toro",
-      "emoji": "🧚",
-      "awards": ["Academy Award for Best Cinematography", "Academy Award for Best Art Direction"],
-      "cultural_significance": "Spanish-Mexican co-production that explores the horrors of war through magical realism."
-    },
-    {
-      "id": "volver",
-      "title": "Volver",
-      "year": 2006,
-      "genre": ["Comedy", "Drama"],
-      "duration": 121,
-      "rating": 7.6,
-      "description": "After her death, a mother returns to her home town in order to fix the situations she couldn't resolve during her life.",
-      "category": "Spanish Drama",
-      "director": "Pedro Almodóvar",
-      "emoji": "👻",
-      "awards": ["Cannes Film Festival Best Actress Award"],
-      "cultural_significance": "Celebrates Spanish culture, family bonds, and the strength of women."
     }
   ],
   "netherlands": [
@@ -1659,14 +2041,20 @@
       "id": "black_book",
       "title": "Black Book",
       "year": 2006,
-      "genre": ["Drama", "Thriller", "War"],
+      "genre": [
+        "Drama",
+        "Thriller",
+        "War"
+      ],
       "duration": 145,
       "rating": 7.8,
       "description": "In the Nazi-occupied Netherlands during World War II, a Jewish singer infiltrates the regional Gestapo headquarters for the Dutch resistance.",
       "category": "Dutch War Drama",
       "director": "Paul Verhoeven",
       "emoji": "📖",
-      "awards": ["Netherlands Film Festival Golden Calf"],
+      "awards": [
+        "Netherlands Film Festival Golden Calf"
+      ],
       "cultural_significance": "Explores Dutch resistance during WWII and the moral complexities of survival."
     }
   ],
@@ -1675,14 +2063,20 @@
       "id": "let_the_right_one_in",
       "title": "Let the Right One In",
       "year": 2008,
-      "genre": ["Drama", "Horror", "Romance"],
+      "genre": [
+        "Drama",
+        "Horror",
+        "Romance"
+      ],
       "duration": 115,
       "rating": 7.9,
       "description": "A bullied 12-year-old boy befriends a young vampire in a Stockholm suburb.",
       "category": "Swedish Horror",
       "director": "Tomas Alfredson",
       "emoji": "🧛",
-      "awards": ["Guldbagge Award for Best Film"],
+      "awards": [
+        "Guldbagge Award for Best Film"
+      ],
       "cultural_significance": "Revolutionary Swedish horror film that explores loneliness and friendship."
     }
   ],
@@ -1691,14 +2085,20 @@
       "id": "trollhunter",
       "title": "Trollhunter",
       "year": 2010,
-      "genre": ["Fantasy", "Horror", "Mystery"],
+      "genre": [
+        "Fantasy",
+        "Horror",
+        "Mystery"
+      ],
       "duration": 103,
       "rating": 6.8,
       "description": "A group of students investigates a series of mysterious bear killings, only to discover something bigger than they ever imagined.",
       "category": "Norwegian Fantasy",
       "director": "André Øvredal",
       "emoji": "🧌",
-      "awards": ["Amanda Award for Best Visual Effects"],
+      "awards": [
+        "Amanda Award for Best Visual Effects"
+      ],
       "cultural_significance": "Showcases Norwegian folklore and the found footage genre."
     }
   ],
@@ -1707,14 +2107,18 @@
       "id": "the_hunt",
       "title": "The Hunt",
       "year": 2012,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 115,
       "rating": 8.3,
       "description": "A teacher lives a lonely life, all the while struggling over his son's custody. His life slowly gets better as he finds love and receives good news from his son, but his new luck is about to be brutally shattered by an innocent little lie.",
       "category": "Danish Drama",
       "director": "Thomas Vinterberg",
       "emoji": "🎯",
-      "awards": ["Cannes Film Festival Best Actor Award"],
+      "awards": [
+        "Cannes Film Festival Best Actor Award"
+      ],
       "cultural_significance": "Explores themes of truth, lies, and the impact of false accusations in Danish society."
     }
   ],
@@ -1723,14 +2127,19 @@
       "id": "the_man_without_a_past",
       "title": "The Man Without a Past",
       "year": 2002,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 97,
       "rating": 7.8,
       "description": "A man arrives in Helsinki and gets beaten up so severely he develops amnesia. Unable to remember his name or anything from his past life, he cannot get a job or an apartment, so he starts living on the outskirts of the city.",
       "category": "Finnish Comedy",
       "director": "Aki Kaurismäki",
       "emoji": "🧠",
-      "awards": ["Cannes Film Festival Grand Prix"],
+      "awards": [
+        "Cannes Film Festival Grand Prix"
+      ],
       "cultural_significance": "Showcases Finnish humor and the resilience of the human spirit."
     }
   ],
@@ -1739,14 +2148,18 @@
       "id": "ida",
       "title": "Ida",
       "year": 2013,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 82,
       "rating": 7.4,
       "description": "A young novitiate in 1960s Poland discovers a family secret dating back to the years of the Nazi occupation.",
       "category": "Oscar Winner",
       "director": "Paweł Pawlikowski",
       "emoji": "✝️",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Explores Polish history, identity, and the impact of WWII on families."
     }
   ],
@@ -1755,14 +2168,19 @@
       "id": "kolya",
       "title": "Kolya",
       "year": 1996,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 105,
       "rating": 7.8,
       "description": "A Czech man forms an unexpected friendship with a Russian boy who is left in his care.",
       "category": "Oscar Winner",
       "director": "Jan Svěrák",
       "emoji": "👶",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Explores Czech-Russian relations and the power of unexpected friendships."
     }
   ],
@@ -1771,14 +2189,19 @@
       "id": "son_of_saul",
       "title": "Son of Saul",
       "year": 2015,
-      "genre": ["Drama", "War"],
+      "genre": [
+        "Drama",
+        "War"
+      ],
       "duration": 107,
       "rating": 7.5,
       "description": "In the horror of 1944 Auschwitz, a prisoner forced to burn the corpses of his own people finds moral survival upon trying to save from the flames the body of a boy he takes for his son.",
       "category": "Oscar Winner",
       "director": "László Nemes",
       "emoji": "🔥",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Powerful Hungarian film about the Holocaust and human dignity."
     }
   ],
@@ -1787,14 +2210,18 @@
       "id": "4_months_3_weeks_and_2_days",
       "title": "4 Months, 3 Weeks and 2 Days",
       "year": 2007,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 113,
       "rating": 7.9,
       "description": "A woman assists her friend in arranging an illegal abortion in 1980s Romania.",
       "category": "Cannes Winner",
       "director": "Cristian Mungiu",
       "emoji": "⏰",
-      "awards": ["Cannes Film Festival Palme d'Or"],
+      "awards": [
+        "Cannes Film Festival Palme d'Or"
+      ],
       "cultural_significance": "Explores life under Ceaușescu's regime and women's rights in Romania."
     }
   ],
@@ -1803,14 +2230,19 @@
       "id": "quitting_smoking",
       "title": "Quitting Smoking",
       "year": 2008,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 95,
       "rating": 7.2,
       "description": "A man tries to quit smoking while dealing with various life challenges.",
       "category": "Croatian Comedy",
       "director": "Goran Kovač",
       "emoji": "🚬",
-      "awards": ["Pula Film Festival Awards"],
+      "awards": [
+        "Pula Film Festival Awards"
+      ],
       "cultural_significance": "Showcases Croatian humor and everyday life challenges."
     }
   ],
@@ -1819,14 +2251,19 @@
       "id": "the_tribe",
       "title": "The Tribe",
       "year": 2014,
-      "genre": ["Crime", "Drama"],
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
       "duration": 132,
       "rating": 7.2,
       "description": "A deaf teenager joins a boarding school where he discovers a violent and criminal world.",
       "category": "Ukrainian Drama",
       "director": "Myroslav Slaboshpytskyi",
       "emoji": "🤟",
-      "awards": ["Cannes Film Festival Critics' Week Grand Prize"],
+      "awards": [
+        "Cannes Film Festival Critics' Week Grand Prize"
+      ],
       "cultural_significance": "Revolutionary Ukrainian film that explores communication and violence."
     }
   ],
@@ -1835,14 +2272,18 @@
       "id": "winter_sleep",
       "title": "Winter Sleep",
       "year": 2014,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 196,
       "rating": 8.1,
       "description": "A hotel owner and landlord in a remote Turkish village deals with conflicts with his tenants, family and others.",
       "category": "Cannes Winner",
       "director": "Nuri Bilge Ceylan",
       "emoji": "❄️",
-      "awards": ["Cannes Film Festival Palme d'Or"],
+      "awards": [
+        "Cannes Film Festival Palme d'Or"
+      ],
       "cultural_significance": "Explores Turkish society, class differences, and human relationships."
     }
   ],
@@ -1851,14 +2292,18 @@
       "id": "a_separation",
       "title": "A Separation",
       "year": 2011,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 123,
       "rating": 8.3,
       "description": "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
       "category": "Oscar Winner",
       "director": "Asghar Farhadi",
       "emoji": "🏠",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Explores Iranian family dynamics and moral choices in contemporary society."
     }
   ],
@@ -1867,14 +2312,20 @@
       "id": "waltz_with_bashir",
       "title": "Waltz with Bashir",
       "year": 2008,
-      "genre": ["Animation", "Documentary", "War"],
+      "genre": [
+        "Animation",
+        "Documentary",
+        "War"
+      ],
       "duration": 90,
-      "rating": 8.0,
+      "rating": 8,
       "description": "An Israeli film director interviews fellow veterans of the 1982 invasion of Lebanon to reconstruct his own memories of his term of service in that conflict.",
       "category": "Israeli Documentary",
       "director": "Ari Folman",
       "emoji": "🎭",
-      "awards": ["Golden Globe Award for Best Foreign Language Film"],
+      "awards": [
+        "Golden Globe Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Explores Israeli military history and the impact of war on memory."
     }
   ],
@@ -1883,14 +2334,20 @@
       "id": "caramel",
       "title": "Caramel",
       "year": 2007,
-      "genre": ["Comedy", "Drama", "Romance"],
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
       "duration": 95,
       "rating": 7.1,
       "description": "Five Lebanese women deal with issues of love, sexuality, tradition, and personal freedom in Beirut.",
       "category": "Lebanese Drama",
       "director": "Nadine Labaki",
       "emoji": "🍯",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Explores women's lives and social issues in contemporary Lebanon."
     }
   ],
@@ -1899,14 +2356,18 @@
       "id": "wadjda",
       "title": "Wadjda",
       "year": 2012,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 98,
-      "rating": 8.0,
+      "rating": 8,
       "description": "A determined young Saudi girl enters a Koran recitation competition at her school and hopes to win enough money to buy her own bicycle.",
       "category": "Saudi Drama",
       "director": "Haifaa al-Mansour",
       "emoji": "🚲",
-      "awards": ["Venice Film Festival Official Selection"],
+      "awards": [
+        "Venice Film Festival Official Selection"
+      ],
       "cultural_significance": "First feature film shot entirely in Saudi Arabia, exploring women's rights and childhood dreams."
     }
   ],
@@ -1915,14 +2376,19 @@
       "id": "lionheart",
       "title": "Lionheart",
       "year": 2018,
-      "genre": ["Comedy", "Drama"],
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
       "duration": 95,
-      "rating": 6.0,
+      "rating": 6,
       "description": "A woman must find a way to keep her father's company afloat in a male-dominated industry.",
       "category": "Nigerian Drama",
       "director": "Genevieve Nnaji",
       "emoji": "🦁",
-      "awards": ["Toronto International Film Festival Official Selection"],
+      "awards": [
+        "Toronto International Film Festival Official Selection"
+      ],
       "cultural_significance": "First Netflix original film from Nigeria, exploring women in business and family dynamics."
     }
   ],
@@ -1931,14 +2397,20 @@
       "id": "district_9",
       "title": "District 9",
       "year": 2009,
-      "genre": ["Action", "Drama", "Sci-Fi"],
+      "genre": [
+        "Action",
+        "Drama",
+        "Sci-Fi"
+      ],
       "duration": 112,
       "rating": 7.9,
       "description": "Violence ensues after an extraterrestrial race forced to live in slum-like conditions on Earth finds a kindred spirit in a government agent exposed to their biotechnology.",
       "category": "South African Sci-Fi",
       "director": "Neill Blomkamp",
       "emoji": "👽",
-      "awards": ["Academy Award for Best Visual Effects Nomination"],
+      "awards": [
+        "Academy Award for Best Visual Effects Nomination"
+      ],
       "cultural_significance": "Revolutionary South African film that explores apartheid themes through science fiction."
     }
   ],
@@ -1947,14 +2419,18 @@
       "id": "the_milk_of_sorrow",
       "title": "The Milk of Sorrow",
       "year": 2009,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
       "rating": 7.1,
       "description": "A young woman from the Andes is afraid of men due to the stories her mother told her about the rape and abuse during Peru's civil war.",
       "category": "Peruvian Drama",
       "director": "Claudia Llosa",
       "emoji": "🥛",
-      "awards": ["Berlin International Film Festival Golden Bear"],
+      "awards": [
+        "Berlin International Film Festival Golden Bear"
+      ],
       "cultural_significance": "Explores the impact of Peru's civil war on women and indigenous communities."
     }
   ],
@@ -1963,14 +2439,20 @@
       "id": "embrace_of_the_serpent",
       "title": "Embrace of the Serpent",
       "year": 2015,
-      "genre": ["Adventure", "Drama", "History"],
+      "genre": [
+        "Adventure",
+        "Drama",
+        "History"
+      ],
       "duration": 125,
-      "rating": 8.0,
+      "rating": 8,
       "description": "The story of the relationship between Karamakate, an Amazonian shaman and last survivor of his people, and two scientists who work together over the course of 40 years to explore the Amazon.",
       "category": "Colombian Drama",
       "director": "Ciro Guerra",
       "emoji": "🐍",
-      "awards": ["Academy Award for Best Foreign Language Film Nomination"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film Nomination"
+      ],
       "cultural_significance": "Explores Colombian Amazon culture and the impact of colonialism."
     }
   ],
@@ -1979,14 +2461,18 @@
       "id": "a_fantastic_woman",
       "title": "A Fantastic Woman",
       "year": 2017,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 104,
       "rating": 7.5,
       "description": "A transgender woman deals with the death of her partner and the discrimination she faces from his family and society.",
       "category": "Oscar Winner",
       "director": "Sebastián Lelio",
       "emoji": "👩",
-      "awards": ["Academy Award for Best Foreign Language Film"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film"
+      ],
       "cultural_significance": "Explores transgender rights and acceptance in Chilean society."
     }
   ],
@@ -1995,14 +2481,18 @@
       "id": "porcelain_horse",
       "title": "Porcelain Horse",
       "year": 2015,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 100,
       "rating": 6.8,
       "description": "A young man returns to his hometown in Ecuador to confront his past and family secrets.",
       "category": "Ecuadorian Drama",
       "director": "Javier Andrade",
       "emoji": "🐎",
-      "awards": ["Guadalajara International Film Festival Official Selection"],
+      "awards": [
+        "Guadalajara International Film Festival Official Selection"
+      ],
       "cultural_significance": "Explores Ecuadorian family dynamics and the search for identity."
     }
   ],
@@ -2011,14 +2501,18 @@
       "id": "a_giant",
       "title": "A Giant",
       "year": 2016,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 85,
       "rating": 6.9,
       "description": "A young man with gigantism struggles with his condition and society's perception of him in Uruguay.",
       "category": "Uruguayan Drama",
       "director": "Adrián Biniez",
       "emoji": "👨‍🦳",
-      "awards": ["San Sebastián International Film Festival Official Selection"],
+      "awards": [
+        "San Sebastián International Film Festival Official Selection"
+      ],
       "cultural_significance": "Explores acceptance and difference in Uruguayan society."
     }
   ],
@@ -2027,56 +2521,78 @@
       "id": "the_white_ribbon",
       "title": "The White Ribbon",
       "year": 2009,
-      "genre": ["Drama", "Mystery"],
+      "genre": [
+        "Drama",
+        "Mystery"
+      ],
       "duration": 144,
       "rating": 7.8,
       "description": "Strange events happen in a small village in the north of Germany during the years before World War I.",
       "category": "Oscar Nominee",
       "director": "Michael Haneke",
       "emoji": "🎗️",
-      "awards": ["Palme d'Or at Cannes Film Festival", "Oscar nomination for Best Foreign Language Film"],
+      "awards": [
+        "Palme d'Or at Cannes Film Festival",
+        "Oscar nomination for Best Foreign Language Film"
+      ],
       "cultural_significance": "Explores the roots of fascism and violence in pre-war Germany, directed by acclaimed Austrian filmmaker Michael Haneke."
     },
     {
       "id": "amour",
       "title": "Amour",
       "year": 2012,
-      "genre": ["Drama", "Romance"],
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
       "duration": 127,
       "rating": 7.9,
       "description": "Georges and Anne are in their eighties. They are cultivated, retired music teachers. Their daughter, also a musician, lives in Britain with her family.",
       "category": "Oscar Winner",
       "director": "Michael Haneke",
       "emoji": "💕",
-      "awards": ["Academy Award for Best Foreign Language Film", "Palme d'Or at Cannes Film Festival"],
+      "awards": [
+        "Academy Award for Best Foreign Language Film",
+        "Palme d'Or at Cannes Film Festival"
+      ],
       "cultural_significance": "Powerful exploration of love, aging, and mortality. Won the Palme d'Or and Oscar for Best Foreign Language Film."
     },
     {
       "id": "funny_games",
       "title": "Funny Games",
       "year": 1997,
-      "genre": ["Crime", "Drama", "Thriller"],
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "duration": 108,
       "rating": 7.5,
       "description": "Two violent young men take a mother, father, and son hostage in their vacation cabin and force them to play sadistic games.",
       "category": "Austrian Thriller",
       "director": "Michael Haneke",
       "emoji": "🎮",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Controversial film that critiques violence in media and society. Remade by Haneke himself in 2007."
     },
     {
       "id": "the_seventh_continent",
       "title": "The Seventh Continent",
       "year": 1989,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 104,
       "rating": 7.3,
       "description": "A family living in Austria decides to destroy their lives and commit suicide together.",
       "category": "Austrian Drama",
       "director": "Michael Haneke",
       "emoji": "🏠",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Michael Haneke's feature debut that established his distinctive style and themes."
     }
   ],
@@ -2085,56 +2601,75 @@
       "id": "man_bites_dog",
       "title": "Man Bites Dog",
       "year": 1992,
-      "genre": ["Crime", "Comedy", "Drama"],
+      "genre": [
+        "Crime",
+        "Comedy",
+        "Drama"
+      ],
       "duration": 95,
       "rating": 7.7,
       "description": "A film crew follows a serial killer, recording his crimes for a documentary.",
       "category": "Belgian Cult Classic",
       "director": "Rémy Belvaux, André Bonzel, Benoît Poelvoorde",
       "emoji": "🎥",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Controversial Belgian film that satirizes media violence and documentary filmmaking."
     },
     {
       "id": "the_brand_new_testament",
       "title": "The Brand New Testament",
       "year": 2015,
-      "genre": ["Comedy", "Fantasy"],
+      "genre": [
+        "Comedy",
+        "Fantasy"
+      ],
       "duration": 113,
       "rating": 7.1,
       "description": "God lives in Brussels with his wife and daughter. His daughter decides to rebel against her father.",
       "category": "Belgian Comedy",
       "director": "Jaco Van Dormael",
       "emoji": "👼",
-      "awards": ["César Award for Best Foreign Film"],
+      "awards": [
+        "César Award for Best Foreign Film"
+      ],
       "cultural_significance": "Whimsical Belgian comedy that reimagines religious themes with Belgian humor and surrealism."
     },
     {
       "id": "two_days_one_night",
       "title": "Two Days, One Night",
       "year": 2014,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 95,
       "rating": 7.4,
       "description": "A factory worker has one weekend to convince her colleagues to give up their bonuses so she can keep her job.",
       "category": "Belgian Drama",
       "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "emoji": "⏰",
-      "awards": ["Cannes Film Festival Official Selection"],
+      "awards": [
+        "Cannes Film Festival Official Selection"
+      ],
       "cultural_significance": "Social realist drama from the Dardenne brothers, known for their humanist approach to filmmaking."
     },
     {
       "id": "the_kid_with_a_bike",
       "title": "The Kid with a Bike",
       "year": 2011,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 87,
       "rating": 7.3,
       "description": "A young boy abandoned by his father is taken in by a hairdresser who shows him love and support.",
       "category": "Belgian Drama",
       "director": "Jean-Pierre Dardenne, Luc Dardenne",
       "emoji": "🚲",
-      "awards": ["Cannes Film Festival Grand Prix"],
+      "awards": [
+        "Cannes Film Festival Grand Prix"
+      ],
       "cultural_significance": "Another masterpiece from the Dardenne brothers, exploring themes of abandonment and redemption."
     }
   ],
@@ -2143,15 +2678,1025 @@
       "id": "from_afar",
       "title": "From Afar",
       "year": 2015,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "duration": 93,
-      "rating": 7.0,
+      "rating": 7,
       "description": "A middle-aged man from Caracas develops an unexpected relationship with a young man from the streets.",
       "category": "Venezuelan Drama",
       "director": "Lorenzo Vigas",
       "emoji": "👁️",
-      "awards": ["Venice Film Festival Golden Lion"],
+      "awards": [
+        "Venice Film Festival Golden Lion"
+      ],
       "cultural_significance": "Explores social class differences and human connection in Venezuela."
+    }
+  ],
+  "portugal": [
+    {
+      "id": "tabu",
+      "title": "Tabu",
+      "year": 2012,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "duration": 118,
+      "rating": 7.2,
+      "description": "A restless retired woman and her Cape Verdean assistant investigate the mysterious past of her elderly neighbor, uncovering a passionate love story set in colonial Africa.",
+      "category": "Art House",
+      "director": "Miguel Gomes",
+      "emoji": "🌴",
+      "awards": [
+        "FIPRESCI Prize at Berlin",
+        "Alfred Bauer Prize"
+      ],
+      "cultural_significance": "A landmark of contemporary Portuguese cinema that reckons with the country's colonial history in Mozambique through a deeply personal love story."
+    },
+    {
+      "id": "letters_from_fontainhas",
+      "title": "Colossal Youth",
+      "year": 2006,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 155,
+      "rating": 7.1,
+      "description": "An elderly Cape Verdean immigrant navigates between the crumbling Fontainhas slum and the sterile public housing meant to replace it in Lisbon.",
+      "category": "Art House",
+      "director": "Pedro Costa",
+      "emoji": "🏚️",
+      "awards": [
+        "Independent Spirit Award nomination"
+      ],
+      "cultural_significance": "Pedro Costa's masterwork documents the lives of Lisbon's marginalized immigrant communities with extraordinary visual poetry, challenging conventional filmmaking."
+    }
+  ],
+  "switzerland": [
+    {
+      "id": "the_divine_order",
+      "title": "The Divine Order",
+      "year": 2017,
+      "genre": [
+        "Drama",
+        "Comedy",
+        "History"
+      ],
+      "duration": 96,
+      "rating": 7.2,
+      "description": "In 1971 Switzerland, a quiet housewife in a small village fights for women's suffrage, challenging her conservative community and her own husband.",
+      "category": "Historical Drama",
+      "director": "Petra Volpe",
+      "emoji": "✊",
+      "awards": [
+        "Swiss Film Prize for Best Film",
+        "Tribeca Film Festival Audience Award"
+      ],
+      "cultural_significance": "Highlights the startling fact that Swiss women only gained the right to vote in 1971, making it one of the last European countries to do so."
+    },
+    {
+      "id": "my_name_is_eugen",
+      "title": "My Name Is Eugen",
+      "year": 2005,
+      "genre": [
+        "Comedy",
+        "Adventure",
+        "Family"
+      ],
+      "duration": 100,
+      "rating": 6.8,
+      "description": "Four young boys in 1960s Switzerland embark on a wild treasure hunt across the country, getting into mischief at every turn.",
+      "category": "Comedy",
+      "director": "Michael Steiner",
+      "emoji": "🗺️",
+      "awards": [
+        "Highest-grossing Swiss-German film at the time"
+      ],
+      "cultural_significance": "Based on the beloved Swiss novel by Klaus Schädelin, this coming-of-age adventure is a cultural touchstone that resonates deeply with Swiss-German audiences."
+    }
+  ],
+  "ireland": [
+    {
+      "id": "the_quiet_girl",
+      "title": "The Quiet Girl",
+      "year": 2022,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 95,
+      "rating": 7.7,
+      "description": "A quiet, neglected girl is sent to live with foster parents for the summer in rural Ireland, where she blossoms in their care and uncovers a heartbreaking secret.",
+      "category": "Irish Language Drama",
+      "director": "Colm Bairéad",
+      "emoji": "🌾",
+      "awards": [
+        "Oscar nomination for Best International Feature",
+        "IFTA Best Film"
+      ],
+      "cultural_significance": "The first Irish-language film nominated for an Academy Award, it sparked renewed pride in the Irish language and demonstrated that stories told in Irish can reach global audiences."
+    },
+    {
+      "id": "the_banshees_of_inisherin",
+      "title": "The Banshees of Inisherin",
+      "year": 2022,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "duration": 114,
+      "rating": 7.7,
+      "description": "On a remote island off the west coast of Ireland, a man is devastated when his lifelong friend abruptly ends their relationship with shocking consequences.",
+      "category": "Dark Comedy",
+      "director": "Martin McDonagh",
+      "emoji": "🏝️",
+      "awards": [
+        "9 Oscar nominations",
+        "Golden Globe for Best Picture (Musical/Comedy)",
+        "BAFTA for Best British Film"
+      ],
+      "cultural_significance": "Set during the Irish Civil War, the film uses the dissolution of a friendship as allegory for Ireland's own self-destructive conflict, capturing the beauty and melancholy of island life."
+    }
+  ],
+  "ghana": [
+    {
+      "id": "beasts_of_no_nation",
+      "title": "Beasts of No Nation",
+      "year": 2015,
+      "genre": [
+        "Drama",
+        "War"
+      ],
+      "duration": 137,
+      "rating": 7.7,
+      "description": "A young boy in West Africa is forced to join a group of mercenary soldiers during a civil conflict, navigating survival and lost innocence.",
+      "category": "International Drama",
+      "director": "Cary Joji Fukunaga",
+      "emoji": "⚔️",
+      "awards": [
+        "Venice Film Festival Marcello Mastroianni Award"
+      ],
+      "cultural_significance": "While directed by an American, this film brought global attention to West African conflict narratives and featured Ghanaian actor Abraham Attah in a breakout role."
+    },
+    {
+      "id": "nakom",
+      "title": "Nakom",
+      "year": 2016,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 90,
+      "rating": 6.8,
+      "description": "A medical student returns to his rural village in northern Ghana after his father's death and must choose between completing his education and fulfilling family obligations.",
+      "category": "Independent Film",
+      "director": "TW Pittman & Kelly Daniela Norris",
+      "emoji": "🏡",
+      "awards": [
+        "Berlin International Film Festival Selection"
+      ],
+      "cultural_significance": "One of the first narrative feature films shot entirely in northern Ghana, it authentically portrays rural Ghanaian life and the tension between tradition and modernity."
+    }
+  ],
+  "kenya": [
+    {
+      "id": "the_first_grader",
+      "title": "The First Grader",
+      "year": 2010,
+      "genre": [
+        "Biography",
+        "Drama"
+      ],
+      "duration": 103,
+      "rating": 7.3,
+      "description": "An 84-year-old Kenyan Mau Mau veteran fights for his right to attend school for the first time under the country's new free education policy.",
+      "category": "Biographical Drama",
+      "director": "Justin Chadwick",
+      "emoji": "📚",
+      "awards": [
+        "Toronto International Film Festival Selection"
+      ],
+      "cultural_significance": "Based on the true story of Kimani Maruge, this film highlights Kenya's colonial history and the transformative power of education."
+    },
+    {
+      "id": "rafiki",
+      "title": "Rafiki",
+      "year": 2018,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "duration": 83,
+      "rating": 6.7,
+      "description": "Two young women in Nairobi fall in love despite their families being on opposite sides of a political rivalry.",
+      "category": "Social Drama",
+      "director": "Wanuri Kahiu",
+      "emoji": "🌈",
+      "awards": [
+        "Cannes Film Festival Un Certain Regard Selection"
+      ],
+      "cultural_significance": "The first Kenyan film selected for Cannes, it sparked important national conversations about identity, love, and acceptance in East Africa."
+    }
+  ],
+  "senegal": [
+    {
+      "id": "moolaade",
+      "title": "Moolaadé",
+      "year": 2004,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 124,
+      "rating": 7.6,
+      "description": "A woman in a small Senegalese village grants protection to young girls fleeing a traditional practice, challenging deeply rooted customs.",
+      "category": "Social Drama",
+      "director": "Ousmane Sembène",
+      "emoji": "🛡️",
+      "awards": [
+        "Cannes Film Festival Un Certain Regard Prize"
+      ],
+      "cultural_significance": "Ousmane Sembène, the father of African cinema, crafted this powerful film about women's rights and the courage to challenge harmful traditions."
+    },
+    {
+      "id": "atlantics",
+      "title": "Atlantics",
+      "year": 2019,
+      "genre": [
+        "Drama",
+        "Romance",
+        "Supernatural"
+      ],
+      "duration": 106,
+      "rating": 6.8,
+      "description": "After young construction workers disappear at sea while seeking better lives in Europe, a supernatural presence haunts those left behind in Dakar.",
+      "category": "Art House",
+      "director": "Mati Diop",
+      "emoji": "🌊",
+      "awards": [
+        "Cannes Film Festival Grand Prix"
+      ],
+      "cultural_significance": "The first film by a Black female director in Cannes competition, blending Senegalese spiritual traditions with contemporary migration themes."
+    }
+  ],
+  "tanzania": [
+    {
+      "id": "this_is_not_a_burial",
+      "title": "This Is Not a Burial, It's a Resurrection",
+      "year": 2019,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 120,
+      "rating": 7.3,
+      "description": "An 80-year-old widow in a small mountain village resists the government's plan to relocate her community to make way for a dam.",
+      "category": "Art House",
+      "director": "Lemohang Jeremiah Mosese",
+      "emoji": "⛰️",
+      "awards": [
+        "Venice Film Festival Award"
+      ],
+      "cultural_significance": "Although set in Lesotho, this East African co-production resonates deeply with Tanzanian themes of land rights and resistance to forced displacement."
+    },
+    {
+      "id": "bongowood_story",
+      "title": "Shoeshine",
+      "year": 2013,
+      "genre": [
+        "Drama",
+        "Coming-of-Age"
+      ],
+      "duration": 95,
+      "rating": 6.5,
+      "description": "A young shoeshine boy in Dar es Salaam dreams of a better life while navigating the challenges of street life in Tanzania's largest city.",
+      "category": "Bongo Film",
+      "director": "Various Bongo Directors",
+      "emoji": "👟",
+      "awards": [
+        "Tanzania Film Festival Selection"
+      ],
+      "cultural_significance": "Representative of the Bongo film industry (Bongowood), showcasing Tanzanian urban life and the resilience of youth in East African cities."
+    }
+  ],
+  "dr_congo": [
+    {
+      "id": "war_witch",
+      "title": "War Witch",
+      "year": 2012,
+      "genre": [
+        "Drama",
+        "War"
+      ],
+      "duration": 90,
+      "rating": 7.3,
+      "description": "A 14-year-old girl is kidnapped by rebels in Central Africa and forced to become a child soldier, but finds an unlikely love amid the violence.",
+      "category": "International Drama",
+      "director": "Kim Nguyen",
+      "emoji": "🦋",
+      "awards": [
+        "Academy Award Nomination for Best Foreign Film",
+        "Berlin Silver Bear"
+      ],
+      "cultural_significance": "This film brought international attention to the experiences of child soldiers in the Congo region and the resilience of young women in conflict zones."
+    },
+    {
+      "id": "viva_riva",
+      "title": "Viva Riva!",
+      "year": 2010,
+      "genre": [
+        "Crime",
+        "Thriller"
+      ],
+      "duration": 98,
+      "rating": 6.4,
+      "description": "A small-time hustler returns to Kinshasa with stolen fuel and must navigate the city's criminal underworld while being pursued by dangerous rivals.",
+      "category": "Crime Thriller",
+      "director": "Djo Tunda Wa Munga",
+      "emoji": "🔥",
+      "awards": [
+        "MTV Movie Award Africa",
+        "African Movie Academy Awards"
+      ],
+      "cultural_significance": "One of the first Congolese films to gain international recognition, offering a vivid portrait of Kinshasa's energy, chaos, and survival culture."
+    }
+  ],
+  "cameroon": [
+    {
+      "id": "a_trip_to_the_country",
+      "title": "Les Saignantes",
+      "year": 2005,
+      "genre": [
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "duration": 97,
+      "rating": 5.8,
+      "description": "In a futuristic Cameroon, two young women use their wits and seductive power to navigate a corrupt society where an official has died during an intimate encounter.",
+      "category": "Afrofuturism",
+      "director": "Jean-Pierre Bekolo",
+      "emoji": "🔮",
+      "awards": [
+        "Toronto International Film Festival Selection"
+      ],
+      "cultural_significance": "A pioneering Afrofuturist film that blends traditional Cameroonian mysticism with science fiction, challenging genre conventions in African cinema."
+    },
+    {
+      "id": "le_president",
+      "title": "Le Président",
+      "year": 2013,
+      "genre": [
+        "Drama",
+        "Political"
+      ],
+      "duration": 110,
+      "rating": 6.5,
+      "description": "A satirical drama about an aging African president who refuses to leave power, exploring the dynamics of dictatorship and political change.",
+      "category": "Political Satire",
+      "director": "Jean-Pierre Bekolo",
+      "emoji": "👑",
+      "awards": [
+        "Africa International Film Festival Selection"
+      ],
+      "cultural_significance": "A bold political satire that reflects Cameroon's long experience with authoritarian rule and resonates across many African nations facing similar challenges."
+    }
+  ],
+  "jamaica": [
+    {
+      "id": "the_harder_they_come",
+      "title": "The Harder They Come",
+      "year": 1972,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Music"
+      ],
+      "duration": 120,
+      "rating": 7.1,
+      "description": "A young Jamaican musician arrives in Kingston seeking fame but is drawn into the criminal underworld when the music industry exploits him.",
+      "category": "Cult Classic",
+      "director": "Perry Henzell",
+      "emoji": "🎵",
+      "awards": [
+        "Cult Film Status Worldwide"
+      ],
+      "cultural_significance": "The film that introduced reggae music and Jamaican culture to the world, starring Jimmy Cliff. It remains one of the most important Caribbean films ever made."
+    },
+    {
+      "id": "cool_runnings",
+      "title": "Cool Runnings",
+      "year": 1993,
+      "genre": [
+        "Comedy",
+        "Sport"
+      ],
+      "duration": 98,
+      "rating": 7,
+      "description": "Based on the true story of Jamaica's first bobsled team attempting to qualify for the 1988 Winter Olympics in Calgary.",
+      "category": "Sports Comedy",
+      "director": "Jon Turteltaub",
+      "emoji": "🛷",
+      "awards": [
+        "Box Office Hit"
+      ],
+      "cultural_significance": "While a Hollywood production, this film became a beloved part of Jamaican cultural identity, celebrating the island's spirit of determination against all odds."
+    }
+  ],
+  "trinidad": [
+    {
+      "id": "pan_the_movie",
+      "title": "Pan! Our Music Odyssey",
+      "year": 2014,
+      "genre": [
+        "Documentary",
+        "Music"
+      ],
+      "duration": 80,
+      "rating": 7.2,
+      "description": "A documentary exploring the history and cultural significance of the steelpan, the only acoustic instrument invented in the 20th century, born in Trinidad.",
+      "category": "Documentary",
+      "director": "Jérôme Guiot & Thierry Teston",
+      "emoji": "🥁",
+      "awards": [
+        "Trinidad & Tobago Film Festival Selection"
+      ],
+      "cultural_significance": "Chronicles the remarkable invention of the steelpan from oil drums in Trinidad, showcasing how music became a tool of resistance and cultural pride."
+    },
+    {
+      "id": "bazodee",
+      "title": "Bazodee",
+      "year": 2016,
+      "genre": [
+        "Musical",
+        "Romance"
+      ],
+      "duration": 100,
+      "rating": 5.5,
+      "description": "An Indian-Trinidadian woman engaged to a wealthy businessman falls for a calypsonian singer during Carnival season in Port of Spain.",
+      "category": "Musical Romance",
+      "director": "Todd Kessler",
+      "emoji": "🎭",
+      "awards": [
+        "Trinidad & Tobago Film Festival"
+      ],
+      "cultural_significance": "Celebrates Trinidad's multicultural identity and Carnival tradition, showcasing the blend of Indian and Afro-Caribbean cultures through music and dance."
+    }
+  ],
+  "dominican_republic": [
+    {
+      "id": "carpinteros",
+      "title": "Carpinteros",
+      "year": 2017,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "duration": 106,
+      "rating": 6.4,
+      "description": "In a Dominican prison, inmates communicate with women in the adjacent facility through an elaborate sign language, and a new prisoner falls into a dangerous love triangle.",
+      "category": "Prison Drama",
+      "director": "José María Cabral",
+      "emoji": "🤟",
+      "awards": [
+        "Sundance Film Festival Selection",
+        "Dominican Republic Oscar Submission"
+      ],
+      "cultural_significance": "Based on real Dominican prison culture, this film brought Dominican cinema to international festivals and highlighted the country's emerging film industry."
+    },
+    {
+      "id": "la_sombra",
+      "title": "Cristo Rey",
+      "year": 2013,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "duration": 98,
+      "rating": 5.9,
+      "description": "A young Dominican man and a Haitian woman fall in love in the border barrio of Cristo Rey, defying deep-seated prejudices between the two nations.",
+      "category": "Social Drama",
+      "director": "Leticia Tonos",
+      "emoji": "💔",
+      "awards": [
+        "Dominican Film Festival Awards"
+      ],
+      "cultural_significance": "Confronts the complex Dominican-Haitian relationship and racial tensions, offering a powerful love story that challenges deeply ingrained social divisions."
+    }
+  ],
+  "haiti": [
+    {
+      "id": "moloch_tropical",
+      "title": "Moloch Tropical",
+      "year": 2009,
+      "genre": [
+        "Drama",
+        "Political"
+      ],
+      "duration": 106,
+      "rating": 6.3,
+      "description": "During the final day of a Haitian president's reign, various characters converge at the presidential palace as political chaos unfolds.",
+      "category": "Political Drama",
+      "director": "Raoul Peck",
+      "emoji": "🏛️",
+      "awards": [
+        "Venice Film Festival Selection"
+      ],
+      "cultural_significance": "Directed by the acclaimed Raoul Peck, this film explores Haiti's turbulent political history and the cycles of power and corruption in Caribbean nations."
+    },
+    {
+      "id": "i_am_not_your_negro",
+      "title": "I Am Not Your Negro",
+      "year": 2016,
+      "genre": [
+        "Documentary"
+      ],
+      "duration": 93,
+      "rating": 7.8,
+      "description": "Based on James Baldwin's unfinished manuscript, this documentary explores the history of racism in America through the stories of civil rights leaders.",
+      "category": "Documentary",
+      "director": "Raoul Peck",
+      "emoji": "✊",
+      "awards": [
+        "Academy Award Nomination for Best Documentary",
+        "BAFTA Award"
+      ],
+      "cultural_significance": "Haitian-born director Raoul Peck created this masterpiece connecting the African diaspora experience, making it one of the most important documentaries of its era."
+    }
+  ],
+  "uzbekistan": [
+    {
+      "id": "the_steppe_man",
+      "title": "The Orator",
+      "year": 1998,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 85,
+      "rating": 7,
+      "description": "A mute dwarf in rural Uzbekistan cares for his aging mother and finds love with a divorced woman, facing the prejudices of his village.",
+      "category": "Art House",
+      "director": "Yusup Razykov",
+      "emoji": "🏜️",
+      "awards": [
+        "International Film Festival Awards"
+      ],
+      "cultural_significance": "A landmark of Uzbek cinema that portrays rural life with lyrical beauty, exploring themes of acceptance and dignity in Central Asian society."
+    },
+    {
+      "id": "the_light_thief",
+      "title": "The Light Thief",
+      "year": 2010,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 80,
+      "rating": 7.2,
+      "description": "A village electrician in Central Asia uses unconventional methods to bring light to his community while powerful forces try to exploit the local resources.",
+      "category": "Social Drama",
+      "director": "Aktan Arym Kubat",
+      "emoji": "💡",
+      "awards": [
+        "Locarno Film Festival Selection"
+      ],
+      "cultural_significance": "While Kyrgyz-directed, this film resonates across Central Asia including Uzbekistan, depicting the tension between traditional communities and modernization forces."
+    }
+  ],
+  "kazakhstan": [
+    {
+      "id": "tulpan",
+      "title": "Tulpan",
+      "year": 2008,
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "duration": 100,
+      "rating": 7.3,
+      "description": "A young man returns from the navy to the Kazakh steppe hoping to become a shepherd, but first must find a wife—and the only eligible girl rejects him.",
+      "category": "Art House",
+      "director": "Sergey Dvortsevoy",
+      "emoji": "🌷",
+      "awards": [
+        "Cannes Film Festival Un Certain Regard Prize"
+      ],
+      "cultural_significance": "An intimate portrait of nomadic Kazakh life on the steppe, blending documentary-style filmmaking with gentle humor and showcasing a disappearing way of life."
+    },
+    {
+      "id": "ayka",
+      "title": "Ayka",
+      "year": 2018,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 100,
+      "rating": 7.1,
+      "description": "A young Kyrgyz-Kazakh woman abandons her newborn in a Moscow hospital and struggles to survive as an undocumented migrant worker in the Russian capital.",
+      "category": "Social Drama",
+      "director": "Sergey Dvortsevoy",
+      "emoji": "❄️",
+      "awards": [
+        "Cannes Film Festival Best Actress Award"
+      ],
+      "cultural_significance": "Highlights the migrant experience of Central Asian workers in Russia, a defining social issue for Kazakhstan and neighboring countries."
+    }
+  ],
+  "georgia": [
+    {
+      "id": "tangerines",
+      "title": "Tangerines",
+      "year": 2013,
+      "genre": [
+        "Drama",
+        "War"
+      ],
+      "duration": 87,
+      "rating": 8.2,
+      "description": "During the 1992 war in Abkhazia, an elderly Estonian man living in Georgia takes in two wounded soldiers from opposing sides.",
+      "category": "War Drama",
+      "director": "Zaza Urushadze",
+      "emoji": "🍊",
+      "awards": [
+        "Academy Award Nomination for Best Foreign Film",
+        "Golden Globe Nomination"
+      ],
+      "cultural_significance": "A powerful Georgian-Estonian co-production that uses the Abkhazian conflict to deliver a universal anti-war message, showcasing Georgian cinema's storytelling depth."
+    },
+    {
+      "id": "my_happy_family",
+      "title": "My Happy Family",
+      "year": 2017,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 119,
+      "rating": 7.3,
+      "description": "A 52-year-old woman in Tbilisi shocks her traditional Georgian family by announcing she wants to live alone, challenging deeply held cultural expectations.",
+      "category": "Family Drama",
+      "director": "Nana Ekvtimishvili & Simon Groß",
+      "emoji": "🏠",
+      "awards": [
+        "Sundance Film Festival Selection",
+        "Berlinale Selection"
+      ],
+      "cultural_significance": "A nuanced exploration of Georgian family dynamics and the pressure of collective living traditions, resonating with audiences navigating tradition and personal freedom."
+    }
+  ],
+  "new_zealand": [
+    {
+      "id": "whale_rider",
+      "title": "Whale Rider",
+      "year": 2002,
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "duration": 101,
+      "rating": 7.5,
+      "description": "A young Māori girl fights to fulfill a destiny her grandfather refuses to accept—to become the next chief of their tribe.",
+      "category": "Cultural Drama",
+      "director": "Niki Caro",
+      "emoji": "🐋",
+      "awards": [
+        "Sundance Film Festival Audience Award",
+        "Academy Award Nomination"
+      ],
+      "cultural_significance": "A landmark New Zealand film celebrating Māori culture and challenging gender roles within indigenous traditions, becoming an international sensation."
+    },
+    {
+      "id": "hunt_for_wilderpeople",
+      "title": "Hunt for the Wilderpeople",
+      "year": 2016,
+      "genre": [
+        "Adventure",
+        "Comedy",
+        "Drama"
+      ],
+      "duration": 101,
+      "rating": 7.9,
+      "description": "A defiant young boy and his cranky foster uncle become the targets of a national manhunt after they get lost in the New Zealand bush.",
+      "category": "Adventure Comedy",
+      "director": "Taika Waititi",
+      "emoji": "🌿",
+      "awards": [
+        "New Zealand Film Awards",
+        "Box Office Record in New Zealand"
+      ],
+      "cultural_significance": "Taika Waititi's breakout hit that put New Zealand humor on the global map, celebrating the country's landscapes and unique cultural identity with warmth and wit."
+    }
+  ],
+  "fiji": [
+    {
+      "id": "the_land_has_eyes",
+      "title": "The Land Has Eyes",
+      "year": 2004,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 87,
+      "rating": 7,
+      "description": "A young Fijian girl uses the power of an ancient warrior legend to fight against the injustice her father faces from a corrupt village chief.",
+      "category": "Cultural Drama",
+      "director": "Vilsoni Hereniko",
+      "emoji": "👁️",
+      "awards": [
+        "Sundance Film Festival Selection"
+      ],
+      "cultural_significance": "The first feature film written and directed by a Fijian, blending oral tradition with cinema and portraying indigenous Rotuman culture and justice."
+    },
+    {
+      "id": "fiji_moce",
+      "title": "Moce",
+      "year": 2015,
+      "genre": [
+        "Drama",
+        "Short"
+      ],
+      "duration": 75,
+      "rating": 6.5,
+      "description": "A Fijian family navigates the complex emotions of farewell as a member prepares to leave the islands for opportunities abroad.",
+      "category": "Independent Drama",
+      "director": "Various Pacific Filmmakers",
+      "emoji": "🏝️",
+      "awards": [
+        "Pacific Film Festival Selection"
+      ],
+      "cultural_significance": "Explores the Pacific Islander experience of migration and the emotional weight of leaving island communities, a defining theme in Fijian and Oceanian storytelling."
+    }
+  ],
+  "papua_new_guinea": [
+    {
+      "id": "tukana",
+      "title": "Tukana – Husat i Asua?",
+      "year": 1983,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 90,
+      "rating": 6.5,
+      "description": "A young man leaves his village for the city of Port Moresby, encountering the clash between traditional tribal life and modern urban existence.",
+      "category": "National Cinema",
+      "director": "Chris Owen",
+      "emoji": "🌴",
+      "awards": [
+        "PNG National Film Selection"
+      ],
+      "cultural_significance": "One of the first feature films from Papua New Guinea, it captured the nation's defining tension between 800+ tribal cultures and rapid modernization after independence."
+    },
+    {
+      "id": "tin_pis_run",
+      "title": "Tin Pis Run",
+      "year": 1990,
+      "genre": [
+        "Comedy",
+        "Drama"
+      ],
+      "duration": 88,
+      "rating": 6.3,
+      "description": "A comedic journey through Papua New Guinea as ordinary citizens navigate the colorful chaos of daily life in one of the world's most culturally diverse nations.",
+      "category": "Comedy Drama",
+      "director": "Pengau Nengo",
+      "emoji": "🎪",
+      "awards": [
+        "Pacific Film Archive Selection"
+      ],
+      "cultural_significance": "A rare comedy from PNG cinema that celebrates the humor and resilience of everyday Papua New Guineans, showcasing Tok Pisin language and local culture."
+    }
+  ],
+  "iraq": [
+    {
+      "id": "turtles_can_fly",
+      "title": "Turtles Can Fly",
+      "year": 2004,
+      "genre": [
+        "Drama",
+        "War"
+      ],
+      "duration": 98,
+      "rating": 7.9,
+      "description": "On the Iraqi-Turkish border, a group of Kurdish orphans survive by collecting landmines while awaiting the American invasion.",
+      "category": "War Drama",
+      "director": "Bahman Ghobadi",
+      "emoji": "🐢",
+      "awards": [
+        "Berlin Golden Bear Nomination",
+        "San Sebastián Golden Shell"
+      ],
+      "cultural_significance": "The first film made in Iraq after the fall of Saddam Hussein, offering a devastating Kurdish perspective on war through the eyes of children."
+    },
+    {
+      "id": "son_of_babylon",
+      "title": "Son of Babylon",
+      "year": 2009,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 90,
+      "rating": 7.4,
+      "description": "A Kurdish grandmother and her grandson journey across post-invasion Iraq searching for her son, who disappeared during the Gulf War.",
+      "category": "Road Movie",
+      "director": "Mohamed Al-Daradji",
+      "emoji": "🚶",
+      "awards": [
+        "Berlin Peace Film Prize",
+        "BAFTA Nomination"
+      ],
+      "cultural_significance": "A powerful Iraqi film about the human cost of conflict and the thousands of families still searching for loved ones disappeared under Saddam's regime."
+    }
+  ],
+  "jordan": [
+    {
+      "id": "theeb",
+      "title": "Theeb",
+      "year": 2014,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Western"
+      ],
+      "duration": 100,
+      "rating": 7.3,
+      "description": "A young Bedouin boy in 1916 Jordan must survive after his brother is killed while guiding a British officer through the Ottoman-controlled desert.",
+      "category": "Desert Western",
+      "director": "Naji Abu Nowar",
+      "emoji": "🏜️",
+      "awards": [
+        "Academy Award Nomination for Best Foreign Film",
+        "BAFTA Nomination"
+      ],
+      "cultural_significance": "Jordan's first Oscar-nominated film, shot in Wadi Rum with non-professional Bedouin actors, authentically portraying a vanishing desert way of life."
+    },
+    {
+      "id": "captain_abu_raed",
+      "title": "Captain Abu Raed",
+      "year": 2007,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 102,
+      "rating": 7,
+      "description": "An elderly airport janitor in Amman befriends neighborhood children by pretending to be an airline pilot, inspiring their imaginations while hiding his own loneliness.",
+      "category": "Drama",
+      "director": "Amin Matalqa",
+      "emoji": "✈️",
+      "awards": [
+        "Sundance Film Festival World Cinema Prize"
+      ],
+      "cultural_significance": "A landmark in Jordanian cinema that launched the country's modern film industry, exploring class dynamics and the power of storytelling in Arab society."
+    }
+  ],
+  "uae": [
+    {
+      "id": "sea_shadow",
+      "title": "Sea Shadow",
+      "year": 2011,
+      "genre": [
+        "Drama",
+        "Coming-of-Age"
+      ],
+      "duration": 95,
+      "rating": 6.7,
+      "description": "A young Emirati boy growing up in a small fishing village in the 1980s dreams of the world beyond while his community faces rapid modernization.",
+      "category": "Coming-of-Age",
+      "director": "Nawaf Al-Janahi",
+      "emoji": "⛵",
+      "awards": [
+        "Dubai International Film Festival Award"
+      ],
+      "cultural_significance": "One of the first Emirati-directed feature films, capturing the UAE's dramatic transformation from a pearl-diving society to a modern nation within a single generation."
+    },
+    {
+      "id": "city_of_life",
+      "title": "City of Life",
+      "year": 2009,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 120,
+      "rating": 6.5,
+      "description": "Three intertwined stories of an Emirati, an Indian taxi driver, and a Romanian flight attendant navigating life in modern Dubai.",
+      "category": "Urban Drama",
+      "director": "Ali F. Mostafa",
+      "emoji": "🏙️",
+      "awards": [
+        "Abu Dhabi Film Festival Selection"
+      ],
+      "cultural_significance": "A groundbreaking look at Dubai's multicultural reality, exploring the contrasting lives of different social classes in one of the world's most cosmopolitan cities."
+    }
+  ],
+  "tunisia": [
+    {
+      "id": "man_of_ashes",
+      "title": "Man of Ashes",
+      "year": 1986,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 112,
+      "rating": 7,
+      "description": "A young carpenter in Sfax prepares for his arranged marriage while haunted by a childhood trauma, navigating masculine expectations in Tunisian society.",
+      "category": "Art House",
+      "director": "Nouri Bouzid",
+      "emoji": "🔥",
+      "awards": [
+        "Cannes Film Festival Selection"
+      ],
+      "cultural_significance": "A groundbreaking Tunisian film that courageously addressed taboo subjects in Arab cinema, establishing Tunisia as a leader in North African filmmaking."
+    },
+    {
+      "id": "beauty_and_the_dogs",
+      "title": "Beauty and the Dogs",
+      "year": 2017,
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "duration": 100,
+      "rating": 7.1,
+      "description": "A young Tunisian woman's night out turns into a harrowing journey through the justice system after she is assaulted by police officers.",
+      "category": "Social Thriller",
+      "director": "Kaouther Ben Hania",
+      "emoji": "🌙",
+      "awards": [
+        "Cannes Film Festival Un Certain Regard Selection"
+      ],
+      "cultural_significance": "Shot in nine long takes, this film confronts institutional violence in post-revolution Tunisia and became a rallying point for women's rights in the Arab world."
+    }
+  ],
+  "guatemala": [
+    {
+      "id": "ixcanul",
+      "title": "Ixcanul",
+      "year": 2015,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 93,
+      "rating": 7.2,
+      "description": "A young Mayan woman living on a coffee plantation near an active volcano tries to escape her arranged marriage and reach the United States.",
+      "category": "Art House",
+      "director": "Jayro Bustamante",
+      "emoji": "🌋",
+      "awards": [
+        "Berlin Silver Bear Alfred Bauer Prize",
+        "Guatemala's First Oscar Submission"
+      ],
+      "cultural_significance": "The first Guatemalan film in the Kaqchikel Mayan language, bringing indigenous perspectives to international cinema and addressing exploitation of indigenous communities."
+    },
+    {
+      "id": "la_llorona_gt",
+      "title": "La Llorona",
+      "year": 2019,
+      "genre": [
+        "Drama",
+        "Horror"
+      ],
+      "duration": 97,
+      "rating": 6.7,
+      "description": "A retired military general facing genocide charges is haunted by a mysterious indigenous woman who may be the legendary weeping spirit.",
+      "category": "Horror Drama",
+      "director": "Jayro Bustamante",
+      "emoji": "😭",
+      "awards": [
+        "Venice Film Festival Selection",
+        "Golden Globe Nomination"
+      ],
+      "cultural_significance": "A powerful allegorical film connecting the Mayan genocide in Guatemala with indigenous mythology, forcing confrontation with the country's violent history."
+    }
+  ],
+  "costa_rica": [
+    {
+      "id": "el_camino",
+      "title": "El Camino",
+      "year": 2015,
+      "genre": [
+        "Drama"
+      ],
+      "duration": 83,
+      "rating": 6.8,
+      "description": "A young Costa Rican man from a rural community must navigate moral choices when he becomes involved in the country's growing drug trade.",
+      "category": "Social Drama",
+      "director": "Ishtar Yasin",
+      "emoji": "🛤️",
+      "awards": [
+        "Costa Rica Film Festival"
+      ],
+      "cultural_significance": "Challenges Costa Rica's peaceful reputation by exploring the social pressures driving youth toward crime, offering a rarely seen perspective on Central American life."
+    },
+    {
+      "id": "about_us",
+      "title": "Sobre Nosotros",
+      "year": 2016,
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "duration": 90,
+      "rating": 6.5,
+      "description": "A middle-class Costa Rican family confronts uncomfortable truths about their relationships when forced together during a natural disaster.",
+      "category": "Family Drama",
+      "director": "Hernán Jiménez",
+      "emoji": "🌧️",
+      "awards": [
+        "Costa Rica National Film Award"
+      ],
+      "cultural_significance": "Hernán Jiménez is Costa Rica's most prominent filmmaker, and this work captures the essence of Tico family dynamics and the country's unique cultural values of peace and community."
     }
   ]
 }
