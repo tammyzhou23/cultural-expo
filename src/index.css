@@ -482,17 +482,17 @@
 
   .toast.success {
     border-color: #238636;
-    background-color: rgba(35, 134, 54, 0.1);
+    background-color: #1a2e1f;
   }
 
   .toast.error {
     border-color: #DA3633;
-    background-color: rgba(218, 54, 51, 0.1);
+    background-color: #2d1a1a;
   }
 
   .toast.info {
     border-color: var(--accent-primary);
-    background-color: rgba(99, 102, 241, 0.1);
+    background-color: #1a1a2d;
   }
 
   /* Badges and Tags */

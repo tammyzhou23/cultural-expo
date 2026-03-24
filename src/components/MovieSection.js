@@ -147,13 +147,6 @@ function MovieSection({ selectedCountry }) {
             </motion.div>
           ))}
         </div>
-      ) : (
-        <div className="text-center py-8">
-          <div className="text-6xl mb-4">🎬</div>
-          <h3 className="text-xl font-bold text-gray-300 mb-2">No Movies Found</h3>
-          <p className="text-gray-400">No movie information available for this country.</p>
-        </div>
-      )}
     </div>
   );
 }
